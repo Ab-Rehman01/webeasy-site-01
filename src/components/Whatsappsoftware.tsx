@@ -1,3 +1,5 @@
+'use client'
+
 // components/WhatsAppSoftware.tsx
 
 import Image from "next/image";
@@ -8,9 +10,10 @@ export default function WhatsAppSoftware() {
         
         <div className="flex flex-col md:flex-row gap-6 items-center">
           <Image
-            src="/images/WhatsApp Image 2025.jpg"
-            alt="WhatsApp Marketing Tool"
-            className="w-full md:w-1/2 rounded-lg"
+              src="/images/WhatsApp Image 2025.jpg"
+              alt="WhatsApp contact image"
+              width={600} // set appropriate width
+              height={400} // set appropriate height
           />
           <div className="flex-1">
             <p className="mb-4 text-lg">

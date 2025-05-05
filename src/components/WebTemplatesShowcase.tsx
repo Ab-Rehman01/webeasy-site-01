@@ -49,11 +49,12 @@ export default function WebTemplatesShowcase() {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
           {projects.map((project, index) => (
             <div key={index} className="relative group rounded-xl shadow-lg overflow-hidden border h-[350px]">
-              <div className="absolute inset-0 overflow-hidden">
+              <div className="absolute inset-0 overflow-hidden relative w-full h-[1050px]">
               <Image
-  src={project.image}
-  alt={project.title}
-  className="w-full h-[1050px] object-cover transform translate-y-0 group-hover:-translate-y-[700px] transition-transform duration-[2000ms] ease-in-out"
+ src={project.image}
+ alt={project.title}
+ fill
+ className="object-cover transform translate-y-0 group-hover:-translate-y-[700px] transition-transform duration-[2000ms] ease-in-out"
 />
               </div>
               <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-70 text-white text-center py-2 text-lg font-semibold z-10">

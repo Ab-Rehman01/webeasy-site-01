@@ -16,7 +16,7 @@ const ShopifyHero = () => {
           transition={{ duration: 0.8 }}
         >
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white leading-tight">
-            Build Your Dream  Shopify Website Design Services in Pakistan <br /> <span className="text-purple-600">Shopify Store</span>
+            Build Your Dream  Shopify Website Design Services in Pakistan<br /> <span className="text-purple-600">Shopify Store</span>
           </h1>
           <p className="mt-4 text-gray-600 dark:text-gray-300 text-lg">
             Launch a stunning online shop with modern design, fast performance, and seamless checkout.

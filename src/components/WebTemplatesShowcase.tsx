@@ -50,7 +50,8 @@ const projects = [
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
         {projects.map((project, index) => (
           <div key={index} className="relative group rounded-xl shadow-lg overflow-hidden border h-[450px]">
-            <div className="absolute inset-0 overflow-hidden relative w-[400px] h-[1005px]">
+            <div className="relative w-full h-[450px] overflow-hidden">
+
               <Image
                 src={project.image}
                 alt={project.title}

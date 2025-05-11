@@ -1,4 +1,5 @@
 // app/shopify-development/page.tsx
+import ShopifyHero from '@/components/ShopifyHero';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -8,6 +9,9 @@ export const metadata: Metadata = {
 
 export default function ShopifyDevelopmentPage() {
   return (
+   <>
+    <ShopifyHero />
+   
     <section className="p-6 max-w-6xl mx-auto">
       <h1 className="text-4xl font-bold text-purple-600 mb-4">
         Shopify Store Development
@@ -39,5 +43,6 @@ export default function ShopifyDevelopmentPage() {
         Let&apos;s Build Your Store – WhatsApp Us
       </a>
     </section>
+    </>
   );
 }

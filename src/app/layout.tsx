@@ -4,6 +4,7 @@ import { ReactNode } from 'react'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 
+
 export const metadata = {
   title: 'Webeasy-Tech',
   description: 'Professional digital services: websites, Shopify, marketing, and software.',
@@ -17,7 +18,8 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   style={{ backgroundImage: "url('/images/—Pngtree—dark blue light technology technical_15869204.jpg')" }}
 >
   <Navbar />
-  <main className="container mx-auto px-4">{children}</main>
+  <main className=" px-0">{children}</main>
+ 
   <Footer />
 </body>
     </html>

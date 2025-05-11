@@ -5,7 +5,7 @@ import Image from "next/image";
 const projects = [
   {
     title: "Modern Portfolio",
-    image: "/screencapture-my-new.jpg",
+    image: "/screencapture-blucomtechnologiesss.jpg",
   },
   {
     title: "E-Commerce Store",
@@ -50,7 +50,7 @@ const projects = [
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
         {projects.map((project, index) => (
           <div key={index} className="relative group rounded-xl shadow-lg overflow-hidden border h-[450px]">
-            <div className="relative w-full h-[450px] overflow-hidden">
+            <div className="relative w-full h-[1100px] overflow-hidden">
 
               <Image
                 src={project.image}

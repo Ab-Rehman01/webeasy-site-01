@@ -37,6 +37,8 @@
 //     </section>
 //   );
 // }
+
+'use client';
 import React from 'react';
 import { FaSearch, FaGlobe, FaTools, FaChartLine } from 'react-icons/fa';
 import Head from 'next/head';

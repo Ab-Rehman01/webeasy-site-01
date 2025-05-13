@@ -23,30 +23,31 @@ export default function Navbar() {
         <ul className="hidden md:flex space-x-6 text-white text-sm font-medium items-center">
           <li><a href="/">Home</a></li>
           <li className="relative group">
-  <a href="/services" className="cursor-pointer">Services</a>
-  <ul className="absolute left-0 top-full bg-gray-800 text-white mt-1 rounded shadow-lg min-w-[160px] opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-opacity duration-200 z-50">
-    <li>
-      <a href="/web-development" className="block px-4 py-2 hover:bg-gray-700">
-        Web Development
-      </a>
-    </li>
-    <li>
-      <a href="/digital-marketing" className="block px-4 py-2 hover:bg-gray-700">
-        Digital Marketing
-      </a>
-    </li>
-    <li>
-      <a href="/seo-services" className="block px-4 py-2 hover:bg-gray-700">
-        SEO Services
-      </a>
-    </li>
-  </ul>
-</li>
+            <a href="/services" className="cursor-pointer">Services</a>
+            <ul className="absolute left-0 top-full bg-gray-800 text-white mt-1 rounded shadow-lg min-w-[160px] opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-opacity duration-200 z-50">
+              <li>
+                <a href="/web-development" className="block px-4 py-2 hover:bg-gray-700">
+                  Web Development
+                </a>
+              </li>
+              <li>
+                <a href="/digital-marketing" className="block px-4 py-2 hover:bg-gray-700">
+                  Digital Marketing
+                </a>
+              </li>
+              <li>
+                <a href="/seo-services" className="block px-4 py-2 hover:bg-gray-700">
+                  SEO Services
+                </a>
+              </li>
+            </ul>
+          </li>
 
           <li><a href="/testimonials">Testimonials</a></li>
           <li>
             <a href="https://wa.me/923242822577" target="_blank" rel="noopener noreferrer">WhatsApp</a>
           </li>
+           <li><a href="/contact">Contact Us</a></li>
         </ul>
 
         {/* Mobile Menu Button */}
@@ -74,6 +75,7 @@ export default function Navbar() {
           </li>
           <li><a href="/testimonials" onClick={() => setMenuOpen(false)}>Testimonials</a></li>
           <li><a href="https://wa.me/923242822577" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
+           <li><a href="/contact">Contact Us</a></li>
         </ul>
       )}
     </nav>

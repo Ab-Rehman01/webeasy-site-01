@@ -1,8 +1,11 @@
 "use client";
-import { useState } from "react";
+
+import { useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
 
 export default function ContactPage() {
+  const formRef = useRef<HTMLFormElement>(null);
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -12,36 +15,41 @@ export default function ContactPage() {
 
   const [status, setStatus] = useState("");
 
-  const handleChange = (e: any) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({
+      ...prev,
+      [name]: value,
+    }));
   };
 
-  const handleSubmit = async (e: any) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    setStatus("Sending...");
 
-    emailjs
-      .send(
-        "service_784c58v", // replace with your EmailJS service ID
+    if (formRef.current) {
+      emailjs
+        .sendForm(
+          "service_784c58v", // replace with your EmailJS service ID
         "template_xbuyokh", // replace with your EmailJS template ID
-        formData,
+      formRef.current,
         "23-5vuksDomrEBbUl" // replace with your EmailJS public key
-      )
-      .then(
-        () => {
+        )
+        .then((result) => {
+          console.log("✅ Email successfully sent!", result.text);
           setStatus("Message sent successfully!");
           setFormData({ name: "", email: "", phone: "", message: "" });
-        },
-        () => {
-          setStatus("Failed to send message.");
-        }
-      );
+        })
+        .catch((error) => {
+          console.error("❌ Email failed to send:", error.text);
+          setStatus("Failed to send message. Please try again.");
+        });
+    }
   };
 
   return (
     <div className="max-w-xl mx-auto p-6">
       <h1 className="text-2xl font-bold mb-4">Contact Us to Buy Package</h1>
-      <form onSubmit={handleSubmit} className="space-y-4">
+      <form ref={formRef} onSubmit={handleSubmit} className="space-y-4">
         <input
           type="text"
           name="name"
@@ -83,7 +91,7 @@ export default function ContactPage() {
         >
           Send
         </button>
-        <p className="text-sm mt-2">{status}</p>
+        {status && <p className="text-sm mt-2 text-green-600">{status}</p>}
       </form>
     </div>
   );

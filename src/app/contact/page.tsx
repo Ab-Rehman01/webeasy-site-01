@@ -22,10 +22,10 @@ export default function ContactPage() {
 
     emailjs
       .send(
-        "your_service_id", // replace with your EmailJS service ID
-        "your_template_id", // replace with your EmailJS template ID
+        "service_784c58v", // replace with your EmailJS service ID
+        "template_xbuyokh", // replace with your EmailJS template ID
         formData,
-        "your_public_key" // replace with your EmailJS public key
+        "23-5vuksDomrEBbUl" // replace with your EmailJS public key
       )
       .then(
         () => {

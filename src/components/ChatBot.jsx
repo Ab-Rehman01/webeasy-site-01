@@ -244,7 +244,7 @@ const CustomChatBot = () => {
       },
     },
     end: {
-      message: ({ state }) => `${searchResult.length} images found!`,
+      message: ({ }) => `${searchResult.length} images found!`,
       render: (
         <div className="mt-5">
           <Link

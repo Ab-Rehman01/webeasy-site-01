@@ -1,6 +1,8 @@
 "use client";
 import { useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
+import { EmailJSResponseStatus } from "@emailjs/browser";
+
 
 
 export default function ContactPage() {
@@ -31,8 +33,8 @@ export default function ContactPage() {
           formRef.current,
           "23-5vuksDomrEBbUl" // replace with your EmailJS public key
         )
-        .then((_result) => {
-          console.log(_result.text); // ya koi meaningful use
+        .then((result: EmailJSResponseStatus) => {
+  console.log(result.text);
           setStatus("✅ Message sent successfully!");
           setFormData({ name: "", email: "", phone: "", message: "" });
         })

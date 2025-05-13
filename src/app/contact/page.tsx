@@ -97,7 +97,7 @@ export default function ContactPage() {
             Send Message
           </button>
           <p
-            className={`text-sm mt-3 text-white text-center transition-opacity duration-300 ${status ? "opacity-100" : "opacity-0"
+            className={`text-sm mt-3 text-green-800 text-center transition-opacity duration-300 ${status ? "opacity-100" : "opacity-0"
               }`}
           >
             {status}

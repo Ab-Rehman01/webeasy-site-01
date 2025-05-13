@@ -2,6 +2,7 @@
 import { useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
 
+
 export default function ContactPage() {
   const formRef = useRef<HTMLFormElement | null>(null);
   const [formData, setFormData] = useState({
@@ -30,8 +31,8 @@ export default function ContactPage() {
           formRef.current,
           "23-5vuksDomrEBbUl" // replace with your EmailJS public key
         )
-        .then((result) => {
-          console.log(result.text); // ya koi meaningful use
+        .then((_result) => {
+          console.log(_result.text); // ya koi meaningful use
           setStatus("✅ Message sent successfully!");
           setFormData({ name: "", email: "", phone: "", message: "" });
         })

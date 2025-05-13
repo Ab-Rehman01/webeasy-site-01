@@ -145,6 +145,7 @@ import { useState } from "react";
 // import { Link } from "react-router-dom";
 import Link from "next/link";
 import ChatBot from "react-chatbotify";
+import Image from "next/image";
 
 const CustomChatBot = () => {
   const [open, setOpen] = useState(false);
@@ -275,14 +276,14 @@ const CustomChatBot = () => {
 
   return (
     <>
-      <img
-        src="/support.png" // Make sure this is in public/header
-        alt="support"
-        className={`w-28 h-28 p-2 rounded-full cursor-pointer ${
-          open ? "hidden" : "block"
-        }`}
-        onClick={() => setOpen(!open)}
-      />
+      <Image
+  src="/support.png"
+  alt="support"
+  width={112}
+  height={112}
+  className={`p-2 rounded-full cursor-pointer ${open ? "hidden" : "block"}`}
+  onClick={() => setOpen(!open)}
+/>
       <div className={open ? "block" : "hidden"}>
         <ChatBot
           options={{

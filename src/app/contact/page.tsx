@@ -56,7 +56,7 @@ export default function ContactPage() {
           placeholder="Your Name"
           value={formData.name}
           onChange={handleChange}
-          className="w-full p-2 border rounded"
+          className="w-full p-2 border rounded text-black bg-white placeholder-gray-500"
           required
         />
         <input
@@ -65,7 +65,7 @@ export default function ContactPage() {
           placeholder="Your Email"
           value={formData.email}
           onChange={handleChange}
-          className="w-full p-2 border rounded"
+          className="w-full p-2 border rounded text-black bg-white placeholder-gray-500"
           required
         />
         <input
@@ -74,7 +74,7 @@ export default function ContactPage() {
           placeholder="Phone Number"
           value={formData.phone}
           onChange={handleChange}
-          className="w-full p-2 border rounded"
+          className="w-full p-2 border rounded text-black bg-white placeholder-gray-500"
           required
         />
         <textarea
@@ -82,7 +82,7 @@ export default function ContactPage() {
           placeholder="Message / Package Name"
           value={formData.message}
           onChange={handleChange}
-          className="w-full p-2 border rounded"
+          className="w-full p-2 border rounded text-black bg-white placeholder-gray-500"
           required
         />
         <button

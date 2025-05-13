@@ -30,7 +30,7 @@ export default function ContactPage() {
           formRef.current,
           "23-5vuksDomrEBbUl" // replace with your EmailJS public key
         )
-        .then((result) => {
+        .then(() => {
           setStatus("✅ Message sent successfully!");
           setFormData({ name: "", email: "", phone: "", message: "" });
         })

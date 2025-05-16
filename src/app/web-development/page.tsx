@@ -25,7 +25,7 @@ export default function WebDevelopmentPage() {
         {/* Left Content */}
         <div>
           <h2 className="text-2xl font-semibold mb-3">Our Services</h2>
-          <ul className="list-disc pl-6 mb-6 space-y-1 text-gray-700">
+          <ul className="list-disc pl-6 mb-6 space-y-1 text-white-700">
             <li>Next.js / React Web Apps</li>
             <li>WordPress Development</li>
             <li>Landing Pages & Portfolios</li>
@@ -34,7 +34,7 @@ export default function WebDevelopmentPage() {
           </ul>
 
           <h2 className="text-2xl font-semibold mb-3">Why Choose Us?</h2>
-          <ul className="list-disc pl-6 mb-6 space-y-1 text-gray-700">
+          <ul className="list-disc pl-6 mb-6 space-y-1 text-white-700">
             <li>Clean and Scalable Code</li>
             <li>SEO-Optimized Builds</li>
             <li>Quick Turnaround Time</li>

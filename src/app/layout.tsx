@@ -1,30 +1,39 @@
 // src/app/layout.tsx
-import './globals.css'
-import { ReactNode } from 'react'
-import Navbar from '../components/Navbar'
-import Footer from '../components/Footer'
-
+import './globals.css';
+import { ReactNode } from 'react';
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 
 export const metadata = {
   title: 'Webeasy-Tech',
   description: 'Professional digital services: websites, Shopify, marketing, and software.',
-}
+};
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
-    <body
-  className="bg-fixed bg-center bg-cover text-white"
-  style={{ backgroundImage: "url('/images/—Pngtree—dark blue light technology technical_15869204.jpg')" }}
->
-  <Navbar />
-  <main className=" px-0">{children}</main>
- 
-  <Footer />
-</body>
+      <body className="relative text-white">
+        {/* Background Image with Overlay */}
+        <div className="fixed inset-0 z-[-1]">
+          <div
+            className="absolute inset-0 bg-black opacity-60"
+            aria-hidden="true"
+          ></div>
+          <img
+            src="/images/contact-bg.jpg"
+            alt="background"
+            className="w-full h-full object-cover"
+          />
+        </div>
+
+        <Navbar />
+        <main className="px-0">{children}</main>
+        <Footer />
+      </body>
     </html>
-  )
+  );
 }
+
 // src/app/layout.tsx
 // src/app/layout.tsx (or wherever your root layout lives)
 // src/app/layout.tsx

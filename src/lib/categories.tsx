@@ -4,6 +4,21 @@ export const categories = [
     name: "Portfolio Templates",
     slug: "portfolio",
     image: "/categories/portfolio.jpg",
+    templates: [
+      {
+        id: "1",
+        name: "Portfolio",
+        image: "/templates/portfolio1.jpg",
+        demoUrl: "https://demo.site/portfolio1",
+      },
+      {
+        id: "2",
+        name: "Creative Portfolio",
+        image: "/templates/portfolio2.jpg",
+        demoUrl: "https://demo.site/portfolio2",
+      },
+    ],
+    
   },
   {
     name: "E-Commerce Templates",

@@ -5,17 +5,17 @@ import Link from "next/link"; // ✅ import Link
 const projects = [
   {
     title: "Modern Portfolio",
-    slug: "modern-portfolio",
+
     image: "/screencapture-blucomtechnologiesss.jpg",
   },
   {
     title: "E-Commerce Store",
-    slug: "ecommerce-store",
+  
     image: "/screencapture-file-K.png",
   },
   {
     title: "Agency Landing Page",
-    slug: "agency-landing",
+ 
     image: "/screencapture.jpg",
   },
 ];
@@ -25,10 +25,10 @@ const projects = [
 export default function WebTemplatesShowcase() {
   return (
     <section className="py-12 px-4 max-w-7xl mx-auto">
-      <h2 className="text-3xl font-bold text-center mb-10">Our Web Templates</h2>
+      <h2 className="text-3xl font-bold text-center mb-10">Our Web Showcase</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
         {projects.map((project, index) => (
-          <Link key={index} href={`/templates/${project.slug}`} className="block">
+
             <div className="relative group rounded-xl shadow-lg overflow-hidden border h-[450px]">
               <div className="relative w-full h-[1400px] overflow-hidden">
                 <Image
@@ -43,7 +43,7 @@ export default function WebTemplatesShowcase() {
                 {project.title}
               </div>
             </div>
-          </Link>
+         
         ))}
       </div>
     </section>

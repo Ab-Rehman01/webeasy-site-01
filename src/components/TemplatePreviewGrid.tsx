@@ -10,6 +10,7 @@ interface Template {
 interface Props {
   categorySlug: string;
   templates: Template[];
+   limit?: number;
 }
 
 export default function TemplatePreviewGrid({ categorySlug, templates }: Props) {

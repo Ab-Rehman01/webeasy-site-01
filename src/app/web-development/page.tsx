@@ -58,8 +58,7 @@ export default function WebDevelopmentPage() {
         <div className="flex justify-center items-center">
         
           <Image
-            src="/image
-            s/Web_design_Star_IT_Euro.png.webp"
+            src="/images/Web_design_Star_IT_Euro.png.webp"
             alt="Web Development Preview"
             width={600}
             height={400}

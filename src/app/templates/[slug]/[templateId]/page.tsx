@@ -20,18 +20,17 @@ export default function TemplateDetailPage({ params }: Props) {
   const relatedTemplates = category.templates.filter((t) => t.id !== template.id);
 
   return (
-  <main className="p-6 max-w-screen-xl mx-auto">
+    <main className="p-6 max-w-screen-xl mx-auto">
       <h1 className="text-3xl font-bold mb-4">{template.name}</h1>
-
-      <div className="relative w-[1024px] h-full rounded-lg overflow-hidden mb-4 shadow-2xl">
-  <Image
-    src={template.image1 ?? "/fallback.jpg"}
-    alt={template.name}
-    width={1024}
-    height={750}
-    className="rounded-lg object-cover"
-  />
-</div>
+      <div className="relative w-[1024px] h-full rounded-lg overflow-hidden mb-4 shadow-2xl mx-auto">
+        <Image
+          src={template.image1 ?? "/fallback.jpg"}
+          alt={template.name}
+          width={1024}
+          height={750}
+          className="rounded-lg object-cover"
+        />
+      </div>
 
 
       <p className="mb-4 text-green-700">

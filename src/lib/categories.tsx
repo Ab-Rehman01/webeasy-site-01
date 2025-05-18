@@ -9,8 +9,8 @@ export const categories = [
       {
         id: "1",
         name: "Portfolio",
-        image: "/categories/portfolio/screencapture-file-K-templete-portfolio.png",
-        image1: "/categories/1.jpg",
+        image: "/categories/portfolio/screencapture-themewagon-.png",
+        image1: "/categories/screencapture-themewagon-.pngscreencapture-themewagon-.png",
         demoUrl: "https://demo.site/portfolio1",
         price: "PKR 15,000",
         description: "Elegant and responsive portfolio template for creatives."
@@ -27,10 +27,11 @@ export const categories = [
       {
         id: "2",
         name: "Creative Portfolio",
-        image: "/templates/portfolio2.jpg",
+        image: "/categories/portfolio/screencapture-themewagon-github.png",
+        image1: "/categories/screencapture-demo-htmlcodex-25252.png",
         demoUrl: "https://demo.site/portfolio2",
         price: "PKR 18,000",
-        description: "Showcase your artwork with this modern creative portfolio."
+        description: "Also, ProMan is a portfolio template furnished with all the required amenities. With this Bootstrap 5 template, a modal video player is provided on its responsive header. Along with that, a burger menu, drop-down menu bar, a back-to-top button, fun fact counter, geolocation, contact form UI and other user-friendly elements ensure a better experience. With smooth navigation and beautiful design, the template stays unique with its features. You can choose ProMan for your next project to create a unique portfolio website."
       },
       {
         id: "2",

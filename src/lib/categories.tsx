@@ -10,7 +10,7 @@ export const categories = [
         id: "1",
         name: "Portfolio",
         image: "/categories/portfolio/screencapture-themewagon-.png",
-        image1: "/categories/screencapture-themewagon-.pngscreencapture-themewagon-.png",
+        image1: "/categories/screencapture-themewagonn-.png",
         demoUrl: "https://demo.site/portfolio1",
         price: "PKR 15,000",
         description: "Elegant and responsive portfolio template for creatives."
@@ -19,13 +19,13 @@ export const categories = [
         id: "2",
         name: "Creative Portfolio",
         image: "/categories/portfolio/screencapture-file-K-templete-portfolio-lizu.png",
-        image1: "/categories/business.jpg",
+        image1: "/categories/screencapture-file-K-templete-portfolio-lizuf.png",
         demoUrl: "https://lizu-portfolio-responsive-html-template.vercel.app/",
         price: "PKR 18,000",
         description: "Showcase your artwork with this modern creative portfolio."
       },
       {
-        id: "2",
+        id: "3",
         name: "Creative Portfolio",
         image: "/categories/portfolio/screencapture-themewagon-github.png",
         image1: "/categories/screencapture-demo-htmlcodex-25252.png",

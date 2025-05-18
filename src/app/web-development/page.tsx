@@ -70,15 +70,17 @@ export default function WebDevelopmentPage() {
       </div>
 
       {/* Templates Section */}
-      <div className="mt-16">
-        <ScrollFadeIn direction="left">
-        <TemplateCategories />
-        </ScrollFadeIn>
+     <div className="mt-16">
+  <ScrollFadeIn direction="left">
+    <TemplateCategories />
+  </ScrollFadeIn>
 
-        <div className="mt-12">
-          <WebTemplatesShowcase />
-        </div>
-      </div>
+  <div className="mt-12">
+    <ScrollFadeIn direction="right">
+      <WebTemplatesShowcase />
+    </ScrollFadeIn>
+  </div>
+</div>
     </section>
   );
 }

@@ -4,6 +4,7 @@ import { ReactNode } from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 
+
 export const metadata = {
   title: 'Webeasy-Tech',
   description: 'Professional digital services: websites, Shopify, marketing, and software.',
@@ -16,18 +17,20 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         {/* Background Image with Overlay */}
         <div className="fixed inset-0 z-[-1]">
           <div
-            className="absolute inset-0 bg-black opacity-60"
+            className="absolute inset-0 bg-white opacity-60"
             aria-hidden="true"
           ></div>
-          <img
+          {/* <img
             src="/images/contact-bg.jpg"
             alt="background"
             className="w-full h-full object-cover"
-          />
+          /> */}
         </div>
 
         <Navbar />
         <main className="px-0">{children}</main>
+      
+
         <Footer />
       </body>
     </html>

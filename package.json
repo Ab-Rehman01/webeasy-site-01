@@ -10,13 +10,14 @@
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
-    "framer-motion": "^12.10.5",
+    "framer-motion": "^12.12.1",
     "lucide-react": "^0.488.0",
     "next": "14.2.20",
     "react": "^18",
     "react-chatbotify": "^2.0.0-beta.33",
     "react-dom": "^18",
-    "react-icons": "^5.5.0"
+    "react-icons": "^5.5.0",
+    "react-intersection-observer": "^9.16.0"
   },
   "devDependencies": {
     "@types/node": "^20",

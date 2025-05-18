@@ -10,7 +10,7 @@ export const categories = [
         id: "1",
         name: "Portfolio",
         image: "/categories/portfolio/screencapture-file-K-templete-portfolio.png",
-        image1: "/categories/business.jpg",
+        image1: "/categories/1.jpg",
         demoUrl: "https://demo.site/portfolio1",
         price: "PKR 15,000",
         description: "Elegant and responsive portfolio template for creatives."

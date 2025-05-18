@@ -2,6 +2,7 @@
 
 import TemplateCategories from '@/components/TemplateCategories';
 import WebTemplatesShowcase from '@/components/WebTemplatesShowcase';
+import ScrollFadeIn from "@/components/ScrollFadeIn";
 import { Metadata } from 'next';
 import Image from 'next/image';
 
@@ -17,15 +18,16 @@ export default function WebDevelopmentPage() {
       <h1 className="text-4xl font-bold text-blue-600 mb-4 text-center md:text-left">
         Professional Web Development
       </h1>
-      <p className="text-lg mb-8 text-center md:text-left">
+      <p className="text-lg mb-8 text-center md:text-left text-black">
         Custom-built websites tailored to your business needs. Fast, responsive, and SEO-friendly.
       </p>
 
       <div className="grid md:grid-cols-2 gap-6 items-start">
+          <ScrollFadeIn direction="left">
         {/* Left Content */}
         <div>
-          <h2 className="text-2xl font-semibold mb-3">Our Services</h2>
-          <ul className="list-disc pl-6 mb-6 space-y-1 text-white-700">
+          <h2 className="text-2xl font-semibold mb-3 text-black">Our Services</h2>
+          <ul className="list-disc pl-6 mb-6 space-y-1 text-black">
             <li>Next.js / React Web Apps</li>
             <li>WordPress Development</li>
             <li>Landing Pages & Portfolios</li>
@@ -34,7 +36,7 @@ export default function WebDevelopmentPage() {
           </ul>
 
           <h2 className="text-2xl font-semibold mb-3">Why Choose Us?</h2>
-          <ul className="list-disc pl-6 mb-6 space-y-1 text-white-700">
+          <ul className="list-disc pl-6 mb-6 space-y-1 text-black">
             <li>Clean and Scalable Code</li>
             <li>SEO-Optimized Builds</li>
             <li>Quick Turnaround Time</li>
@@ -50,22 +52,28 @@ export default function WebDevelopmentPage() {
             Chat on WhatsApp Now
           </a>
         </div>
+        </ScrollFadeIn>
 
         {/* Right Side Image */}
         <div className="flex justify-center items-center">
+        
           <Image
-            src="/images/Web_design_Star_IT_Euro.png.webp"
+            src="/image
+            s/Web_design_Star_IT_Euro.png.webp"
             alt="Web Development Preview"
             width={600}
             height={400}
             className="rounded-xl shadow-lg object-contain"
           />
         </div>
+        
       </div>
 
       {/* Templates Section */}
       <div className="mt-16">
+        <ScrollFadeIn direction="left">
         <TemplateCategories />
+        </ScrollFadeIn>
 
         <div className="mt-12">
           <WebTemplatesShowcase />

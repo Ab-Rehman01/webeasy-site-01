@@ -8,9 +8,9 @@ import { categories } from "../lib/categories";
 export default function TemplateCategories() {
   return (
     <section className="py-12 px-4 max-w-7xl mx-auto">
-      <h2 className="text-3xl font-bold text-center mb-10">Categories</h2>
+      <h2 className="text-3xl font-bold text-center mb-10 text-black">Categories</h2>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
         {categories.map((category, index) => (
           <Link
             key={index}
@@ -26,7 +26,7 @@ export default function TemplateCategories() {
                 className="object-cover group-hover:scale-105 transition-transform duration-700 ease-in-out"
               />
             </div>
-            <div className="p-4 text-center bg-opacity-10 bg-black">
+            <div className="p-4 text-center bg-opacity-70 bg-black">
               <h3 className="text-white text-xl font-semibold">{category.name}</h3>
             </div>
           </Link>

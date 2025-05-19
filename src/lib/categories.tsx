@@ -31,18 +31,47 @@ export const categories = [
         image1: "/categories/screencapture-demo-htmlcodex-25252.png",
         demoUrl: "https://demo.site/portfolio2",
         price: "PKR 18,000",
-        description: "Also, ProMan is a portfolio template furnished with all the required amenities. With this Bootstrap 5 template, a modal video player is provided on its responsive header. Along with that, a burger menu, drop-down menu bar, a back-to-top button, fun fact counter, geolocation, contact form UI and other user-friendly elements ensure a better experience. With smooth navigation and beautiful design, the template stays unique with its features. You can choose ProMan for your next project to create a unique portfolio website."
+        description: 'JoySeno is a portfolio template crafted with all the required features to emphasize designers’ skills.
+This modern template uses Bootstrap 4, HTML5, and CSS3. It includes various components like a modal video player,
+hero header, blog section, and more. Fully responsive and developer-friendly. Domain + Hosting included!
+
+🔑 **Key Features:**
+- HTML5 & CSS3
+- Bootstrap 5
+- SASS supported coding
+- Modern and unique design
+- Developer-friendly HTML code
+- Clean and well-commented code
+- Web browsers compatibility
+- Responsive and mobile-friendly
+- Animated video play button
+- Popup YouTube video
+- Animated word typing
+- Fun Fact Counter
+- Animated progress bar
+- Sorting and popup portfolio
+- On-hover Effect
+- Testimonial carousel
+- Smooth transition effects
+- Social link with icon
+- “Back to Top” button
+- Contact form UI
+- Geolocation support
+- Google Web Fonts integrated
+- Bootstrap icon font support
+- Font Awesome v5 icon font'
       },
       {
-        id: "2",
+        id: "4",
         name: "Creative Portfolio",
-        image: "/templates/portfolio2.jpg",
+        image: "/categories/portfolio/screencapture-themewagon-github-io-mark-.png",
+        image1: "/categories/mark-1-1200x736.png"
         demoUrl: "https://demo.site/portfolio2",
         price: "PKR 18,000",
         description: "Showcase your artwork with this modern creative portfolio."
       },
       {
-        id: "2",
+        id: "5",
         name: "Creative Portfolio",
         image: "/templates/portfolio2.jpg",
         demoUrl: "https://demo.site/portfolio2",

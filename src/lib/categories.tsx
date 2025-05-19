@@ -1,6 +1,20 @@
 // lib/categories.ts
 
-export const categories = [
+
+export const categories: {
+  name: string;
+  slug: string;
+  image: string;
+  templates: {
+    id: string;
+    name: string;
+    image: string;
+    image1?: string; 
+    demoUrl: string;
+    price: string;
+    description: string;
+  }[];
+}[] = [
   {
     name: "Portfolio Templates",
     slug: "portfolio",

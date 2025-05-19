@@ -113,8 +113,8 @@ hero header, blog section, and more. Fully responsive and developer-friendly. Do
         {
           id: "6",
           name: "Creative Portfolio",
-          image: "/categories/portfolio/portfolio2.jpg",
-          image1: "/categories/mark-1-1200x736.png",
+          image: "/categories/portfolio/screencapture-themewagon-github-io-clyde-2025-05-19-.png",
+          image1: "/categories/Clyde-1200x736.png",
           demoUrl: "https://demo.site/portfolio2",
           price: "PKR 18,000",
           description: "Showcase your artwork with this modern creative portfolio."

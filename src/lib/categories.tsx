@@ -26,16 +26,16 @@ export const categories = [
       },
       {
         id: "3",
-        name: "Creative Portfolio",
+        name: "Creative Portfolio - JoySeno",
         image: "/categories/portfolio/screencapture-themewagon-github.png",
         image1: "/categories/screencapture-demo-htmlcodex-25252.png",
         demoUrl: "https://demo.site/portfolio2",
         price: "PKR 18,000",
-        description: 'JoySeno is a portfolio template crafted with all the required features to emphasize designers’ skills.
+        description: `JoySeno is a portfolio template crafted with all the required features to emphasize designers’ skills.
 This modern template uses Bootstrap 4, HTML5, and CSS3. It includes various components like a modal video player,
 hero header, blog section, and more. Fully responsive and developer-friendly. Domain + Hosting included!
 
-🔑 **Key Features:**
+🔑 Key Features:
 - HTML5 & CSS3
 - Bootstrap 5
 - SASS supported coding
@@ -59,13 +59,13 @@ hero header, blog section, and more. Fully responsive and developer-friendly. Do
 - Geolocation support
 - Google Web Fonts integrated
 - Bootstrap icon font support
-- Font Awesome v5 icon font'
+- Font Awesome v5 icon font`
       },
       {
         id: "4",
         name: "Creative Portfolio",
         image: "/categories/portfolio/screencapture-themewagon-github-io-mark-.png",
-        image1: "/categories/mark-1-1200x736.png"
+        image1: "/categories/mark-1-1200x736.png",
         demoUrl: "https://demo.site/portfolio2",
         price: "PKR 18,000",
         description: "Showcase your artwork with this modern creative portfolio."
@@ -74,14 +74,16 @@ hero header, blog section, and more. Fully responsive and developer-friendly. Do
         id: "5",
         name: "Creative Portfolio",
         image: "/templates/portfolio2.jpg",
+        image1: "/categories/mark-1-1200x736.png",
         demoUrl: "https://demo.site/portfolio2",
         price: "PKR 18,000",
         description: "Showcase your artwork with this modern creative portfolio."
       },
       {
-        id: "2",
+        id: "6",
         name: "Creative Portfolio",
-        image: "/templates/portfolio2.jpg",
+        image: "/categories/portfolio/portfolio2.jpg",
+        image1: "/categories/mark-1-1200x736.png",
         demoUrl: "https://demo.site/portfolio2",
         price: "PKR 18,000",
         description: "Showcase your artwork with this modern creative portfolio."

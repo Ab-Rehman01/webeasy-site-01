@@ -90,8 +90,8 @@ features: [
       {
         id: "5",
         name: "Creative Portfolio",
-        image: "/categories/portfolio/screencapture-themewagon-github.png",
-        image1: "/categories/mark-1-1200x736.png",
+        image: "/categories/portfolio/screencapture-themewagon-gggithub.png",
+        image1: "/categories/Profile-feat-Bootstrap-4-portfolio-website-template-1.jpg",
         demoUrl: "https://demo.site/portfolio2",
         price: "PKR 18,000",
         description: "Showcase your artwork with this modern creative portfolio."

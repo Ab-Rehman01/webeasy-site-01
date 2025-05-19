@@ -35,13 +35,13 @@ export default function TemplateDetailPage({ params }: Props) {
 
 
 
-      <p className="mb-4 text-green-700">
-         <h1 className="text-xl font-semibold mb-2 text-black">Key Features:</h1>
+      <p className="text-lg text-gray-700 mb-4">
+         <h1 className="text-3xl font-bold mb-4 text-black">Description:</h1>
         {template.description || "This is a modern and responsive template perfect for businesses."}
       </p>
       {template.features && template.features.length > 0 && (
         <div className="mb-6">
-          <h2 className="text-xl font-semibold mb-2 text-black">Key Features:</h2>
+          <h2 className="text-2xl font-semibold mb-4 text-black">Key Features:</h2>
           <ul className="list-disc pl-6 space-y-1 text-gray-800 text-sm">
             {template.features.map((feature, index) => (
               <li key={index}>{feature}</li>

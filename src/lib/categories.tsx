@@ -12,8 +12,8 @@ export const categories: {
     image1?: string; 
     demoUrl: string;
     price: string;
-    
     description: string;
+     features?: string[];
     
   }[];
 }[] = [

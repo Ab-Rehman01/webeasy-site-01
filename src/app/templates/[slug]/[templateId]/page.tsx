@@ -1,3 +1,4 @@
+//templates/[templetid]/page.tsx
 import { categories } from "@/lib/categories";
 import { notFound } from "next/navigation";
 import Image from "next/image";

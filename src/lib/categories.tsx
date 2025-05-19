@@ -47,33 +47,34 @@ export const categories: {
         price: "PKR 18,000",
         description: `JoySeno is a portfolio template crafted with all the required features to emphasize designers’ skills.
 This modern template uses Bootstrap 4, HTML5, and CSS3. It includes various components like a modal video player,
-hero header, blog section, and more. Fully responsive and developer-friendly. Domain + Hosting included!
+hero header, blog section, and more. Fully responsive and developer-friendly. Domain + Hosting included!`,
 
-🔑 Key Features:
-- HTML5 & CSS3
-- Bootstrap 5
-- SASS supported coding
-- Modern and unique design
-- Developer-friendly HTML code
-- Clean and well-commented code
-- Web browsers compatibility
-- Responsive and mobile-friendly
-- Animated video play button
-- Popup YouTube video
-- Animated word typing
-- Fun Fact Counter
-- Animated progress bar
-- Sorting and popup portfolio
-- On-hover Effect
-- Testimonial carousel
-- Smooth transition effects
-- Social link with icon
-- “Back to Top” button
-- Contact form UI
-- Geolocation support
-- Google Web Fonts integrated
-- Bootstrap icon font support
-- Font Awesome v5 icon font`
+features: [
+  "HTML5 & CSS3",
+  "Bootstrap 5",
+  "SASS supported coding",
+  "Modern and unique design",
+  "Developer-friendly HTML code",
+  "Clean and well-commented code",
+  "Web browsers compatibility",
+  "Responsive and mobile-friendly",
+  "Animated video play button",
+  "Popup YouTube video",
+  "Animated word typing",
+  "Fun Fact Counter",
+  "Animated progress bar",
+  "Sorting and popup portfolio",
+  "On-hover Effect",
+  "Testimonial carousel",
+  "Smooth transition effects",
+  "Social link with icon",
+  "“Back to Top” button",
+  "Contact form UI",
+  "Geolocation support",
+  "Google Web Fonts integrated",
+  "Bootstrap icon font support",
+  "Font Awesome v5 icon font"
+]
       },
       {
         id: "4",
@@ -87,7 +88,7 @@ hero header, blog section, and more. Fully responsive and developer-friendly. Do
       {
         id: "5",
         name: "Creative Portfolio",
-        image: "/templates/portfolio2.jpg",
+        image: "/categories/portfolio/screencapture-themewagon-github.png",
         image1: "/categories/mark-1-1200x736.png",
         demoUrl: "https://demo.site/portfolio2",
         price: "PKR 18,000",

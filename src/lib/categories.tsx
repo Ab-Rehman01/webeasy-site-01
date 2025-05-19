@@ -28,7 +28,7 @@ export const categories: {
   }[];
 }[] = [
     {
-      name: "Portfolio Templates",
+      name: "PORTFOLIO TEMPLATE DESIGN",
       slug: "portfolio",
       image: "/categories/portfolio.jpg",
       templates: [
@@ -328,20 +328,141 @@ export const categories: {
       ],
     },
     {
-      name: "E-Commerce Templates",
+      name: "E-Commerce Templates Design",
       slug: "ecommerce",
       image: "/categories/ecommerce.jpg",
       templates: [
         {
           id: "1",
-          name: "Fashion Store",
-          image: "/templates/ecommerce1.jpg",
-          demoUrl: "https://demo.site/ecommerce1",
-          price: "PKR 25,000",
-          description: "Stylish fashion e-commerce template with cart and payment integration."
+          name: "Watch – Modern Gadget eCommerce Template",
+          slug: "watch-modern-gadget-ecommerce-template",
+          keyphrase: "Gadget eCommerce Template",
+          seoTitle: "Gadget eCommerce Template – Watch Product Landing Page",
+          metaDescription: "Watch is a sleek gadget eCommerce template for showcasing and selling smartwatches and digital products online. Fully responsive and conversion optimized.",
+          image: "/categories/Ecom/screencapture-file-K-templete-E-com-003-watch-master-index-html-2025-05-20-00_13_24.jpg",
+          imageAlt: "Watch eCommerce Template Preview – Smartwatch Landing Page Design",
+          image1: "/categories/screencapture-file-K-templete-E-com-003-watch-master-index-html-2025-05-20-00_13_24.jpg",
+          demoUrl: "https://yourdomain.com/demo/watch-ecommerce", // Replace with actual URL
+          price: "Free", // Or enter actual price if selling
+          tags: [
+            "eCommerce",
+            "Product Landing Page",
+            "Gadget Template",
+            "Smartwatch",
+            "Bootstrap 4",
+            "Responsive Design",
+            "Minimal",
+            "Tech Store",
+            "HTML5 Template"
+          ],
+          description: "Watch is a clean, minimal, and powerful eCommerce template ideal for showcasing and selling gadgets like smartwatches. It combines modern design with smooth UX to deliver a high-converting product landing page. Perfect for startups or tech-focused online stores.",
+          overview: "Built with Bootstrap 4, HTML5, and CSS3, Watch is a fully responsive eCommerce template designed for promoting gadgets and wearables. From high-resolution visuals to detailed product descriptions and engaging call-to-action buttons, it has everything to drive online sales. Each section is thoughtfully structured for maximum user engagement and mobile compatibility.",
+          gallery: "Includes a visually rich hero section, product feature display, image gallery, testimonials, and call-to-action blocks. Modal image previews and smooth hover effects make navigation intuitive and appealing.",
+          skill: "Uses Bootstrap 4, CSS3 animations, jQuery, and responsive grid systems to ensure performance across all devices. Designed with developers and end-users in mind.",
+          features: [
+            "Modern single-product layout",
+            "Fully responsive design",
+            "Hero section with product showcase",
+            "Call-to-action buy buttons",
+            "Product details and features section",
+            "Customer testimonials",
+            "Modal image gallery",
+            "Cross-browser compatibility",
+            "Optimized for mobile shopping",
+            "Built with Bootstrap 4 & HTML5"
+          ]
+
         },
         {
+
           id: "2",
+          name: "Furnitica – Furniture & Interior HTML Template",
+          slug: "furnitica-furniture-interior-html-template",
+          keyphrase: "Furniture Interior HTML Template",
+          seoTitle: "Furniture Interior HTML Template – Furnitica Decor Design",
+          metaDescription: "Furnitica is a premium furniture and interior HTML template with 25 pages and 5 homepage layouts. Fully responsive and built with Bootstrap 4.",
+          image: "/categories/Ecom/screencapture-furnitica-minimalist-furniture-vercel-app-2025-05-20-01_49_50.jpg", // update if actual image path is different
+          imageAlt: "Furnitica Furniture & Interior HTML Template Preview",
+          image1: "/categories/1547480409 fur.jpg",
+          demoUrl: "https://yourdomain.com/demo/furnitica-template", // Replace with actual demo URL
+          price: "9999/-", // Replace with your actual price
+          tags: [
+            "Furniture Template",
+            "Interior Design",
+            "Decor Website",
+            "Bootstrap 4",
+            "HTML Template",
+            "Responsive Design",
+            "Home Decor",
+            "Lookbook Layout",
+            "eCommerce Ready"
+          ],
+          description: "Furnitica is a well-crafted HTML template tailored for modern furniture and interior decor websites. It features 25+ HTML pages including 5 unique homepage layouts, product lookbook, and more. Ideal for creating visually rich, responsive eCommerce or brand sites in the furniture industry.",
+          overview: "Designed with elegance and practicality in mind, Furnitica combines modern UI trends with solid coding practices. Built using HTML5, CSS3, and Bootstrap 4, this template ensures a mobile-first experience across all devices. With multiple homepage variations and stylish layout options, it’s perfect for furniture brands, decor showrooms, or home interior agencies.",
+          gallery: "Includes a product lookbook, category grids, banners, homepage sliders, testimonial sections, and image-rich product pages. Cleanly structured for showcasing product collections in style.",
+          skill: "Utilizes HTML5, Bootstrap 4, CSS3, jQuery, and Google Fonts. Clean and modular code structure ensures easy customization and scalability.",
+          features: [
+            "25 Pre-built HTML Pages",
+            "5 Unique Homepages",
+            "Fully Responsive Layout",
+            "Clean and Minimal Interface",
+            "Built with Bootstrap 4",
+            "Product Lookbook Section",
+            "Google Web Fonts Integration",
+            "Cross-browser Compatibility",
+            "SEO-optimized Code Structure",
+            "Modern Product Grid and Details Pages"
+          ]
+        },
+        {
+          id: "3",
+          name: "Belle – Multipurpose eCommerce HTML Template",
+          slug: "belle-multipurpose-ecommerce-html-template",
+          keyphrase: "Multipurpose eCommerce HTML Template",
+          seoTitle: "Multipurpose eCommerce HTML Template – Belle Bootstrap 4 Design",
+          metaDescription: "Belle is a powerful Bootstrap 4 multipurpose eCommerce HTML template with 14+ homepages and 68+ pages, ideal for fashion, furniture, auto parts, and more.",
+          image: "/categories/Ecom/screencapture-file-K-templete-E-com-belle-template-index-html-2025-05-20-02_39_58.jpg", // Update with actual path
+          imageAlt: "Belle Multipurpose eCommerce HTML Template Preview",
+          image1: "/categories/1573476912 belle.jpg",
+          demoUrl: "https://yourdomain.com/demo/belle-template", // Replace with actual demo URL
+          price: "$35", // Set your pricing
+          tags: [
+            "eCommerce Template",
+            "Bootstrap 4",
+            "Fashion Store",
+            "Furniture Website",
+            "Multipurpose HTML Template",
+            "Responsive Design",
+            "Auto Parts",
+            "Mega Menu",
+            "HTML Template",
+            "Product Zoom"
+          ],
+          description: "Belle is a feature-rich multipurpose eCommerce HTML template built with Bootstrap 4. It includes 14+ homepage layouts and over 68 HTML pages tailored for different niches like fashion, furniture, electronics, cosmetics, and more. Whether you're launching a new shop or refreshing an existing one, Belle provides all the tools you need for a professional and scalable online presence.",
+          overview: "Belle stands out with a modern UI, multiple layout options, and extensive eCommerce functionality. Designed using HTML5, CSS3, and Bootstrap 4, it delivers optimal responsiveness across all devices. Features like mega menus, product image swatches, infinite scroll, and social sharing make it a top choice for any online store looking for performance and visual impact.",
+          gallery: "The gallery features stylish product pages, blog layouts, cart and wishlist views, and responsive banners. Customizable headers, footers, and sliders are built for enhanced user engagement and conversions.",
+          skill: "Developed with HTML5, CSS3, jQuery, and Bootstrap 4. The code is clean, modular, and easy to customize for any eCommerce business model.",
+          features: [
+            "14+ Pre-Built Homepages",
+            "68+ Total HTML Pages",
+            "8+ Product & Shop Layouts",
+            "Mega Menu Integration",
+            "Product Zoom & Image Swatches",
+            "Wishlist & Cart Pages Included",
+            "Infinite Scroll Support",
+            "Multiple Blog Variations",
+            "Fully Responsive Across Devices",
+            "Mobile-Optimized Design",
+            "Google Fonts Integration",
+            "Cross-Browser Compatibility",
+            "Optimized CSS & JS Files",
+            "Clean, Well-Commented Code",
+            "Lifetime Updates Included"
+          ]
+        }
+        ,
+        {
+          id: "4",
           name: "Tech Gadgets Store",
           image: "/templates/ecommerce2.jpg",
           demoUrl: "https://demo.site/ecommerce2",
@@ -349,7 +470,7 @@ export const categories: {
           description: "Modern tech store template for selling electronics and gadgets."
         },
         {
-          id: "1",
+          id: "5",
           name: "Fashion Store",
           image: "/templates/ecommerce1.jpg",
           demoUrl: "https://demo.site/ecommerce1",
@@ -357,23 +478,7 @@ export const categories: {
           description: "Stylish fashion e-commerce template with cart and payment integration."
         },
         {
-          id: "2",
-          name: "Tech Gadgets Store",
-          image: "/templates/ecommerce2.jpg",
-          demoUrl: "https://demo.site/ecommerce2",
-          price: "PKR 30,000",
-          description: "Modern tech store template for selling electronics and gadgets."
-        },
-        {
-          id: "1",
-          name: "Fashion Store",
-          image: "/templates/ecommerce1.jpg",
-          demoUrl: "https://demo.site/ecommerce1",
-          price: "PKR 25,000",
-          description: "Stylish fashion e-commerce template with cart and payment integration."
-        },
-        {
-          id: "2",
+          id: "6",
           name: "Tech Gadgets Store",
           image: "/templates/ecommerce2.jpg",
           demoUrl: "https://demo.site/ecommerce2",

@@ -32,7 +32,7 @@ export default function TemplateDetailPage({ params }: Props) {
       </Head>
 
       <main className="p-6 max-w-screen-xl mx-auto">
-        <h1 className="text-3xl font-bold mb-4">{template.name}</h1>
+        <h1 className="text-3xl font-bold mb-4 text-black">{template.name}</h1>
 
         <div className="relative w-full max-w-[1024px] mx-auto rounded-lg overflow-hidden mb-4 shadow-2xl">
           <Image

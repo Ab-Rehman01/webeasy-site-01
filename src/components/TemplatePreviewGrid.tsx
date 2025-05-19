@@ -32,7 +32,7 @@ export default function TemplatePreviewGrid({ categorySlug, templates }: Props) 
               className="object-cover"
             />
           </div>
-          <div className="p-2 text-center">
+          <div className="p-2 text-center [background-color:#ffbe0c] text-white">
             <h3 className="text-sm font-medium">{template.name}</h3>
           </div>
         </Link>

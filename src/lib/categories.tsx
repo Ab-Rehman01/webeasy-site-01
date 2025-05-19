@@ -15,8 +15,10 @@ export const categories: {
     description: string;
     overview?: string;
     features?: string[];
+    gallery?: string;
+    skill?: string;
 
-
+  
   }[];
 }[] = [
     {
@@ -97,9 +99,14 @@ hero header, blog section, and more. Fully responsive and developer-friendly. Do
           demoUrl: "https://demo.site/portfolio2",
           price: "PKR 18,000",
           description: `Profile is a modern, responsive, and thoughtfully designed Bootstrap 4 portfolio website template ideal for professionals seeking to showcase their skills and work. Whether you're a freelancer, designer, developer, architect, or any creative individual, this template offers all the essential tools to build an impressive online presence.`,
-          overview: `rofile is a modern, r`
+          overview: `Profile is structured as a single-page layout, featuring smooth scrolling, elegant typography, and a vibrant yet professional color scheme. The hero section prominently displays a large profile photo, your name, designation, and quick access to social media links — making an impactful first impression.
+A vertical static sidebar on the left showcases an avatar and a neatly animated navigation menu for easy access to different sections.`,
+          gallery:`A standout feature of this template, the portfolio section includes filterable categories, allowing visitors to view work based on type or skill. Clicking on a project thumbnail opens a large modal popup where both images and descriptions can be showcased — ideal for presenting past work in an organized, professional format.`,
+          skill:`The skills section includes animated counters to visually represent your proficiencies. A striking background enhances visual appeal, while integrated icon libraries such as Font Awesome, Devicons, and Simple Line Icons add clarity and consistency.
+
+The timeline section provides a vertically sliding presentation for listing educational background or project history in a dynamic, unconventional format.`,
           features: [
-            "  One Page Layout with sticky sidebar navigation",
+            " One Page Layout with sticky sidebar navigation",
             "  Smooth CSS3 animations and hover effects",
             "  Filterable portfolio gallery with modal previews",
             "  Retina ready design optimized for high-resolution screens",

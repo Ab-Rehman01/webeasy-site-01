@@ -17,7 +17,7 @@ export default function TemplatePreviewGrid({ categorySlug, templates }: Props) 
   const previewTemplates = templates.slice(0, 5); // Only first 3
 
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-4 mt-4">
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-4 mt-4 text-black">
       {previewTemplates.map((template) => (
         <Link
           key={template.id}

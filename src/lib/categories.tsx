@@ -99,17 +99,17 @@ hero header, blog section, and more. Fully responsive and developer-friendly. Do
           description: `Profile is a modern, responsive, and thoughtfully designed Bootstrap 4 portfolio website template ideal for professionals seeking to showcase their skills and work. Whether you're a freelancer, designer, developer, architect, or any creative individual, this template offers all the essential tools to build an impressive online presence.`,
           overview: `rofile is a modern, r`
           features: [
-            " * One Page Layout with sticky sidebar navigation",
-            " * Smooth CSS3 animations and hover effects",
-            " * Filterable portfolio gallery with modal previews",
-            " * Retina ready design optimized for high-resolution screens",
-            " * Text rotator for dynamic headings or roles",
-            " * Responsive burger menu for seamless mobile experience",
-            " * Integrated social media icons",
-            " * Google Web Fonts for enhanced typography",
-            " * Built-in jQuery counters to display skill percentages",
-            " * Cross-browser compatibility ensuring reliable performance across major browsers",
-            " * Google Maps integration for contact or location section",
+            "  One Page Layout with sticky sidebar navigation",
+            "  Smooth CSS3 animations and hover effects",
+            "  Filterable portfolio gallery with modal previews",
+            "  Retina ready design optimized for high-resolution screens",
+            "  Text rotator for dynamic headings or roles",
+            "  Responsive burger menu for seamless mobile experience",
+            "  Integrated social media icons",
+            "  Google Web Fonts for enhanced typography",
+            "  Built-in jQuery counters to display skill percentages",
+            "  Cross-browser compatibility ensuring reliable performance across major browsers",
+            "  Google Maps integration for contact or location section",
           ]
         },
         {

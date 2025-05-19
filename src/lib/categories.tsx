@@ -13,7 +13,9 @@ export const categories: {
     demoUrl: string;
     price: string;
     description: string;
+    overview?: string;
     features?: string[];
+
 
   }[];
 }[] = [
@@ -75,7 +77,7 @@ hero header, blog section, and more. Fully responsive and developer-friendly. Do
             "Geolocation support",
             "Google Web Fonts integrated",
             "Bootstrap icon font support",
-            "Font Awesome v5 icon font"
+            "Font Awesome v5 icon font",
           ]
         },
         {
@@ -95,7 +97,7 @@ hero header, blog section, and more. Fully responsive and developer-friendly. Do
           demoUrl: "https://demo.site/portfolio2",
           price: "PKR 18,000",
           description: `Profile is a modern, responsive, and thoughtfully designed Bootstrap 4 portfolio website template ideal for professionals seeking to showcase their skills and work. Whether you're a freelancer, designer, developer, architect, or any creative individual, this template offers all the essential tools to build an impressive online presence.`,
-
+          overview: `rofile is a modern, r`
           features: [
             " * One Page Layout with sticky sidebar navigation",
             " * Smooth CSS3 animations and hover effects",
@@ -107,7 +109,7 @@ hero header, blog section, and more. Fully responsive and developer-friendly. Do
             " * Google Web Fonts for enhanced typography",
             " * Built-in jQuery counters to display skill percentages",
             " * Cross-browser compatibility ensuring reliable performance across major browsers",
-            " * Google Maps integration for contact or location section"
+            " * Google Maps integration for contact or location section",
           ]
         },
         {

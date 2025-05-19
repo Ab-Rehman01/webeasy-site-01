@@ -36,8 +36,11 @@ export default function TemplateDetailPage({ params }: Props) {
 
 
       <p className="text-lg text-gray-700 mb-4">
-         <h1 className="text-3xl font-bold mb-4 text-black">Description:</h1>
+         <h1 className="text-4xl font-bold mb-4 text-black">Description:</h1>
         {template.description || "This is a modern and responsive template perfect for businesses."}
+       <h1 className="text-3xl font-bold mb-4 text-black">Template Overview</h1>
+        {template.overview || "This is a modern and responsive template perfect for businesses."}
+
       </p>
       {template.features && template.features.length > 0 && (
         <div className="mb-6">
@@ -49,6 +52,7 @@ export default function TemplateDetailPage({ params }: Props) {
           </ul>
         </div>
       )}
+      
 
 
       <p className="text-lg font-semibold mb-4 text-gray-800">

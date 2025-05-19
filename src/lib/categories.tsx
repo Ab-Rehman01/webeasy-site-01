@@ -286,7 +286,7 @@ export const categories: {
           metaDescription: "Creative Portfolio is a sleek Bootstrap 4 one-page template for freelancers and creatives. Responsive, animated, and perfect for personal branding.",
           image: "/categories/portfolio/screencapture-creative-portfolio-template.png",
           imageAlt: "Creative Portfolio Bootstrap Template Screenshot",
-          image1: "/categories/portfolio/screencapture-creative-portfolio-hero-section.png",
+          image1: "/categories/screencapture-creative-portfolio-hero-section.png",
           demoUrl: "https://demo.themefisher.com/themefisher/creative-portfolio/",
           price: "PKR 16,000",
           tags: [

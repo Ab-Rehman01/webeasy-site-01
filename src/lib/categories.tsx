@@ -463,28 +463,255 @@ export const categories: {
         ,
         {
           id: "4",
-          name: "Tech Gadgets Store",
-          image: "/templates/ecommerce2.jpg",
-          demoUrl: "https://demo.site/ecommerce2",
-          price: "PKR 30,000",
-          description: "Modern tech store template for selling electronics and gadgets."
-        },
+          name: "Coza Store – HTML5 eCommerce Website Template",
+          slug: "coza-store-html5-ecommerce-website-template",
+          keyphrase: "HTML5 eCommerce Website Template",
+          seoTitle: "HTML5 eCommerce Website Template – Coza Store Bootstrap Design",
+          metaDescription: "Coza Store is a responsive HTML5 eCommerce website template with Bootstrap 4, multi-page layouts, carousel slider, and shop-ready features.",
+          image: "/categories/Ecom/screencapture-themewagon-github-io-cozastore-2025-05-20-06_09_23.jpg", // Replace with actual path
+          imageAlt: "Coza Store HTML5 eCommerce Website Template Preview",
+          image1: "/categories/cozastore.webp",
+          demoUrl: "https://yourdomain.com/demo/coza-store-template", // Replace with actual demo URL
+          price: "$29", // Set your pricing
+          tags: [
+            "HTML5 eCommerce Template",
+            "Bootstrap 4 Template",
+            "Coza Store",
+            "Shop Website Template",
+            "Product Slider",
+            "Responsive Design",
+            "Multi-page Template",
+            "Sticky Navigation",
+            "Dropdown Menu",
+            "Google Maps Integration"
+          ],
+          description: "Coza Store is a modern and responsive HTML5 eCommerce website template designed using Bootstrap 4. Its minimal and elegant layout, along with shop-ready components, makes it a perfect choice for online stores. It includes multiple pages such as shop, product, blog, and contact, supported by an intuitive user interface that enhances the shopping experience.",
+          overview: "The Coza Store template offers a complete front-end eCommerce solution with multi-page support, animated sliders, sticky navigation, and dropdown menus. It includes 3 homepage variations, stylish animations, and multiple content sections built for performance and visual appeal. Designed for fashion, accessories, and general retail, it's fully responsive and optimized for all devices.",
+          gallery: "Features include a full-width carousel slider, pagination-ready blog section, social media integration, sidebar layouts, and a Google Maps-enabled contact page. All assets are neatly organized for easy customization.",
+          skill: "Developed using HTML5, CSS3, SCSS, JavaScript, and Bootstrap 4. It’s beginner-friendly and developer-ready, with clean, modular code and separate vendor and component files.",
+          features: [
+            "Multi-page Layout",
+            "3 Homepage Variations",
+            "Sticky Navigation Menu",
+            "Full-width Search Bar",
+            "Multi-level Dropdown Navigation",
+            "Animated Carousel Slider",
+            "On-hover Product Animations",
+            "Pagination in Blog Section",
+            "Social Media Icons Integration",
+            "Right Sidebar Support",
+            "Google Maps Integration",
+            "Descriptive Footer Layout",
+            "Back to Top Button",
+            "SCSS Source Files Included",
+            "10 HTML Files & 16 Vendor Files",
+            "Optimized for Mobile and Desktop"
+          ]
+        }
+        ,
         {
           id: "5",
-          name: "Fashion Store",
-          image: "/templates/ecommerce1.jpg",
-          demoUrl: "https://demo.site/ecommerce1",
-          price: "PKR 25,000",
-          description: "Stylish fashion e-commerce template with cart and payment integration."
-        },
+          name: "Karma – HTML5 Bootstrap eCommerce Website Template",
+          slug: "karma-html5-bootstrap-ecommerce-website-template",
+          keyphrase: "HTML5 Bootstrap eCommerce Template",
+          seoTitle: "HTML5 Bootstrap eCommerce Template – Karma Fashion Website Design",
+          metaDescription: "Karma is a stylish and responsive HTML5 Bootstrap eCommerce website template with product sliders, hero headers, grids, and UI elements for online stores.",
+          image: "/categories/Ecom/screencapture-file-K-templete-E-com-karma-masterr-karma-master-index-html-2025-05-20-06_00_23.jpg", // Replace with actual path
+          imageAlt: "Karma HTML5 Bootstrap eCommerce Website Template Preview",
+          image1: "/categories/Karma-1-1200x736.webp",
+          demoUrl: "https://yourdomain.com/demo/karma-template", // Replace with actual demo URL
+          price: "$29", // Replace with your price
+          tags: [
+            "HTML5 Bootstrap eCommerce Template",
+            "Karma Template",
+            "Fashion Website Design",
+            "Product Grid",
+            "Responsive Online Shop",
+            "Bootstrap 4 Template",
+            "Product Carousel",
+            "Newsletter Subscription",
+            "UI Elements",
+            "Google Maps Integration"
+          ],
+          description: "Karma is a stylish and fully responsive HTML5 Bootstrap eCommerce website template designed for fashion stores, clothing brands, and online shops. It features a clean, minimal layout with all the essential components to set up an elegant and functional eCommerce frontend. Built with HTML5, CSS3, and Bootstrap 4, it ensures compatibility across all devices and modern browsers.",
+          overview: "This multi-page eCommerce template includes a visually appealing hero section, interactive product sliders, countdown timers, Instagram feed integration, and responsive UI elements. Karma is suitable for fashion, apparel, and lifestyle products, offering a wide range of modern sections and forms for a complete shopping experience.",
+          gallery: "The template includes grids with filtering, sticky top navigation, modals, product carousels, breadcrumb navigation, and review systems. Its SCSS architecture, structured layout, and complete documentation make customization quick and efficient.",
+          skill: "Developed with HTML5, CSS3, SCSS, Bootstrap 4, and JavaScript. Ideal for developers building scalable online stores or web designers customizing stylish frontend UIs.",
+          features: [
+            "HTML5 & CSS3 Template",
+            "Built with Bootstrap 4",
+            "Clean & Minimal Design",
+            "Fully Responsive Layout",
+            "Hero Header with Call to Action",
+            "Sticky Navigation Menu",
+            "Multi-level Drop-down Menu",
+            "Product Grid with Filters",
+            "Countdown Timer Feature",
+            "Hover Effects & Product Sliders",
+            "Newsletter Subscription Form",
+            "Instagram Feed Integration",
+            "Google Maps on Contact Page",
+            "Login, Cart, Checkout Pages",
+            "Order Tracking & Review Forms",
+            "Blog Section with Pagination",
+            "Price Range Filter UI",
+            "Breadcrumb Navigation",
+            "Comment System",
+            "10+ UI Elements",
+            "SCSS Files Included",
+            "PHP Contact Form",
+            "FontAwesome Icons",
+            "Well-documented Codebase"
+          ]
+        }
+        ,
         {
           id: "6",
-          name: "Tech Gadgets Store",
-          image: "/templates/ecommerce2.jpg",
-          demoUrl: "https://demo.site/ecommerce2",
-          price: "PKR 30,000",
-          description: "Modern tech store template for selling electronics and gadgets."
+          name: "Shopmax – Bootstrap 4 HTML5 eCommerce Website Template",
+          slug: "shopmax-bootstrap-html5-ecommerce-template",
+          keyphrase: "Bootstrap eCommerce Website Template",
+          seoTitle: "Bootstrap eCommerce Website Template – Shopmax Online Store Layout",
+          metaDescription: "Shopmax is a responsive Bootstrap 4 HTML5 eCommerce template with hero headers, product pages, checkout features, and newsletter forms for online shops.",
+          image: "/categories/Ecom/screencapture-file-K-templete-E-com-shopmax-master-shopmax-master-index-html-2025-05-20-05_18_30.jpg", // Replace with actual path
+          imageAlt: "Shopmax Bootstrap HTML5 eCommerce Template Preview",
+          image1: "/categories/shopmax-1.jpg",
+          demoUrl: "https://yourdomain.com/demo/shopmax-template", // Replace with actual demo URL
+          price: "$29", // Replace with your actual price
+          tags: [
+            "Bootstrap eCommerce Template",
+            "Shopmax HTML5 Template",
+            "Responsive Online Store",
+            "Product Page Layout",
+            "Shopping Cart",
+            "Checkout Page",
+            "Minimal UI Design",
+            "Cross-browser Compatible",
+            "Newsletter Integration",
+            "HTML5 Bootstrap Shop Template"
+          ],
+          description: "Shopmax is a professionally crafted Bootstrap 4 HTML5 eCommerce template perfect for online shops, marketplaces, and modern retail websites. It includes a clean, minimal UI, product carousels, dynamic header sections, and all the necessary pages for a complete store frontend.",
+          overview: "With its fluid layout and cross-browser compatibility, Shopmax ensures your online store looks flawless on all devices. This multi-page template includes dedicated sections for product categories, cart, checkout, and newsletter subscription – everything you need to launch a stylish eCommerce website.",
+          gallery: "This template includes product display cards, breadcrumbs, off-canvas search, newsletter popups, and flexible headers. The layout is mobile-first, and optimized for performance with reusable components and clean code.",
+          skill: "Built with HTML5, CSS3, Bootstrap 4, and minimal JS. Best for frontend developers and web designers building online retail and shopping platforms quickly with customization in mind.",
+          features: [
+            "Bootstrap 4 Framework",
+            "HTML5 & CSS3 Markup",
+            "Clean & Minimal Design",
+            "Fully Responsive Layout",
+            "Multi-page Template",
+            "Hero Header with CTA",
+            "Off-canvas Search Option",
+            "Drop-down Menu Navigation",
+            "Shopping Cart & Checkout Pages",
+            "Breadcrumb Navigation UI",
+            "Pagination Controls",
+            "Hover Effects on Product Cards",
+            "Price Range Filter UI",
+            "Newsletter Subscription Form",
+            "Contact Form Integration",
+            "Icomoon Font Icons",
+            "Cross-browser Compatible",
+            "Mobile-first Design Approach",
+            "Optimized and Well-commented Code"
+          ]
         },
+        {
+          id: "7",
+          name: "Fashion Store – HTML5 Bootstrap 5 eCommerce Template",
+          slug: "fashion-store-html5-ecommerce-template",
+          keyphrase: "Fashion eCommerce Website Template",
+          seoTitle: "Fashion eCommerce Website Template – Clean Bootstrap 5 Store Layout",
+          metaDescription: "Fashion Store is a responsive HTML5 eCommerce template with 20+ pages, blog system, checkout flow, and a clean modern design for fashion brands.",
+          image: "/categories/Ecom/screencapture-file-K-templete-E-com-FashionStore-FashionStore-index-html-2025-05-20-06_46_30.jpg", // Replace with actual path
+          imageAlt: "Fashion Store HTML5 Bootstrap 5 eCommerce Template Preview",
+          image1: "/categories/FashionStore-bootstrap-website-template.webp",
+          demoUrl: "https://yourdomain.com/demo/fashion-store-template", // Replace with actual demo URL
+          price: "$35", // Replace with actual pricing
+          tags: [
+            "Fashion eCommerce Template",
+            "HTML5 Bootstrap Store",
+            "Clothing Store Template",
+            "Responsive Shop Layout",
+            "SCSS Ecommerce Theme",
+            "Quick View Popups",
+            "Live Product Search",
+            "Wishlist System",
+            "Multi-step Checkout",
+            "Filterable Product Grid"
+          ],
+          description: "Fashion Store is a sleek HTML5 eCommerce template built for designers, fashion boutiques, and agencies. With 20+ ready-to-use pages, it offers a complete customer journey — from homepage to checkout — all crafted in clean, responsive design powered by Bootstrap 5.",
+          overview: "Perfect for building fast and elegant fashion websites, Fashion Store includes layouts for home, product categories, blog, checkout, wishlist, and legal pages. It features live search, pop-up quick views, filterable product grids, and size/color swatches — all optimized for mobile and SEO.",
+          gallery: "Includes a full-width homepage slider, filterable category grids, quick-view modals, product pages with swatches, and a distraction-free checkout. Each layout is fully responsive and easy to modify using HTML5 and SCSS.",
+          skill: "Ideal for frontend developers and designers comfortable with HTML5, SCSS, and Bootstrap 5. Customizing fonts, sections, or colors is fast thanks to a clean codebase and utility-first structure.",
+          features: [
+            "Built with Bootstrap 5",
+            "HTML5 and SCSS Codebase",
+            "Responsive Layouts for All Devices",
+            "20+ HTML Pages Included",
+            "Live Search Suggestions",
+            "Product Quick-View Popups",
+            "Size and Color Swatches",
+            "Wishlist Functionality",
+            "Multi-step Checkout Process",
+            "Full Blog System Ready",
+            "Legal Pages: Terms, FAQ, Privacy, Shipping, Returns",
+            "Filterable Category Grids",
+            "Clean Image-focused Homepage",
+            "Lightweight and Fast Loading",
+            "Semantic HTML for SEO",
+            "Well-organized, Commented Code",
+            "Optimized for Modern Browsers",
+            "Cross-browser Compatibility",
+            "Easily Customizable with SCSS",
+            "Polished Design Without Framework Overhead"
+          ]
+        },
+        {
+          id: "8",
+          name: "Electro – Free Electronics Store Website Template",
+          slug: "electro-electronics-store-html-template",
+          keyphrase: "Electronics eCommerce Website Template",
+          seoTitle: "Electronics eCommerce Website Template – Electro HTML5 Bootstrap Design",
+          metaDescription: "Electro is a free HTML5 electronics store template with responsive layout, product sliders, cart, and newsletter. Ideal for online gadget or tech shops.",
+          image: "/categories/Ecom/screencapture-file-K-templete-E-com-Electro-Website-.jpg", // Replace with actual image path
+          imageAlt: "Electro Electronics eCommerce HTML5 Website Template Preview",
+          image1: "/categories/1537207366electrothumb.jpg",
+          demoUrl: "https://yourdomain.com/demo/electro-template", // Replace with actual demo URL
+          price: "Free",
+          tags: [
+            "Electronics Store Template",
+            "Electronics eCommerce",
+            "Free HTML5 Template",
+            "Bootstrap eCommerce",
+            "Responsive Tech Shop",
+            "Product Slider",
+            "Newsletter Form",
+            "Shopping Cart UI",
+            "Social Media Integration",
+            "Device Shop Template"
+          ],
+          description: "Electro is a free, responsive HTML5 template designed for electronics and tech online stores. With a clean layout and key eCommerce features, it enables you to launch your shop quickly and professionally.",
+          overview: "Electro offers a stylish interface with components like product sliders, shopping cart system, subscription form, and social media links. It suits both niche and general electronics eCommerce stores, helping you scale from startup to full-fledged online business.",
+          gallery: "Includes hero sliders for product highlights, category grids, shopping cart pages, and email subscription sections. Fully responsive design ensures compatibility across devices.",
+          skill: "Perfect for users with basic knowledge of HTML/CSS. Easy to customize for developers or store owners wanting a fast launch without coding from scratch.",
+          features: [
+            "Free HTML5 Template",
+            "Bootstrap Framework",
+            "Fully Responsive Design",
+            "Clean & Elegant Layout",
+            "Product Slider Integration",
+            "Newsletter Subscription Form",
+            "Shopping Cart Pages",
+            "Social Media Buttons",
+            "Cross-Browser Compatible",
+            "Easy to Customize",
+            "Ideal for Electronics & Tech Stores",
+            "Optimized for Fast Load Speed",
+            "Professional Look and Feel",
+            "Device-Ready Layouts",
+            "Supports General or Niche Stores"
+          ]
+        }
       ],
     },
     {
@@ -604,36 +831,173 @@ export const categories: {
       templates: [
         {
           id: "1",
-          name: "Corporate Site",
-          image: "/templates/business1.jpg",
-          demoUrl: "https://demo.site/business1",
-          price: "PKR 20,000",
-          description: "Clean and professional business website template."
-        },
+          name: "Flio – Flying Academy HTML Template",
+          slug: "flio-flying-academy-html-template",
+          keyphrase: "Flying Academy HTML Template",
+          seoTitle: "Flying Academy HTML Template – Flio Responsive Bootstrap Design",
+          metaDescription: "Flio is a modern, responsive HTML5 template for aviation and flying academy websites with 24 pages, Bootstrap 4 layout, and easy customization.",
+          image: "/categories/Business/screencapture-file-K-templete-business-flio-flying-academy-html-template-flio-flying-academy-html-template-index-html-2025-05-20-07_38_11.jpg", // Replace with actual image path
+          imageAlt: "Flio Flying Academy Responsive HTML Template Preview",
+          image1: "/categories/1575085252 Flio - Flying Academy HTML Template.jpg",
+          demoUrl: "https://yourdomain.com/demo/flio-template", // Replace with actual demo URL
+          price: "Free",
+          tags: [
+            "Flying School Website",
+            "Flying Academy HTML",
+            "Bootstrap Business Template",
+            "Responsive Aviation Template",
+            "Flight Training Website",
+            "HTML5 CSS3 Template",
+            "Flight School Design",
+            "Cross-Browser Compatible",
+            "Modern Business Template"
+          ],
+          description: "Flio is a responsive and professional HTML template built for flying academies, flight schools, and aviation businesses. Designed with Bootstrap 4, it features 24 fully structured pages and a clean, modern layout.",
+          overview: "With 2 homepages and 22 inner pages, Flio gives you all the tools to set up a fully functional and visually appealing business website. Its well-commented code and organized structure make customization simple and fast.",
+          gallery: "Includes homepage sliders, service pages, contact forms, and clean inner page layouts. Designed for clarity and professionalism.",
+          skill: "Ideal for developers or small business owners with basic HTML/CSS knowledge. Minimal setup needed for launching a flight training site.",
+          features: [
+            "24 HTML Pages (2 Home + 22 Inner)",
+            "Clean & Modern Design",
+            "Bootstrap 4 Framework",
+            "Fully Responsive Layout",
+            "HTML5 & CSS3 Valid Code",
+            "Cross-Browser Compatible",
+            "Smooth Transition Effects",
+            "Google Fonts Integration",
+            "Easy to Customize",
+            "Well-Commented Code",
+            "Professional Business Look",
+            "Free Updates Included"
+          ]
+        }
+        ,
         {
-          id: "1",
-          name: "Corporate Site",
-          image: "/templates/business1.jpg",
-          demoUrl: "https://demo.site/business1",
-          price: "PKR 20,000",
-          description: "Clean and professional business website template."
-        },
+          id: "2",
+          name: "Avilon – Landing Page HTML Template",
+          slug: "avilon-app-saas-landing-page-template",
+          keyphrase: "App Landing Page Template",
+          seoTitle: "App Landing Page Template – Avilon HTML Bootstrap One Page Design",
+          metaDescription: "Avilon is a modern, responsive Bootstrap HTML template for SaaS apps, mobile apps, or digital products with animated scrolling and one-page design.",
+          image: "/categories/Business/screencapture-bootstrapmade-content-demo-Avilon-2025-05-20-07_53_17.jpg", // Replace with actual image path
+          imageAlt: "Avilon App and SaaS Landing Page Template Preview",
+          image1: "/categories/Avilon-bootstrap-website-template.webp",
+          demoUrl: "https://yourdomain.com/demo/avilon-template", // Replace with actual demo URL
+          price: "Free",
+          tags: [
+            "App Landing Page",
+            "SaaS HTML Template",
+            "One Page Bootstrap",
+            "Mobile App Website",
+            "Responsive App Template",
+            "Animated Scrolling",
+            "Pricing Table Template",
+            "Off-canvas Menu",
+            "Digital Product Landing"
+          ],
+          description: "Avilon is a clean and elegant one-page landing template designed for promoting apps, SaaS products, or any digital software. Built on Bootstrap, it’s fully responsive and performs smoothly on smartphones, tablets, and desktops.",
+          overview: "Avilon includes slick animations, pricing tables, off-canvas mobile menu, and multiple layout options for showcasing product features. Its lightweight structure makes it ideal for fast and impactful product presentations.",
+          gallery: "Includes animated scrolling, image lightbox gallery, pricing table, and mobile-optimized layouts for one-page presentations.",
+          skill: "Suitable for beginners with basic HTML/CSS knowledge. Easy to customize and deploy as a product or app landing page.",
+          features: [
+            "Latest Bootstrap Support",
+            "One Page Layout",
+            "Slick Modern Design",
+            "Animated Scrolling",
+            "Responsive on All Devices",
+            "Image Gallery with Lightbox",
+            "Pricing Table Section",
+            "Off-canvas Mobile Menu",
+            "Multiple Feature Layouts",
+            "Sass/SCSS Source Files (Pro Only)",
+            "PHP/Ajax Contact Form (Pro Only)",
+            "Clean and Lightweight Code"
+          ]
+        }
+        ,
         {
-          id: "1",
-          name: "Corporate Site",
-          image: "/templates/business1.jpg",
-          demoUrl: "https://demo.site/business1",
-          price: "PKR 20,000",
-          description: "Clean and professional business website template."
-        },
+          id: "3",
+          name: "Vex – Single Product Landing Page Bootstrap Template",
+          slug: "vex-single-product-landing-page-template",
+          keyphrase: "Single Product Landing Page",
+          seoTitle: "Single Product Landing Page – Vex Bootstrap 4 Template Free",
+          metaDescription: "Vex is a free responsive Bootstrap 4 landing page template for showcasing single products with testimonials, sliders, and elegant design.",
+          image: "/categories/Business/screencapture-themefisher-demo-2025-05-20-08_25_27.jpg", // Replace with actual image path
+          imageAlt: "Vex Single Product Bootstrap Landing Page Template Preview",
+          image1: "/categories/vex.webp",
+          demoUrl: "https://yourdomain.com/demo/vex-template", // Replace with actual demo URL
+          price: "Free",
+          tags: [
+            "Single Product Landing Page",
+            "Bootstrap 4 Template",
+            "Responsive Landing Page",
+            "Product Showcase",
+            "Business Landing Page",
+            "Free HTML Template",
+            "Conversion Focused",
+            "Testimonial Section",
+            "Animated Product Slider"
+          ],
+          description: "Vex is a free, fully responsive single product landing page template built with Bootstrap 4. It’s designed for businesses looking to showcase and promote one main product with compelling visuals, testimonials, and conversion-optimized layout.",
+          overview: "Crafted using the Bootstrap 4 framework, Vex offers a smooth user experience across all devices. It includes a product showcase slider, testimonial section, and attractive layout to boost engagement and drive conversions effectively.",
+          gallery: "Includes animated product slider, feature highlight section, testimonial block, and responsive layout.",
+          skill: "Easy to customize for users with basic HTML/CSS knowledge. Great for product presentations or marketing campaigns.",
+          features: [
+            "Free Bootstrap 4 Template",
+            "Fully Responsive Layout",
+            "One Page Product Landing Design",
+            "Animated Product Showcase",
+            "Clean Typography and Font Pack",
+            "Testimonial Section",
+            "Conversion-Optimized Design",
+            "Cross-Browser Compatibility",
+            "HTML5/CSS3 Standards",
+            "Well-structured Code",
+            "Mobile and Tablet Friendly"
+          ]
+        }
+        ,
         {
-          id: "1",
-          name: "Corporate Site",
-          image: "/templates/business1.jpg",
-          demoUrl: "https://demo.site/business1",
-          price: "PKR 20,000",
-          description: "Clean and professional business website template."
-        },
+          id: "4",
+          name: "Datarc – Fullscreen Agency Website Template",
+          slug: "datarc-fullscreen-agency-template",
+          keyphrase: "Fullscreen Agency Website Template",
+          seoTitle: "Fullscreen Agency Website Template – Datarc HTML Template Free",
+          metaDescription: "Datarc is a free fullscreen agency website template ideal for digital firms, creative studios, and tech startups with a clean modern design.",
+          image: "/categories/Business/screencapture-preview-colorlib-theme-datarc-2025-05-20-08_40_47.jpg", // Replace with actual image path
+          imageAlt: "Datarc Fullscreen Creative Agency Website Template Preview",
+          image1: "/categories/datarc-digital-agency-free-website-template.jpg.avif",
+          demoUrl: "https://yourdomain.com/demo/datarc-template", // Replace with actual demo URL
+          price: "Free",
+          tags: [
+            "Fullscreen Agency Template",
+            "Creative Agency Website",
+            "Startup Landing Page",
+            "SaaS Landing Template",
+            "Responsive HTML Template",
+            "Filterable Portfolio",
+            "Functional Contact Form",
+            "Digital Firm Web Template",
+            "Free Business Template"
+          ],
+          description: "Datarc is a fullscreen, responsive website template designed for creative agencies, digital startups, and SaaS platforms. It features a clean layout, large banner, portfolio section, testimonials, and pricing tables.",
+          overview: "Ideal for agencies and startups, Datarc offers a sleek fullscreen layout with smooth user interaction, modern elements, and key sections like contact forms and portfolio filters for effective project showcasing.",
+          gallery: "Includes fullscreen hero section, filterable portfolio, testimonials, and pricing tables.",
+          skill: "Basic HTML/CSS knowledge is sufficient for customization. Perfect for design-focused businesses and creative professionals.",
+          features: [
+            "Free Fullscreen HTML Template",
+            "Ideal for Agencies and Startups",
+            "Responsive and Mobile-Friendly",
+            "Clean and Minimalist Design",
+            "Filterable Portfolio Section",
+            "Functional Contact Form",
+            "Client Testimonials Section",
+            "Pricing Table Included",
+            "Built with Bootstrap",
+            "Modern Typography and UI"
+          ]
+        }
+        ,
       ],
     },
     {

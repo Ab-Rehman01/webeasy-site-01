@@ -868,7 +868,7 @@ export const categories: {
             "Easy to Customize",
             "Well-Commented Code",
             "Professional Business Look",
-            "Free Updates Included"
+            "Free Updates Included",
           ]
         }
         ,

@@ -879,7 +879,7 @@ export const categories: {
           keyphrase: "App Landing Page Template",
           seoTitle: "App Landing Page Template – Avilon HTML Bootstrap One Page Design",
           metaDescription: "Avilon is a modern, responsive Bootstrap HTML template for SaaS apps, mobile apps, or digital products with animated scrolling and one-page design.",
-          image: "/categories/Business/screencapture-bootstrapmade-content-demo-Avilon-2025-05-20-07_53_17 (1).jpg", // Replace with actual image path
+          image: "/categories/Business/screencapture-bootstrapmade-content-demo-Avilon.jpg", // Replace with actual image path
           imageAlt: "Avilon App and SaaS Landing Page Template Preview",
           image1: "/categories/Avilon-bootstrap-website-template.webp",
           demoUrl: "https://yourdomain.com/demo/avilon-template", // Replace with actual demo URL
@@ -999,6 +999,46 @@ export const categories: {
         }
         ,
         {
+          id: "5",
+          name: "Datarc – Fullscreen Agency Website Template",
+          slug: "datarc-fullscreen-agency-template",
+          keyphrase: "Fullscreen Agency Website Template",
+          seoTitle: "Fullscreen Agency Website Template – Datarc HTML Template Free",
+          metaDescription: "Datarc is a free fullscreen agency website template ideal for digital firms, creative studios, and tech startups with a clean modern design.",
+          image: "/categories/Business/screencapture-preview-colorlib-theme-datarc-2025-05-20-08_40_47.jpg", // Replace with actual image path
+          imageAlt: "Datarc Fullscreen Creative Agency Website Template Preview",
+          image1: "/categories/datarc-digital-agency-free-website-template.jpg.avif",
+          demoUrl: "https://yourdomain.com/demo/datarc-template", // Replace with actual demo URL
+          price: "Free",
+          tags: [
+            "Fullscreen Agency Template",
+            "Creative Agency Website",
+            "Startup Landing Page",
+            "SaaS Landing Template",
+            "Responsive HTML Template",
+            "Filterable Portfolio",
+            "Functional Contact Form",
+            "Digital Firm Web Template",
+            "Free Business Template"
+          ],
+          description: "Datarc is a fullscreen, responsive website template designed for creative agencies, digital startups, and SaaS platforms. It features a clean layout, large banner, portfolio section, testimonials, and pricing tables.",
+          overview: "Ideal for agencies and startups, Datarc offers a sleek fullscreen layout with smooth user interaction, modern elements, and key sections like contact forms and portfolio filters for effective project showcasing.",
+          gallery: "Includes fullscreen hero section, filterable portfolio, testimonials, and pricing tables.",
+          skill: "Basic HTML/CSS knowledge is sufficient for customization. Perfect for design-focused businesses and creative professionals.",
+          features: [
+            "Free Fullscreen HTML Template",
+            "Ideal for Agencies and Startups",
+            "Responsive and Mobile-Friendly",
+            "Clean and Minimalist Design",
+            "Filterable Portfolio Section",
+            "Functional Contact Form",
+            "Client Testimonials Section",
+            "Pricing Table Included",
+            "Built with Bootstrap",
+            "Modern Typography and UI"
+          ]
+        }
+        ,{
           id: "5",
           name: "Datarc – Fullscreen Agency Website Template",
           slug: "datarc-fullscreen-agency-template",

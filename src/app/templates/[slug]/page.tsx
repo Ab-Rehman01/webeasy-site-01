@@ -2,6 +2,7 @@ import { categories } from "@/lib/categories";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import Image from "next/image";
+import TemplateCategories from "@/components/TemplateCategories";
 
 interface Props {
   params: {
@@ -46,6 +47,17 @@ export default function CategoryPage({ params }: Props) {
           No templates available in this category.
         </p>
       )}
+      {categories.length > 0 && (
+                <div className="mt-12">
+                  <h2 className="text-2xl font-bold mb-6 text-center text-black">
+                    More Templates in {category.name}
+                  </h2>
+                  <TemplateCategories />
+                
+                    
+                  
+                </div>
+              )}
     </main>
   );
 }

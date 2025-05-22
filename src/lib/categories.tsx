@@ -922,7 +922,7 @@ export const categories: {
           keyphrase: "Single Product Landing Page",
           seoTitle: "Single Product Landing Page – Vex Bootstrap 4 Template Free",
           metaDescription: "Vex is a free responsive Bootstrap 4 landing page template for showcasing single products with testimonials, sliders, and elegant design.",
-          image: "/categories/Business/screencapture-themefisher-demo-2025-05-20-08_25_27.jpg", // Replace with actual image path
+          image: "/categories/business/screencapture-themefisher-demo-2025-05-20-08_25_27.webp", // Replace with actual image path
           imageAlt: "Vex Single Product Bootstrap Landing Page Template Preview",
           image1: "/categories/vex.webp",
           demoUrl: "https://yourdomain.com/demo/vex-template", // Replace with actual demo URL
@@ -964,7 +964,7 @@ export const categories: {
           keyphrase: "Fullscreen Agency Website Template",
           seoTitle: "Fullscreen Agency Website Template – Datarc HTML Template Free",
           metaDescription: "Datarc is a free fullscreen agency website template ideal for digital firms, creative studios, and tech startups with a clean modern design.",
-          image: "/categories/Business/screencapture-preview-colorlib-theme-datarc-2025-05-20-08_40_47.jpg", // Replace with actual image path
+          image: "/categories/business/screencapture-preview-colorlib-theme-datarc-2025-05-20-08_40_47.webp", // Replace with actual image path
           imageAlt: "Datarc Fullscreen Creative Agency Website Template Preview",
           image1: "/categories/datarc-digital-agency-free-website-template.jpg.avif",
           demoUrl: "https://yourdomain.com/demo/datarc-template", // Replace with actual demo URL

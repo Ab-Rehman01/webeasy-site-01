@@ -879,7 +879,7 @@ export const categories: {
           keyphrase: "App Landing Page Template",
           seoTitle: "App Landing Page Template – Avilon HTML Bootstrap One Page Design",
           metaDescription: "Avilon is a modern, responsive Bootstrap HTML template for SaaS apps, mobile apps, or digital products with animated scrolling and one-page design.",
-          image: "/categories/Business/screencapture-bootstrapmade-content-demo-Avilon.jpg", // Replace with actual image path
+          image: "/categories/business/screencapture-bootstrapmade-content-demo-Avilon.jpg", // Replace with actual image path
           imageAlt: "Avilon App and SaaS Landing Page Template Preview",
           image1: "/categories/Avilon-bootstrap-website-template.webp",
           demoUrl: "https://yourdomain.com/demo/avilon-template", // Replace with actual demo URL

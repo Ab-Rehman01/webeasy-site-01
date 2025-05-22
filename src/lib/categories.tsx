@@ -836,7 +836,7 @@ export const categories: {
           keyphrase: "Flying Academy HTML Template",
           seoTitle: "Flying Academy HTML Template – Flio Responsive Bootstrap Design",
           metaDescription: "Flio is a modern, responsive HTML5 template for aviation and flying academy websites with 24 pages, Bootstrap 4 layout, and easy customization.",
-          image: "/categories/Business/screencapture-file-K-templete-business-flio-flying-academy-html-template-flio-flying-academy-html-template-index-html-2025-05-20-07_38_11.jpg", // Replace with actual image path
+          image: "/categories/business/screencapture-file-K-templete-business-flio-flying-academy-html-template-flio-flying-academy-html-template-index-html-2025-05-20-07_38_11 (2) (1).jpg", // Replace with actual image path
           imageAlt: "Flio Flying Academy Responsive HTML Template Preview",
           image1: "/categories/1575085252 Flio - Flying Academy HTML Template.jpg",
           demoUrl: "https://yourdomain.com/demo/flio-template", // Replace with actual demo URL

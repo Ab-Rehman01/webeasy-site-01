@@ -999,136 +999,142 @@ export const categories: {
         }
         ,
         {
-          id: "5",
-          name: "Stella Orre – Interior & Architecture HTML Template",
+          id: "stella-orre-html-template",
+          name: "Stella Orre – Architecture & Interior HTML Template",
           slug: "stella-orre-html-template",
-          keyphrase: "Interior Architecture HTML Template",
-          seoTitle: "Interior Architecture HTML Template – Stella Orre | Responsive Design",
-          metaDescription: "Stella Orre is a responsive Interior Architecture HTML Template ideal for designers, architects, and creative studios. Tested on all devices with rich features.",
+          keyphrase: "Architecture Interior HTML Template",
+          seoTitle: "Architecture Interior HTML Template – Stella Orre | Responsive & Stylish",
+          metaDescription: "Stella Orre is a responsive HTML template designed for architecture and interior design agencies, packed with features and elegant design.",
           image: "/categories/business/screencapture-file-K-templete-business-stella-html-2025-05-22-22_15_49.webp",
-          imageAlt: "Stella Orre HTML Template for interior and architecture websites",
+          imageAlt: "Stella Orre – HTML template for architecture and interior design",
           image1: "/categories/1575087015 Stella Orre - Architecture And Interior HTML Template.jpg",
           demoUrl: "https://demo.yourdomain.com/stella-orre",
           price: "Free",
           tags: [
             "Stella Orre",
-            "HTML Template",
             "Architecture Template",
-            "Interior Design Template",
+            "Interior Design HTML",
             "Bootstrap 3",
-            "Responsive Design",
-            "Creative Studio Template"
+            "Responsive Website",
+            "Creative Agency",
+            "Business Template"
           ],
-          description: "Stella Orre is a clean and modern HTML template for architecture and interior design studios. Responsive design, 30+ pages, gallery, and more.",
-          overview: "Stella Orre HTML Template is specially designed for architecture firms, interior designers, and creative agencies. With its fluid layout and elegant structure, it is perfect for showcasing design projects and services online.",
-          gallery: "/images/templates/stella-orre/gallery",
-          skill: "HTML5, CSS3, Bootstrap 3, Responsive Design",
+          description: "Stella Orre is a feature-rich, responsive HTML template crafted for architecture firms, interior design studios, and creative businesses. With over 30 HTML pages and a pixel-perfect layout, it provides everything needed for a modern web presence.",
+          overview: "Designed specifically for architecture and interior work, Stella Orre combines aesthetic elegance with powerful functionality. Built on Bootstrap 3, it offers multiple gallery styles, blog layouts, contact forms, parallax effects, and Retina-ready design. This multipurpose template adapts seamlessly to any screen size and device.",
+          gallery: "Includes grid, fullwidth, masonry, and single-detail gallery styles for showcasing architectural or design projects beautifully and interactively.",
+          skill: "HTML5, CSS3, Bootstrap 3, AJAX Contact Form, Responsive Design",
           features: [
             "100% Fluid Responsive Design",
-            "Tested on Real Devices",
             "Working PHP AJAX Contact Form",
-            "Over 30 HTML Pages",
-            "Unlimited Blog and Gallery Layouts",
+            "Flexible Layout and Unlimited Sidebars",
+            "Retina Optimised and Flat, Modern Look",
+            "30+ Prebuilt HTML Pages",
+            "Multiple Gallery Layouts (Grid, Masonry, Fullwidth)",
+            "Unlimited Blog Pages and Sidebars",
+            "Advanced Typography and Custom Fonts",
             "Cross-Browser Compatibility",
-            "Built on Bootstrap 3",
-            "Parallax Effect and Google Fonts"
+            "Built on Bootstrap 3 Framework",
+            "Parallax Scrolling and Unique Effects",
+            "Google Map with Multiple Locations",
+            "Pixel Perfect Design",
+            "Social Media Integration and Footer Widgets",
+            "Valid HTML5 & CSS3 Codebase"
           ]
         }
-        , {
-          id: "5",
-          name: "Datarc – Fullscreen Agency Website Template",
-          slug: "datarc-fullscreen-agency-template",
-          keyphrase: "Fullscreen Agency Website Template",
-          seoTitle: "Fullscreen Agency Website Template – Datarc HTML Template Free",
-          metaDescription: "Datarc is a free fullscreen agency website template ideal for digital firms, creative studios, and tech startups with a clean modern design.",
-          image: "/categories/Business/screencapture-preview-colorlib-theme-datarc-2025-05-20-08_40_47.jpg", // Replace with actual image path
-          imageAlt: "Datarc Fullscreen Creative Agency Website Template Preview",
-          image1: "/categories/datarc-digital-agency-free-website-template.jpg.avif",
-          demoUrl: "https://yourdomain.com/demo/datarc-template", // Replace with actual demo URL
-          price: "Free",
-          tags: [
-            "Fullscreen Agency Template",
-            "Creative Agency Website",
-            "Startup Landing Page",
-            "SaaS Landing Template",
-            "Responsive HTML Template",
-            "Filterable Portfolio",
-            "Functional Contact Form",
-            "Digital Firm Web Template",
-            "Free Business Template"
-          ],
-          description: "Datarc is a fullscreen, responsive website template designed for creative agencies, digital startups, and SaaS platforms. It features a clean layout, large banner, portfolio section, testimonials, and pricing tables.",
-          overview: "Ideal for agencies and startups, Datarc offers a sleek fullscreen layout with smooth user interaction, modern elements, and key sections like contact forms and portfolio filters for effective project showcasing.",
-          gallery: "Includes fullscreen hero section, filterable portfolio, testimonials, and pricing tables.",
-          skill: "Basic HTML/CSS knowledge is sufficient for customization. Perfect for design-focused businesses and creative professionals.",
-          features: [
-            "Free Fullscreen HTML Template",
-            "Ideal for Agencies and Startups",
-            "Responsive and Mobile-Friendly",
-            "Clean and Minimalist Design",
-            "Filterable Portfolio Section",
-            "Functional Contact Form",
-            "Client Testimonials Section",
-            "Pricing Table Included",
-            "Built with Bootstrap",
-            "Modern Typography and UI"
-          ]
-        }
+    , {
+      id: "6",
+      name: "Electricca – Electrical Services HTML Template",
+      slug: "electricca-html-template",
+      keyphrase: "Electrical Services HTML Template",
+      seoTitle: "Electrical Services HTML Template – Electricca | Bootstrap 4 Responsive",
+      metaDescription: "Electricca is a multipage responsive HTML template for electrical service companies. Built on Bootstrap 4, it's SEO-friendly and developer-ready.",
+      image: "/categories/business/screencapture-file-K-templete-business-electricca-1-0-0-index-html-2025-05-22-22_50_29.webp",
+      imageAlt: "Electricca – Responsive HTML template for electrical service companies",
+      image1: "/categories/Electricca-1200x736.webp",
+      demoUrl: "https://demo.yourdomain.com/electricca",
+      price: "Free",
+      tags: [
+        "Electricca",
+        "HTML Template",
+        "Electrical Services",
+        "Bootstrap 4",
+        "Responsive Website",
+        "Business Template",
+        "SEO Optimized",
+        "Corporate Template"
       ],
+      description: "Electricca is a responsive HTML5 template designed for electrical service providers. It features a clean UI, smooth animations, a contact form, geolocation, and a multipage layout ideal for business and corporate use.",
+      overview: "Electricca is a professional-grade HTML template perfect for electrical companies and service businesses. Built with Bootstrap 4, it's developer-friendly, mobile-first, cross-browser compatible, and SEO optimized. Features include a hero header, sliders, testimonials, blog section, and reusable components to build a solid web presence.",
+      gallery: "Includes multiple reusable layout components such as gallery pages, testimonial sections, and blog previews that showcase your work and services effectively.",
+      skill: "HTML5, CSS3, Bootstrap 4, Responsive Design, SEO Optimization",
+      features: [
+        "Bootstrap 4.1.0",
+        "Responsive Multipage Layout",
+        "SEO-Friendly & Fast Loading",
+        "Hero Image and Header Carousel",
+        "Contact Form with Geolocation",
+        "Mobile-First and Cross-Browser Compatible",
+        "Newsletter Subscription UI",
+        "Testimonial & Blog Sections",
+        "Clean, Developer-Friendly Codebase",
+        "Call-to-Action Buttons and On-Hover Effects"
+      ]
+    }
+  ],
     },
-    {
-      name: "Blogs & Magazines",
-      slug: "blogs",
+{
+  name: "Blogs & Magazines",
+    slug: "blogs",
       image: "/categories/blogs.jpg",
-      templates: [
-        {
-          id: "1",
-          name: "Tech Blog",
-          image: "/templates/blog1.jpg",
-          demoUrl: "https://demo.site/blog1",
-          price: "PKR 14,000",
-          description: "Simple and stylish blog template for tech writers."
-        },
-        {
-          id: "1",
-          name: "Tech Blog",
-          image: "/templates/blog1.jpg",
-          demoUrl: "https://demo.site/blog1",
-          price: "PKR 14,000",
-          description: "Simple and stylish blog template for tech writers."
-        },
-        {
-          id: "1",
-          name: "Tech Blog",
-          image: "/templates/blog1.jpg",
-          demoUrl: "https://demo.site/blog1",
-          price: "PKR 14,000",
-          description: "Simple and stylish blog template for tech writers."
-        },
-        {
-          id: "1",
-          name: "Tech Blog",
-          image: "/templates/blog1.jpg",
-          demoUrl: "https://demo.site/blog1",
-          price: "PKR 14,000",
-          description: "Simple and stylish blog template for tech writers."
-        },
-        {
-          id: "1",
-          name: "Tech Blog",
-          image: "/templates/blog1.jpg",
-          demoUrl: "https://demo.site/blog1",
-          price: "PKR 14,000",
-          description: "Simple and stylish blog template for tech writers."
-        },
-        {
-          id: "1",
-          name: "Tech Blog",
-          image: "/templates/blog1.jpg",
-          demoUrl: "https://demo.site/blog1",
-          price: "PKR 14,000",
-          description: "Simple and stylish blog template for tech writers."
-        },
-      ],
+        templates: [
+          {
+            id: "1",
+            name: "Tech Blog",
+            image: "/templates/blog1.jpg",
+            demoUrl: "https://demo.site/blog1",
+            price: "PKR 14,000",
+            description: "Simple and stylish blog template for tech writers."
+          },
+          {
+            id: "1",
+            name: "Tech Blog",
+            image: "/templates/blog1.jpg",
+            demoUrl: "https://demo.site/blog1",
+            price: "PKR 14,000",
+            description: "Simple and stylish blog template for tech writers."
+          },
+          {
+            id: "1",
+            name: "Tech Blog",
+            image: "/templates/blog1.jpg",
+            demoUrl: "https://demo.site/blog1",
+            price: "PKR 14,000",
+            description: "Simple and stylish blog template for tech writers."
+          },
+          {
+            id: "1",
+            name: "Tech Blog",
+            image: "/templates/blog1.jpg",
+            demoUrl: "https://demo.site/blog1",
+            price: "PKR 14,000",
+            description: "Simple and stylish blog template for tech writers."
+          },
+          {
+            id: "1",
+            name: "Tech Blog",
+            image: "/templates/blog1.jpg",
+            demoUrl: "https://demo.site/blog1",
+            price: "PKR 14,000",
+            description: "Simple and stylish blog template for tech writers."
+          },
+          {
+            id: "1",
+            name: "Tech Blog",
+            image: "/templates/blog1.jpg",
+            demoUrl: "https://demo.site/blog1",
+            price: "PKR 14,000",
+            description: "Simple and stylish blog template for tech writers."
+          },
+        ],
     },
   ];

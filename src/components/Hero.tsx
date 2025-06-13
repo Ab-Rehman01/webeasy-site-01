@@ -82,7 +82,8 @@ export default function Hero() {
       initial={{ opacity: 0, scale: 0.95 }}
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.8 }}
-      className="bg-gradient-to-r from-blue-700 to-purple-800 min-h-[80vh] flex flex-col-reverse lg:flex-row items-center justify-between gap-10 px-6 py-16 rounded-3xl my-10 mx-4"
+      className="bg-black  min-h-[80vh] flex flex-col-reverse lg:flex-row items-center justify-between gap-10 px-6 py-16 rounded-3xl my-10 mx-4"
+      // className="bg-gradient-to-r from-blue-700 to-purple-800 min-h-[80vh] flex flex-col-reverse lg:flex-row items-center justify-between gap-10 px-6 py-16 rounded-3xl my-10 mx-4"
     >
       {/* Text Content */}
       <div className="text-center lg:text-left max-w-xl">
@@ -100,10 +101,10 @@ export default function Hero() {
         >
           Get Free Consultation
         </a>
-      </div>
+      {/* </div> */}
 
       {/* Image Section */}
-      <div className="w-full max-w-[900px]">
+      {/* <div className="w-full max-w-[900px]"> */}
   
   <video autoPlay loop muted playsInline className="w-full h-screen object-cover">
   <source src="/video/852421-hd_1920_1080_30fps.mp4" type="video/mp4" />

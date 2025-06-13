@@ -102,13 +102,18 @@ export default function Hero() {
 
       {/* Image Section */}
       <div className="w-full max-w-[900px]">
-  <Image
+  
+  <video autoPlay loop muted playsInline className="w-full h-screen object-cover">
+  <source src="/video/852421-hd_1920_1080_30fps.mp4" type="video/mp4" />
+</video>
+
+  {/* <Image
     src="/programming-background-collage (3).jpg"
     alt="Web development illustration"
     width={900}
     height={600}
     className="w-full h-auto rounded-xl shadow-2xl"
-  />
+  /> */}
 </div>
     </motion.section>
   )

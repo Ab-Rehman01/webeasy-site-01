@@ -79,31 +79,32 @@ import { motion } from 'framer-motion'
 export default function Hero() {
   return (
     <motion.section
-      initial={{ opacity: 0, scale: 0.95 }}
-      animate={{ opacity: 1, scale: 1 }}
-      transition={{ duration: 0.8 }}
-      className=" min-h-[100vh] flex flex-col-reverse lg:flex-row items-center justify-between gap-10 px-6 py-0 rounded-3xl my-10 mx-4"
-      // className="bg-gradient-to-r from-blue-700 to-purple-800 min-h-[80vh] flex flex-col-reverse lg:flex-row items-center justify-between gap-10 px-6 py-16 rounded-3xl my-10 mx-4"
-    >
-      <div className="py-2 px-2 bg-gray-800 text-white relative w-full h-screen overflow-hidden">
+  initial={{ opacity: 0, scale: 0.95 }}
+  animate={{ opacity: 1, scale: 1 }}
+  transition={{ duration: 0.8 }}
+  className="relative min-h-screen w-full overflow-hidden flex items-center justify-center px-6 py-0 my-10 mx-4 rounded-3xl"
+>
   {/* Background Video */}
   <video
     autoPlay
     loop
     muted
     playsInline
-    className="absolute top-0 left-0 w-full h-full object-cover"
+    className="absolute top-0 left-0 w-full h-full object-cover z-0"
   >
     <source src="/video/852421-hd_1920_1080_30fps.mp4" type="video/mp4" />
     Your browser does not support the video tag.
   </video>
 
+  {/* Overlay */}
+  <div className="absolute inset-0 bg-black bg-opacity-60 z-0" />
+
   {/* Text Content */}
-  <div className="relative z-10 flex flex-col items-center justify-center h-full px-4 text-center ">
-    <h1 className="text-4xl md:text-6xl font-bold text-white mb-4 leading-tight">
+  <div className="relative z-10 text-center text-white flex flex-col items-center justify-center px-4 max-w-3xl py-16">
+    <h1 className="text-4xl md:text-6xl font-bold mb-4 leading-tight">
       Websites, Stores & Digital Growth
     </h1>
-    <p className="text-lg md:text-xl text-gray-100 mb-6 max-w-xl">
+    <p className="text-lg md:text-xl text-gray-100 mb-6">
       Launch your brand with custom websites, eCommerce stores, and powerful digital marketing — all with Webeasy-Tech.
     </p>
     <a
@@ -115,7 +116,7 @@ export default function Hero() {
       Get Free Consultation
     </a>
   </div>
-</div>
+</motion.section>
 
       {/* Text Content */}
       {/* <div className="text-center lg:text-left max-w-xl">

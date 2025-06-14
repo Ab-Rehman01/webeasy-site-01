@@ -17,7 +17,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         {/* Background Image with Overlay */}
         <div className="fixed inset-0 z-[-1]">
           <div
-            className="absolute inset-0 bg-gray-800 opacity-60"
+            className="absolute inset-0 bg-gray-900 opacity-60"
             aria-hidden="true"
           ></div>
           {/* <img

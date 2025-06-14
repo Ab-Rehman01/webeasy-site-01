@@ -82,7 +82,7 @@ export default function Hero() {
       initial={{ opacity: 0, scale: 0.95 }}
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.8 }}
-      className="bg-black-800  min-h-[80vh] flex flex-col-reverse lg:flex-row items-center justify-between gap-10 px-6 py-0 rounded-3xl my-10 mx-4"
+      className=" min-h-[100vh] flex flex-col-reverse lg:flex-row items-center justify-between gap-10 px-6 py-0 rounded-3xl my-10 mx-4"
       // className="bg-gradient-to-r from-blue-700 to-purple-800 min-h-[80vh] flex flex-col-reverse lg:flex-row items-center justify-between gap-10 px-6 py-16 rounded-3xl my-10 mx-4"
     >
       <div className="py-20 px-6 bg-gray-900 text-white relative w-full h-screen overflow-hidden">

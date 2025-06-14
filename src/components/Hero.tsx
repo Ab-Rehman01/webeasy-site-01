@@ -85,8 +85,40 @@ export default function Hero() {
       className="bg-black  min-h-[80vh] flex flex-col-reverse lg:flex-row items-center justify-between gap-10 px-6 py-16 rounded-3xl my-10 mx-4"
       // className="bg-gradient-to-r from-blue-700 to-purple-800 min-h-[80vh] flex flex-col-reverse lg:flex-row items-center justify-between gap-10 px-6 py-16 rounded-3xl my-10 mx-4"
     >
+      <div className="relative w-full h-screen overflow-hidden">
+  {/* Background Video */}
+  <video
+    autoPlay
+    loop
+    muted
+    playsInline
+    className="absolute top-0 left-0 w-full h-full object-cover"
+  >
+    <source src="/video/852421-hd_1920_1080_30fps.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+
+  {/* Text Content */}
+  <div className="relative z-10 flex flex-col items-center justify-center h-full px-4 text-center bg-black/50">
+    <h1 className="text-4xl md:text-6xl font-bold text-white mb-4 leading-tight">
+      Websites, Stores & Digital Growth
+    </h1>
+    <p className="text-lg md:text-xl text-gray-100 mb-6 max-w-xl">
+      Launch your brand with custom websites, eCommerce stores, and powerful digital marketing — all with Webeasy-Tech.
+    </p>
+    <a
+      href="https://wa.me/+923242822577"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="inline-block bg-green-500 hover:bg-green-600 text-white px-6 py-3 text-lg font-semibold rounded-full transition-all duration-300"
+    >
+      Get Free Consultation
+    </a>
+  </div>
+</div>
+
       {/* Text Content */}
-      <div className="text-center lg:text-left max-w-xl">
+      {/* <div className="text-center lg:text-left max-w-xl">
         <h1 className="text-4xl md:text-6xl font-bold text-white mb-4 leading-tight">
           Websites, Stores & Digital Growth
         </h1>
@@ -100,15 +132,15 @@ export default function Hero() {
           className="inline-block bg-green-500 hover:bg-green-600 text-white px-6 py-3 text-lg font-semibold rounded-full transition-all duration-300"
         >
           Get Free Consultation
-        </a>
+        </a> */}
       {/* </div> */}
 
       {/* Image Section */}
       {/* <div className="w-full max-w-[900px]"> */}
   
-  <video autoPlay loop muted playsInline className="w-full h-screen object-cover">
+  {/* <video autoPlay loop muted playsInline className="w-full h-screen object-cover">
   <source src="/video/852421-hd_1920_1080_30fps.mp4" type="video/mp4" />
-</video>
+</video> */}
 
   {/* <Image
     src="/programming-background-collage (3).jpg"
@@ -117,7 +149,7 @@ export default function Hero() {
     height={600}
     className="w-full h-auto rounded-xl shadow-2xl"
   /> */}
-</div>
+{/* </div> */}
     </motion.section>
   )
 }

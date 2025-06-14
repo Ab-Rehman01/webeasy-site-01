@@ -85,7 +85,7 @@ export default function Hero() {
       className=" min-h-[100vh] flex flex-col-reverse lg:flex-row items-center justify-between gap-10 px-6 py-0 rounded-3xl my-10 mx-4"
       // className="bg-gradient-to-r from-blue-700 to-purple-800 min-h-[80vh] flex flex-col-reverse lg:flex-row items-center justify-between gap-10 px-6 py-16 rounded-3xl my-10 mx-4"
     >
-      <div className="py-20 px-6 bg-gray-900 text-white relative w-full h-screen overflow-hidden">
+      <div className="py-20 px-6 bg-gray-800 text-white relative w-full h-screen overflow-hidden">
   {/* Background Video */}
   <video
     autoPlay
@@ -99,7 +99,7 @@ export default function Hero() {
   </video>
 
   {/* Text Content */}
-  <div className="relative z-10 flex flex-col items-center justify-center h-full px-4 text-center bg-black/50">
+  <div className="relative z-10 flex flex-col items-center justify-center h-full px-4 text-center ">
     <h1 className="text-4xl md:text-6xl font-bold text-white mb-4 leading-tight">
       Websites, Stores & Digital Growth
     </h1>

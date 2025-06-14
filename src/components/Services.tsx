@@ -54,11 +54,11 @@ export default function Services() {
   return (
     <motion.section
       id="services"
-      initial={{ opacity: 0, y: 50 }}
+      initial={{ opacity: 0, y: 40 }}
       whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, amount: 0.3 }}
-      transition={{ duration: 0.8 }}
-      className="py-20 px-6 bg-gray-900 text-white"
+      viewport={{ once: true, amount: 0.1 }}
+      transition={{ duration: 0.6 }}
+      className="py-20 px-4 sm:px-6 bg-gray-900 text-white w-full overflow-x-hidden"
     >
       <div className="max-w-3xl mx-auto text-center mb-14">
         <motion.h2

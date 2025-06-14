@@ -76,11 +76,11 @@ import { motion } from 'framer-motion'
 
 export default function Hero() {
   return (
-    <motion.section
+  <motion.section
   initial={{ opacity: 0, scale: 0.95 }}
   animate={{ opacity: 1, scale: 1 }}
   transition={{ duration: 0.8 }}
-  className="relative w-full h-screen overflow-hidden flex items-center justify-center"
+  className="relative w-full h-screen overflow-hidden m-0 p-0"
 >
   {/* Background Video */}
   <video
@@ -88,21 +88,21 @@ export default function Hero() {
     loop
     muted
     playsInline
-    className="absolute inset-0 w-full h-full object-cover z-0"
+    className="absolute top-0 left-0 w-full h-full object-cover z-0"
   >
     <source src="/video/852421-hd_1920_1080_30fps.mp4" type="video/mp4" />
     Your browser does not support the video tag.
   </video>
 
-  {/* Dark Overlay */}
-  <div className="absolute inset-0 bg-black bg-opacity-50 z-10" />
+  {/* Optional Dark Overlay */}
+  <div className="absolute inset-0 bg-black/60 z-10" />
 
-  {/* Hero Content */}
-  <div className="relative z-20 text-center text-white px-4 max-w-3xl">
+  {/* Centered Text Content */}
+  <div className="relative z-20 w-full h-full flex flex-col justify-center items-center text-center text-white px-4">
     <h1 className="text-4xl md:text-6xl font-bold mb-4 leading-tight">
       Websites, Stores & Digital Growth
     </h1>
-    <p className="text-lg md:text-xl mb-6">
+    <p className="text-lg md:text-xl mb-6 max-w-xl">
       Launch your brand with custom websites, eCommerce stores, and powerful digital marketing — all with Webeasy-Tech.
     </p>
     <a
@@ -114,6 +114,7 @@ export default function Hero() {
       Get Free Consultation
     </a>
   </div>
+
       {/* Text Content */}
       {/* <div className="text-center lg:text-left max-w-xl">
         <h1 className="text-4xl md:text-6xl font-bold text-white mb-4 leading-tight">

@@ -71,8 +71,6 @@
 // }
 
 
-
-
 import { motion } from 'framer-motion'
 // import Image from 'next/image'
 
@@ -116,7 +114,6 @@ export default function Hero() {
       Get Free Consultation
     </a>
   </div>
-</motion.section>
 
       {/* Text Content */}
       {/* <div className="text-center lg:text-left max-w-xl">

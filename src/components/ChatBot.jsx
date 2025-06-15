@@ -285,7 +285,7 @@ const CustomChatBot = () => {
   className={`p-2 rounded-full cursor-pointer fixed bottom-5 right-5 z-30 ${open ? "hidden" : "block"}`}
   onClick={() => setOpen(!open)}
 />
-      <div className={`fixed bottom-5 right-5 z-50 ${open ? "block" : "hidden"} bg-gray-900 rounded-xl p-2`}>
+      <div className={`fixed bottom-5 right-5 z-30 ${open ? "block" : "hidden"} bg-gray-900 rounded-xl p-2`}>
   <ChatBot
     options={{
       theme: customTheme,

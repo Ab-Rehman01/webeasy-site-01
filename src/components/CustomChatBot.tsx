@@ -98,7 +98,10 @@ const CustomChatBot = () => {
         <ChatBot
           options={{
             theme: customTheme,
-            chatHistory: { storageKey: "webeasy_leads" },
+            chatHistory: {
+              storageKey: "webeasy_chat", // unique key
+              storage: "localStorage",    // or "sessionStorage"
+            },
             header,
           }}
           flow={flow}

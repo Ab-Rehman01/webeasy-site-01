@@ -1,3 +1,4 @@
+"use client";
 // import { useState } from "react";
 // import { Link, redirect } from "react-router-dom";
 // import ChatBot from "react-chatbotify";
@@ -140,7 +141,7 @@
 // }
 
 // export default CustomChatBot
-"use client";
+
 import { useState } from "react";
 // import { Link } from "react-router-dom";
 import Link from "next/link";
@@ -281,19 +282,19 @@ const CustomChatBot = () => {
   alt="support"
   width={112}
   height={112}
-  className={`p-2 rounded-full cursor-pointer ${open ? "hidden" : "block"}`}
+  className={`p-2 rounded-full cursor-pointer fixed bottom-5 right-5 z-40 ${open ? "hidden" : "block"}`}
   onClick={() => setOpen(!open)}
 />
-      <div className={open ? "block" : "hidden"}>
-        <ChatBot
-          options={{
-            theme: customTheme,
-            chatHistory: { storageKey: "example_basic_form" },
-            header,
-          }}
-          flow={flow}
-        />
-      </div>
+      <div className={`fixed bottom-5 right-5 z-50 ${open ? "block" : "hidden"} bg-gray-900 rounded-xl p-2`}>
+  <ChatBot
+    options={{
+      theme: customTheme,
+      chatHistory: { storageKey: "example_basic_form" },
+      header,
+    }}
+    flow={flow}
+  />
+</div>
     </>
   );
 };

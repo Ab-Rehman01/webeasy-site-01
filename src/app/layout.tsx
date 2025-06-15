@@ -15,19 +15,15 @@ export default function RootLayout({ children }: { children: ReactNode }) {
     <html lang="en"><head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </head>
-      <body className="relative text-white">
+      <body className="relative text-white bg-gray-900 min-h-screen">
         {/* Background Image with Overlay */}
-        <div className="fixed inset-0 z-[-1]">
+        {/* <div className="fixed inset-0 z-[-1]">
           <div
             className="absolute bg-gray-900 inset-0 opacity-60"
             aria-hidden="true"
           ></div>
-          {/* <img
-            src="/images/contact-bg.jpg"
-            alt="background"
-            className="w-full h-full object-cover"
-          /> */}
-        </div>
+          
+        </div> */}
 
         <Navbar />
         <main className="px-0">{children}</main>

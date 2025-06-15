@@ -39,7 +39,7 @@ const testimonials = [
             </div>
           ))}
         </div>
-      </div>  
+      </div>
     </section>
   );
 }

@@ -282,7 +282,7 @@ const CustomChatBot = () => {
   alt="support"
   width={112}
   height={112}
-  className={`p-2 rounded-full cursor-pointer fixed bottom-5 right-5 z-40 ${open ? "hidden" : "block"}`}
+  className={`p-2 rounded-full cursor-pointer fixed bottom-5 right-5 z-30 ${open ? "hidden" : "block"}`}
   onClick={() => setOpen(!open)}
 />
       <div className={`fixed bottom-5 right-5 z-50 ${open ? "block" : "hidden"} bg-gray-900 rounded-xl p-2`}>

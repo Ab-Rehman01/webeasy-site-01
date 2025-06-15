@@ -3,6 +3,8 @@ import './globals.css';
 import { ReactNode } from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import ChatBot from '../components/ChatBot'
+import WhatsAppButton from '@/components/WhatsappButton'
 
 
 export const metadata = {
@@ -27,7 +29,9 @@ export default function RootLayout({ children }: { children: ReactNode }) {
 
         <Navbar />
         <main className="px-0">{children}</main>
-      
+        
+       <ChatBot />
+      <WhatsAppButton />
 
         <Footer />
       </body>

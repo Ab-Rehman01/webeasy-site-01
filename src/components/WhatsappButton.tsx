@@ -40,7 +40,7 @@
 const WhatsAppButton = () => (
   <a
     href="https://wa.me/+923242822577?text=السلام%20علیکم،%20میں%20مزید%20معلومات%20چاہتا%20ہوں۔"
-    className=" z-40 fixed bottom-5 right-25 bg-green-500 text-white p-2 rounded-full shadow-lg z-50"
+    className=" fixed bottom-5 right-5 bg-green-500 text-white p-2 rounded-full shadow-lg z-60"
 
     target="_blank"
     rel="noopener noreferrer"

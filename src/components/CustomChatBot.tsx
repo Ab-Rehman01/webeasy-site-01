@@ -1,30 +1,21 @@
-"use client";
-// src/components/CustomChatBot.tsx
-import { useState } from "react";
-import ChatBot from "react-chatbotify";
+'use client';
 
-import { FaWhatsapp } from "react-icons/fa";
+import { useState } from 'react';
+import ChatBot from 'react-chatbotify';
+
+// Define controller type
+interface BotController {
+  next: (path: string) => void;
+}
 
 const CustomChatBot = () => {
   const [open, setOpen] = useState(false);
-
-  const customTheme = {
-    embedded: true,
-    primaryColor: "#4A16D8",
-    secondaryColor: "#FF00FF",
-  };
-
-  const header = {
-    title: <h3>Webeasy Chat</h3>,
-    closeChatIcon: "/close.svg",
-  };
 
   const flow = {
     start: {
       message: "Welcome to Webeasy-Tech! 👋",
       path: "select_service",
     },
-
     select_service: {
       message: "What service are you interested in?",
       options: [
@@ -37,30 +28,36 @@ const CustomChatBot = () => {
       ],
       path: "show_templates",
     },
-
     show_templates: {
-      message: ({ userInput }) => `Great choice! Here’s what we offer for ${userInput}.`,
-      render: ({ userInput }) => (
-        <a
-          href="/templates"
-          className="px-4 py-2 bg-indigo-600 text-white rounded-full mt-4 inline-block"
-        >
-          View Templates
-        </a>
-      ),
-      path: "ask_to_proceed",
+      message: ({ userInput }: { userInput: string }) =>
+        `Great choice! Here’s what we offer for ${userInput}.`,
+      actions: {
+        render: ({ userInput }: { userInput: string }) => (
+          <a
+            href={`/templates?service=${encodeURIComponent(userInput)}`}
+            className="px-4 py-2 bg-indigo-600 text-white rounded-full mt-4 inline-block"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View Templates
+          </a>
+        ),
+        onRender: async ({ controller }: { controller: BotController }) => {
+          await new Promise((r) => setTimeout(r, 1000));
+          controller.next("ask_to_proceed");
+        },
+      },
     },
-
     ask_to_proceed: {
       message: "Would you like to proceed and speak to our team?",
       options: ["Yes, Continue", "No, Thanks"],
-      path: (params) => (params.userInput === "Yes, Continue" ? "collect_lead" : "exit"),
+      path: (params: { userInput: string }) =>
+        params.userInput === "Yes, Continue" ? "collect_lead" : "exit",
     },
-
     collect_lead: {
       message: "Please enter your name, WhatsApp number, and your message.",
       input: true,
-      path: async (params) => {
+      path: async (params: { userInput: string }) => {
         await fetch("/api/lead", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
@@ -69,17 +66,15 @@ const CustomChatBot = () => {
         return "thank_you";
       },
     },
-
     thank_you: {
       message: "Thanks! Our team will contact you shortly on WhatsApp 📩",
       path: "end",
     },
-
     exit: {
-      message: "No worries! You can reach us anytime via the WhatsApp icon below. 😊",
+      message:
+        "No worries! You can reach us anytime via the WhatsApp icon below. 😊",
       path: "end",
     },
-
     end: {
       message: "Have a great day! 👋",
     },
@@ -91,20 +86,22 @@ const CustomChatBot = () => {
         onClick={() => setOpen(!open)}
         className="fixed bottom-5 right-5 z-50 bg-green-500 text-white p-3 rounded-full shadow-lg"
       >
-        <FaWhatsapp size={28} />
+        Chat
       </button>
 
       {open && (
         <ChatBot
-          options={{
-            theme: customTheme,
-            chatHistory: {
-              storageKey: "webeasy_chat", // unique key
-              storage: "localStorage",    // or "sessionStorage"
-            },
-            header,
-          }}
+          id="webeasy-bot"
           flow={flow}
+          settings={{
+            header: {
+              title: <h3>Webeasy Chat</h3>,
+              closeChatIcon: "/close.svg",
+            },
+            chatHistory: {
+              storageKey: "webeasy_chat",
+            },
+          }}
         />
       )}
     </>

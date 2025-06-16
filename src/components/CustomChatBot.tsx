@@ -3,11 +3,6 @@
 import { useState } from 'react';
 import ChatBot from 'react-chatbotify';
 
-// Define controller type
-interface BotController {
-  next: (path: string) => void;
-}
-
 const CustomChatBot = () => {
   const [open, setOpen] = useState(false);
 
@@ -42,8 +37,7 @@ const CustomChatBot = () => {
             View Templates
           </a>
         ),
-        onRender: async ({ controller }: { controller: BotController }) => {
-          await new Promise((r) => setTimeout(r, 1000));
+        onRender: ({ controller }: { controller: { next: (path: string) => void } }) => {
           controller.next("ask_to_proceed");
         },
       },
@@ -71,8 +65,7 @@ const CustomChatBot = () => {
       path: "end",
     },
     exit: {
-      message:
-        "No worries! You can reach us anytime via the WhatsApp icon below. 😊",
+      message: "No worries! You can reach us anytime via the WhatsApp icon below. 😊",
       path: "end",
     },
     end: {

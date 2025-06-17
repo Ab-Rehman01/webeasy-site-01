@@ -18,7 +18,7 @@ export default function WebDevelopmentPage() {
       <h1 className="text-4xl font-bold text-blue-600 mb-4 text-center md:text-left">
         Professional Web Development
       </h1>
-      <p className="text-lg mb-8 text-center md:text-left text-black">
+      <p className="text-lg mb-8 text-center md:text-left text-white">
         Custom-built websites tailored to your business needs. Fast, responsive, and SEO-friendly.
       </p>
 
@@ -26,8 +26,8 @@ export default function WebDevelopmentPage() {
           <ScrollFadeIn direction="left">
         {/* Left Content */}
         <div>
-          <h2 className="text-2xl font-semibold mb-3 text-black">Our Services</h2>
-          <ul className="list-disc pl-6 mb-6 space-y-1 text-black">
+          <h2 className="text-2xl font-semibold mb-3 text-white">Our Services</h2>
+          <ul className="list-disc pl-6 mb-6 space-y-1 text-white">
             <li>Next.js / React Web Apps</li>
             <li>WordPress Development</li>
             <li>Landing Pages & Portfolios</li>
@@ -36,7 +36,7 @@ export default function WebDevelopmentPage() {
           </ul>
 
           <h2 className="text-2xl font-semibold mb-3">Why Choose Us?</h2>
-          <ul className="list-disc pl-6 mb-6 space-y-1 text-black">
+          <ul className="list-disc pl-6 mb-6 space-y-1 ">
             <li>Clean and Scalable Code</li>
             <li>SEO-Optimized Builds</li>
             <li>Quick Turnaround Time</li>

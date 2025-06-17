@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import ChatBot from 'react-chatbotify';
+// import 'react-chatbotify/dist/main.css';
 
 const CustomChatBot = () => {
   const [open, setOpen] = useState(false);
@@ -12,20 +13,25 @@ const CustomChatBot = () => {
       path: "select_service",
     },
     select_service: {
-      message: "What service are you interested in?",
-      options: [
-        "Shopify Store",
-        "WordPress Website",
-        "Custom Website",
-        "Portfolio Website",
-        "WhatsApp Marketing",
-        "Software Licensing",
-      ],
-      path: "show_templates",
-    },
+  message: "What service are you interested in?",
+  options: [
+    "Shopify Store",
+    "WordPress Website",
+    "Custom Website",
+    "Portfolio Website",
+    "WhatsApp Marketing",
+    "Software Licensing",
+  ],
+  input: false, // 👈 Disable typing
+  fallback: "❗ Please select from the options above.",
+  path: "show_templates",
+},
+
     show_templates: {
       message: ({ userInput }: { userInput: string }) =>
         `Great choice! Here’s what we offer for ${userInput}.`,
+      input: false,
+      fallback: "❗ Please select an option using the buttons below.",
       actions: {
         render: ({ userInput }: { userInput: string }) => (
           <a
@@ -37,25 +43,28 @@ const CustomChatBot = () => {
             View Templates
           </a>
         ),
-        onRender: ({ controller }: { controller: { next: (path: string) => void } }) => {
+        onRender: async ({ controller }: { controller: { next: (path: string) => void } }) => {
+          await new Promise((r) => setTimeout(r, 3000));
           controller.next("ask_to_proceed");
         },
       },
     },
-    ask_to_proceed: {
-      message: "Would you like to proceed and speak to our team?",
-      options: ["Yes, Continue", "No, Thanks"],
-      path: (params: { userInput: string }) =>
-        params.userInput === "Yes, Continue" ? "collect_lead" : "exit",
-    },
+   ask_to_proceed: {
+  message: "Would you like to proceed and speak to our team?",
+  options: ["Yes, Continue", "No, Thanks"],
+  input: false, // 👈 Disable typing
+  fallback: "Please select an option to proceed.",
+  path: ({ userInput }: { userInput: string }) =>
+    userInput === "Yes, Continue" ? "collect_lead" : "exit",
+},
     collect_lead: {
-      message: "Please enter your name, WhatsApp number, and your message.",
+      message: "Please enter your name, WhatsApp number, and message.",
       input: true,
-      path: async (params: { userInput: string }) => {
+      path: async ({ userInput }: { userInput: string }) => {
         await fetch("/api/lead", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ lead: params.userInput }),
+          body: JSON.stringify({ lead: userInput }),
         });
         return "thank_you";
       },
@@ -65,7 +74,8 @@ const CustomChatBot = () => {
       path: "end",
     },
     exit: {
-      message: "No worries! You can reach us anytime via the WhatsApp icon below. 😊",
+      message:
+        "No worries! You can reach us anytime via the WhatsApp icon below. 😊",
       path: "end",
     },
     end: {

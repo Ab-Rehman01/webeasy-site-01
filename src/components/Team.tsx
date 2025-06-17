@@ -27,7 +27,7 @@ const teamMembers = [
   {
     name: 'Faisal Malik',
     role: 'Web Developer',
-    image: '/team/dev.jpg',
+    image: '/team/158171475.jpeg',
   },
   {
     name: 'Ayesha Noor',

@@ -8,7 +8,7 @@ import { categories } from "../lib/categories";
 export default function TemplateCategories() {
   return (
     <section className="py-12 px-4 max-w-7xl mx-auto">
-      <h2 className="text-3xl font-bold text-center mb-10 text-black">Categories</h2>
+      <h2 className="text-3xl font-bold text-center mb-10 text-blue-500">Categories</h2>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
         {categories.map((category, index) => (

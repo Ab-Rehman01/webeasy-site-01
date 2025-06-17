@@ -26,7 +26,7 @@ export default function WebDevelopmentPage() {
           <ScrollFadeIn direction="left">
         {/* Left Content */}
         <div>
-          <h2 className="text-2xl font-semibold mb-3 text-white">Our Services</h2>
+          <h2 className="text-2xl font-semibold mb-3 text-blue-700">Our Services</h2>
           <ul className="list-disc pl-6 mb-6 space-y-1 text-white">
             <li>Next.js / React Web Apps</li>
             <li>WordPress Development</li>
@@ -35,7 +35,7 @@ export default function WebDevelopmentPage() {
             <li>Performance Optimization</li>
           </ul>
 
-          <h2 className="text-2xl font-semibold mb-3">Why Choose Us?</h2>
+          <h2 className="text-2xl font-semibold mb-3 text-blue-700">Why Choose Us?</h2>
           <ul className="list-disc pl-6 mb-6 space-y-1 ">
             <li>Clean and Scalable Code</li>
             <li>SEO-Optimized Builds</li>

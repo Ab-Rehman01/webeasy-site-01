@@ -9,16 +9,46 @@ import CustomChatBot from '@/components/CustomChatBot';
 
 
 export const metadata = {
-  title: 'Webeasy-Tech',
-  description: 'Professional digital services: websites, Shopify, marketing, and software.',
+  title: 'Webeasy-Tech | Web Development, Shopify, SEO & Digital Marketing Services',
+description: 'Launch your brand with expert web development, Shopify stores, SEO services, and custom digital solutions by Webeasy-Tech.',
+
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang="en"><head>
+    <html lang="en">
+      <head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/images/favicon/favicon.ico" />
+
+        {/* Social Meta Tags */}
+        <meta property="og:title" content="Webeasy-Tech | Web Development & Marketing Services" />
+        <meta property="og:description" content="Launch your digital brand with expert services by Webeasy-Tech." />
+        <meta property="og:image" content="/og-image.png" />
+        <meta property="og:url" content="https://webeasy-tech.vercel.app" />
+        <meta name="twitter:card" content="summary_large_image" />
+
+        {/* Structured Data */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "LocalBusiness",
+              name: "Webeasy-Tech",
+              url: "https://webeasy-tech.vercel.app",
+              description: "Professional web development, Shopify, and digital marketing services.",
+              sameAs: [
+                "https://www.facebook.com/webeasytech",
+                "https://www.linkedin.com/company/webeasytech"
+              ]
+            }),
+          }}
+        />
       </head>
+
       <body className="relative text-white bg-gray-900 min-h-screen">
+
         {/* Background Image with Overlay */}
         {/* <div className="fixed inset-0 z-[-1]">
           <div

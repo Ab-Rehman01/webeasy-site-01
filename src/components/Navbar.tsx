@@ -6,12 +6,17 @@ export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false)
 
   return (
-    <nav className="bg-gray-900 shadow-md py-4 px-6 sticky top-0 z-50">
-            <div className="flex items-center justify-between container mx-auto">
+    <nav className="bg-gray-900 shadow-md py-2 px-6 sticky top-0 z-50">
+      <div className="flex items-center justify-between container mx-auto">
         {/* Logo + Phone */}
         <div className="flex items-center space-x-4">
-          <Image src="images/420193098_122110677836242846_4605351335286497655_n.jpg" alt="WebEasy Logo" width={120} height={50} />
-
+          <Image
+            src="/images/420193098_122110677836242846_4605351335286497655_n.jpg"
+            alt="WebEasy Logo"
+            width={120}
+            height={35} // instead of 50
+            className="h-[35px] w-auto object-contain"
+          />
           <h1 className="text-2xl font-bold text-white">Webeasy-Tech</h1>
           <a
             href="tel:+923242822577"
@@ -48,7 +53,7 @@ export default function Navbar() {
           <li>
             <a href="https://wa.me/923242822577" target="_blank" rel="noopener noreferrer">WhatsApp</a>
           </li>
-           <li><a href="/contact">Contact Us</a></li>
+          <li><a href="/contact">Contact Us</a></li>
         </ul>
 
         {/* Mobile Menu Button */}
@@ -76,7 +81,7 @@ export default function Navbar() {
           </li>
           <li><a href="/testimonials" onClick={() => setMenuOpen(false)}>Testimonials</a></li>
           <li><a href="https://wa.me/923242822577" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
-           <li><a href="/contact">Contact Us</a></li>
+          <li><a href="/contact">Contact Us</a></li>
         </ul>
       )}
     </nav>

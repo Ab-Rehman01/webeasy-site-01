@@ -106,16 +106,20 @@ export default function Hero() {
           },
         }}
       >
-        <motion.h1 initial={{ opacity: 0 }}
-         animate={{ opacity: 1 }} 
-         transition={{ delay: 0.2 }}
-          
-  className="text-4xl md:text-6xl font-bold mb-4 leading-tight"
->   Websites, Stores & Digital Growth
+        <motion.h1  className="text-4xl md:text-6xl font-bold mb-4 leading-tight"
+          variants={{
+            hidden: { opacity: 0, y: 20 },
+            visible: { opacity: 1, y: 0 },
+          }}
+        >  Websites, Stores & Digital Growth
 
 </motion.h1>
-        <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.2 }}  className="text-lg md:text-xl mb-6 max-w-xl"
->
+        <motion.p  className="text-lg md:text-xl mb-6 max-w-xl"
+          variants={{
+            hidden: { opacity: 0, y: 20 },
+            visible: { opacity: 1, y: 0 },
+          }}
+        >
   Launch your brand with custom websites, eCommerce stores, and powerful digital marketing — all with Webeasy-Tech.
 </motion.p>
         <motion.a
@@ -123,6 +127,10 @@ export default function Hero() {
           target="_blank"
           rel="noopener noreferrer"
           className="inline-block bg-green-500 hover:bg-green-600 text-white px-6 py-3 text-lg font-semibold rounded-full transition-all duration-300"
+          variants={{
+            hidden: { opacity: 0, y: 20 },
+            visible: { opacity: 1, y: 0 },
+          }}
         >
           Get Free Consultation
         </motion.a>

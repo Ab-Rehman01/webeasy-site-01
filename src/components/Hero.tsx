@@ -71,7 +71,7 @@
 // }
 
 
-// import { motion } from 'framer-motion'
+import { motion } from 'framer-motion'
 // import Image from 'next/image'
 export default function Hero() {
   return (
@@ -92,22 +92,42 @@ export default function Hero() {
       <div className="absolute inset-0 bg-black/60 z-10" />
 
       {/* Centered Text Content */}
-      <div className="relative z-20 w-full h-full flex flex-col justify-center items-center text-center text-white px-4">
-        <h1 className="text-4xl md:text-6xl font-bold mb-4 leading-tight">
-          Websites, Stores & Digital Growth
-        </h1>
-        <p className="text-lg md:text-xl mb-6 max-w-xl">
-          Launch your brand with custom websites, eCommerce stores, and powerful digital marketing — all with Webeasy-Tech.
-        </p>
-        <a
+      
+<motion.div
+        className="relative z-20 w-full h-full flex flex-col justify-center items-center text-center text-white px-4 md:px-8"
+        initial="hidden"
+        animate="visible"
+        variants={{
+          hidden: {},
+          visible: {
+            transition: {
+              staggerChildren: 0.3,
+            },
+          },
+        }}
+      >
+        <motion.h1 initial={{ opacity: 0 }}
+         animate={{ opacity: 1 }} 
+         transition={{ delay: 0.2 }}
+          
+  className="text-4xl md:text-6xl font-bold mb-4 leading-tight"
+>   Websites, Stores & Digital Growth
+
+</motion.h1>
+        <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.2 }}  className="text-lg md:text-xl mb-6 max-w-xl"
+>
+  Launch your brand with custom websites, eCommerce stores, and powerful digital marketing — all with Webeasy-Tech.
+</motion.p>
+        <motion.a
           href="https://wa.me/+923242822577"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-block bg-green-500 hover:bg-green-600 text-white px-6 py-3 text-lg font-semibold rounded-full transition-all duration-300"
         >
           Get Free Consultation
-        </a>
-      </div>
+        </motion.a>
+        </motion.div>
+    
     </section>
   );
 }

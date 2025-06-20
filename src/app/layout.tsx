@@ -43,7 +43,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
               url: "https://webeasy-tech.vercel.app",
               description: "Professional web development, Shopify, and digital marketing services.",
               sameAs: [
-                "https://www.facebook.com/webeasytech",
+                "https://www.facebook.com/webezee.host",
                 "https://www.linkedin.com/company/webeasytech"
               ]
             }),

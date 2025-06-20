@@ -1,15 +1,17 @@
 'use client'
 
 import { useState } from 'react'
-
+import Image from 'next/image'
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false)
 
   return (
     <nav className="bg-gray-900 shadow-md py-4 px-6 sticky top-0 z-50">
-      <div className="flex items-center justify-between container mx-auto">
+            <div className="flex items-center justify-between container mx-auto">
         {/* Logo + Phone */}
         <div className="flex items-center space-x-4">
+          <Image src="images/420193098_122110677836242846_4605351335286497655_n.jpg" alt="WebEasy Logo" width={120} height={50} />
+
           <h1 className="text-2xl font-bold text-white">Webeasy-Tech</h1>
           <a
             href="tel:+923242822577"
@@ -18,7 +20,6 @@ export default function Navbar() {
             <span className="mr-1">📞</span> +92 324 2822577
           </a>
         </div>
-
         {/* Desktop Menu */}
         <ul className="hidden md:flex space-x-6 text-white text-sm font-medium items-center">
           <li><a href="/">Home</a></li>

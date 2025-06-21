@@ -31,7 +31,7 @@ export default function ContactForm() {
           formRef.current,
           "23-5vuksDomrEBbUl"
         )
-        .then(( EmailJSResponseStatus) => {
+        .then((result: EmailJSResponseStatus) => {
           setStatus("✅ Message sent successfully!");
           setFormData({ name: "", email: "", phone: "", message: "" });
         })

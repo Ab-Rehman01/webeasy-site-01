@@ -32,9 +32,11 @@ export default function ContactForm() {
           "23-5vuksDomrEBbUl"
         )
         .then((result: EmailJSResponseStatus) => {
-          setStatus("✅ Message sent successfully!");
-          setFormData({ name: "", email: "", phone: "", message: "" });
-        })
+  console.log(result.text); // optional
+  setStatus("✅ Message sent successfully!");
+  setFormData({ name: "", email: "", phone: "", message: "" });
+})
+
         .catch((error) => {
           setStatus("❌ Failed to send. Try again.");
           console.error(error);

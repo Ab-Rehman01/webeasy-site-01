@@ -64,7 +64,18 @@ import { FaCheckCircle } from 'react-icons/fa'
 import { motion } from 'framer-motion'
 
 import ServiceHero from '@/components/ServiceHero'
-
+export const metadata = {
+  title: 'Our Services | Webeasy-Tech',
+  description: 'Explore our wide range of services — web development, SEO, Shopify, and digital marketing tailored for your business.',
+  keywords: 'Web development, SEO, digital marketing, Shopify, online services',
+  openGraph: {
+    title: 'Our Services | Webeasy-Tech',
+    description: 'Grow your business online with custom digital services from Webeasy-Tech.',
+    url: 'https://webeasy-tech.vercel.app/services',
+    type: 'website',
+    images: ['/og-image.png'],
+  },
+};
 const services = [
   {
     title: 'Web Development',

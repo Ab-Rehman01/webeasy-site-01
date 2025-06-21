@@ -9,7 +9,18 @@ interface Props {
     slug: string;
   };
 }
-
+export const metadata = {
+  title: 'Website Templates | Webeasy-Tech',
+  description: 'Choose from premium website templates crafted for speed, design, and conversions — all by Webeasy-Tech.',
+  keywords: 'website templates, free templates, portfolio, business designs',
+  openGraph: {
+    title: 'Website Templates | Webeasy-Tech',
+    description: 'Browse high-quality, ready-to-use templates for business, portfolio, and eCommerce websites.',
+    url: 'https://webeasy-tech.vercel.app/templates',
+    type: 'website',
+    images: ['/og-image.png'],
+  },
+};
 export default function CategoryPage({ params }: Props) {
   const category = categories.find((cat) => cat.slug === params.slug);
 

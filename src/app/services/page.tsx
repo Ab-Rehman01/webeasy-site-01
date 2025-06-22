@@ -63,13 +63,13 @@
 import ServiceSection from '@/components/Service';
 
 export const metadata = {
-  title: 'Our Services | Webeasy-Tech',
+  title: 'Our Services | Webezee-Tech',
   description: 'Explore our wide range of services — web development, SEO, Shopify, and digital marketing tailored for your business.',
   keywords: 'Web development, SEO, digital marketing, Shopify, online services',
   openGraph: {
-    title: 'Our Services | Webeasy-Tech',
+    title: 'Our Services | Webezee-Tech',
     description: 'Grow your business online with custom digital services from Webeasy-Tech.',
-    url: 'https://webeasy-tech.vercel.app/services',
+    url: 'https://webezee-tech.vercel.app/services',
     type: 'website',
     images: ['/og-image.png'],
   },

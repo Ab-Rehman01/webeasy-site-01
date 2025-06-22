@@ -10,13 +10,13 @@ interface Props {
   };
 }
 export const metadata = {
-  title: 'Website Templates | Webeasy-Tech',
-  description: 'Choose from premium website templates crafted for speed, design, and conversions — all by Webeasy-Tech.',
+  title: 'Website Templates | Webezee-Tech',
+  description: 'Choose from premium website templates crafted for speed, design, and conversions — all by Webezee-Tech.',
   keywords: 'website templates, free templates, portfolio, business designs',
   openGraph: {
-    title: 'Website Templates | Webeasy-Tech',
+    title: 'Website Templates | Webezee-Tech',
     description: 'Browse high-quality, ready-to-use templates for business, portfolio, and eCommerce websites.',
-    url: 'https://webeasy-tech.vercel.app/templates',
+    url: 'https://webezee-tech.vercel.app/templates',
     type: 'website',
     images: ['/og-image.png'],
   },

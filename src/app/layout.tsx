@@ -27,11 +27,13 @@ export default function RootLayout({ children }: { children: ReactNode }) {
 
         {/* Social Meta Tags */}
         <meta name="google-site-verification" content="jCY_UMA1Bc0fTorzhjAj65dMcMPUsjhJzx2rUe9y8mA" />
-        <meta property="og:title" content="Webeasy-Tech | Web Development & Marketing Services" />
+        <meta property="og:title" content="Webezee-Tech | Web Development & Marketing Services" />
         <meta property="og:description" content="Launch your digital brand with expert services by Webeasy-Tech." />
         <meta property="og:image" content="/og-image.png" />
-        <meta property="og:url" content="https://webeasy-tech.vercel.app" />
+        <meta property="og:url" content="https://webezee-tech.vercel.app/" />
         <meta name="twitter:card" content="summary_large_image" />
+        <meta name="robots" content="noindex, nofollow" />
+
 
         {/* Structured Data */}
         <script

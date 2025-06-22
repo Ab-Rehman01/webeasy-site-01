@@ -10,7 +10,7 @@ export default function Head() {
 
       {/* Social Meta Tags */}
       <meta name="google-site-verification" content="jCY_UMA1Bc0fTorzhjAj65dMcMPUsjhJzx2rUe9y8mA" />
-      <meta property="og:image" content="/og-image.png" />
+     <meta property="og:image" content="https://webezee-tech.vercel.app/og-image.png" />
       <meta property="og:url" content="https://webezee-tech.vercel.app/" />
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="robots" content="index, nofollow" />

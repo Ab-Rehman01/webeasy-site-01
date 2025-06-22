@@ -11,9 +11,21 @@ import CustomChatBot from '@/components/CustomChatBot';
 export const metadata = {
   title: 'Webeasy-Tech | Web Development, Shopify, SEO & Digital Marketing Services',
   description: 'Launch your brand with expert web development, Shopify stores, SEO services, and custom digital solutions by Webeasy-Tech.',
-  verification: {
-    google: 'yF4LnENpvUiPmi87UHhkt-9nw4ygo8tuX9YlTHLCiiU', // ← your actual code
+
+  icons: {
+    icon: '/images/favicon/favicon.ico',
+    shortcut: '/images/favicon/favicon-32x32.png',
+    apple: '/images/favicon/apple-touch-icon.png',
+    other: {
+      rel: 'manifest',
+      url: '/images/favicon/site.webmanifest',
+    },
   },
+
+  verification: {
+    google: 'yF4LnENpvUiPmi87UHhkt-9nw4ygo8tuX9YlTHLCiiU',
+  },
+
   openGraph: {
     title: 'Webeasy-Tech | Web Development & Marketing Services',
     description: 'Launch your brand with expert web development, Shopify stores, and SEO.',
@@ -28,18 +40,19 @@ export const metadata = {
       },
     ],
   },
+
   twitter: {
     card: 'summary_large_image',
     title: 'Webeasy-Tech | Web Development & Marketing',
     description: 'Launch your brand with custom web and SEO solutions.',
     images: ['https://webezee-tech.vercel.app/og-image.png'],
   },
+
   robots: {
     index: true,
     follow: true,
   },
 };
-
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (

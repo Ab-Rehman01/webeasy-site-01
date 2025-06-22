@@ -13,7 +13,7 @@ export default function Head() {
      <meta property="og:image" content="https://webezee-tech.vercel.app/og-image.png" />
       <meta property="og:url" content="https://webezee-tech.vercel.app/" />
       <meta name="twitter:card" content="summary_large_image" />
-      <meta name="robots" content="index, nofollow" />
+      
 
       {/* Structured Data */}
       <script

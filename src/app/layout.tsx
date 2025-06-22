@@ -10,9 +10,36 @@ import CustomChatBot from '@/components/CustomChatBot';
 
 export const metadata = {
   title: 'Webeasy-Tech | Web Development, Shopify, SEO & Digital Marketing Services',
-description: 'Launch your brand with expert web development, Shopify stores, SEO services, and custom digital solutions by Webeasy-Tech.',
-
+  description: 'Launch your brand with expert web development, Shopify stores, SEO services, and custom digital solutions by Webeasy-Tech.',
+  verification: {
+    google: 'yF4LnENpvUiPmi87UHhkt-9nw4ygo8tuX9YlTHLCiiU', // ← your actual code
+  },
+  openGraph: {
+    title: 'Webeasy-Tech | Web Development & Marketing Services',
+    description: 'Launch your brand with expert web development, Shopify stores, and SEO.',
+    url: 'https://webezee-tech.vercel.app/',
+    type: 'website',
+    images: [
+      {
+        url: 'https://webezee-tech.vercel.app/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'Webeasy-Tech OG Image',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Webeasy-Tech | Web Development & Marketing',
+    description: 'Launch your brand with custom web and SEO solutions.',
+    images: ['https://webezee-tech.vercel.app/og-image.png'],
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
+
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (

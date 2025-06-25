@@ -33,7 +33,7 @@ export const metadata = {
     type: 'website',
     images: [
       {
-        url: 'https://webezee-tech.vercel.app/og-image-v4.png',
+        url: 'https://webezee-tech.vercel.app/og-image.png',
         width: 1200,
         height: 630,
         alt: 'Webeasy-Tech OG Image',
@@ -45,7 +45,7 @@ export const metadata = {
     card: 'summary_large_image',
     title: 'Webeasy-Tech | Web Development & Marketing',
     description: 'Launch your brand with custom web and SEO solutions.',
-    images: ['https://webezee-tech.vercel.app/og-image-v4.png'],
+    images: ['https://webezee-tech.vercel.app/og-image.png'],
   },
 
   robots: {

@@ -33,7 +33,7 @@ export const metadata = {
     type: 'website',
     images: [
       {
-        url: 'https://webezee-tech.vercel.app/og-image.png',
+        url: 'https://webezee-tech.vercel.app/og-image-v11.png',
         width: 1200,
         height: 630,
         alt: 'Webeasy-Tech OG Image',

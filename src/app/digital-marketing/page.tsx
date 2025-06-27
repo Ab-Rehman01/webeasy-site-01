@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 export default function DigitalMarketingPage() {
   return (
     <section className="p-6 max-w-6xl mx-auto">
-      <h1 className="text-4xl font-bold text-green-600 mb-4">Digital Marketing Services</h1>
+      <h1 className="text-4xl font-bold text-green-600 mb-4 pt-16">Digital Marketing Services</h1>
       <p className="text-lg mb-6">
         We help your brand grow through powerful digital marketing strategies and campaigns.
       </p>

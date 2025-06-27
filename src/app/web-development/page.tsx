@@ -15,7 +15,7 @@ export default function WebDevelopmentPage() {
   return (
     <section className="p-6 max-w-6xl mx-auto">
       {/* Hero Section */}
-      <h1 className="text-4xl font-bold text-blue-600 mb-4 text-center md:text-left">
+      <h1 className="text-4xl font-bold text-blue-600 mb-4 text-center md:text-left pt-16">
         Professional Web Development
       </h1>
       <p className="text-lg mb-8 text-center md:text-left text-white">

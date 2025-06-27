@@ -13,12 +13,12 @@ export default function Navbar() {
         <div className="flex items-center space-x-4">
           <Image
             src="/images/420193098_122110677836242846_4605351335286497655_n.jpg"
-            alt="WebEasy Logo"
+            alt="WebEzee Logo"
             width={110}
             height={35}
             className="h-[35px] w-auto object-contain"
           />
-          <h1 className="text-xl font-bold">Webeasy-Tech</h1>
+          <h1 className="text-xl font-bold">WebEzee-Tech</h1>
           <a
             href="tel:+923242822577"
             className="hidden md:flex items-center text-sm text-green-400 hover:text-green-300"
@@ -38,8 +38,9 @@ export default function Navbar() {
               <li><a href="/seo-services" className="block px-4 py-2 hover:bg-gray-700">SEO Services</a></li>
             </ul>
           </li>
-          <li><a href="/testimonials" className="hover:text-green-400">Testimonials</a></li>
+          {/* <li><a href="/testimonials" className="hover:text-green-400">Testimonials</a></li> */}
           <li><a href="https://wa.me/923242822577" target="_blank" rel="noopener noreferrer" className="hover:text-green-400">WhatsApp</a></li>
+              <li><a href="/about" onClick={() => setMenuOpen(false)}>About Us</a></li>
           <li><a href="/contact" className="hover:text-green-400">Contact Us</a></li>
         </ul>
 
@@ -66,9 +67,12 @@ export default function Navbar() {
               </ul>
             </details>
           </li>
-          <li><a href="/testimonials" onClick={() => setMenuOpen(false)}>Testimonials</a></li>
+     
           <li><a href="https://wa.me/923242822577" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
+          <li><a href="/about" onClick={() => setMenuOpen(false)}>About Us</a></li>
+
           <li><a href="/contact" onClick={() => setMenuOpen(false)}>Contact Us</a></li>
+
         </ul>
       )}
     </nav>

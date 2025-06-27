@@ -9,8 +9,22 @@ import CustomChatBot from '@/components/CustomChatBot';
 
 
 export const metadata = {
-  title: 'Webeasy-Tech | Web Development, Shopify, SEO & Digital Marketing Services',
-  description: 'Launch your brand with expert web development, Shopify stores, SEO services, and custom digital solutions by Webezee-Tech.',
+   title: 'WebEzee-Tech | Web Development, Shopify, SEO & Digital Marketing Services ',
+  description:  'Launch your brand with expert web development, Shopify stores, SEO services, and custom digital solutions Web Development in Pakistan by Webezee-Tech.',
+
+  keywords: [
+    'Web Development in Pakistan',
+    'Shopify Development',
+    'SEO Services Optimization',
+    'Digital Marketing',
+    'Responsive Web Design',
+    'E-commerce Solutions',
+    'Webezee Tech',
+    'Next.js Developer',
+    'Website Maintenance',
+    'Branding',
+    'Next.js Development'
+  ],
 
   icons: {
     icon: '/images/favicon/favicon.ico',

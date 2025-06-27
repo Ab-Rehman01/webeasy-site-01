@@ -71,7 +71,7 @@ export const metadata = {
     description: 'Grow your business online with custom digital services from Webeasy-Tech.',
     url: 'https://webezee-tech.vercel.app/services',
     type: 'website',
-    images: ['/og-image.png'],
+    images: ['https://webezee-tech.vercel.app/og-services.png'],
   },
 };
  export default function ServicePage() {

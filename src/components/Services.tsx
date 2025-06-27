@@ -11,7 +11,7 @@ import {
 } from 'react-icons/fa'
 import { PricingPackages } from './PricingPackages'
 import WhatsAppSoftware from './Whatsappsoftware';
-import { SiNextdotjs, SiReact } from 'react-icons/si'; // import first
+import { SiNextdotjs } from 'react-icons/si'; // import first
 import Link from 'next/link';
 
 const services = [
@@ -43,7 +43,7 @@ const services = [
   },
   {
     icon: FaShieldAlt,
-    title: 'Software & Licensing',
+    title: 'Software & Licensing ',
     desc: 'Licensed software with installation, activation, and lifetime support – for Windows, Office, Antivirus & more.',
   },
   {
@@ -80,7 +80,7 @@ export default function Services() {
           transition={{ duration: 0.7 }}
           className="text-4xl font-bold mb-4"
         >
-          Our Services
+          Our Services 
         </motion.h2>
         <p className="text-gray-400 text-lg leading-relaxed">
           We offer a wide range of digital solutions tailored to help your business grow online — from sleek websites to

@@ -9,7 +9,7 @@ export const metadata = {
     description: 'Meet the experts behind your brand’s digital success. Webezee-Tech delivers top-tier development and marketing services.',
     url: 'https://webezee-tech.vercel.app/about',
     type: 'website',
-    images: ['/og-image.png'],
+    images: ['https://webezee-tech.vercel.app/og-image-v2.png'],
   },
 };
 

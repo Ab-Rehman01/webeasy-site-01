@@ -88,9 +88,9 @@ export default function ShopifyDevelopmentPage() {
           </div>
         </section>
         <div className="flex gap-4 items-center justify-center py-4">
-          <Image src="/badges/shopify-badge.png" alt="Shopify Expert" width={100} height={40} />
-          <Image src="/badges/liquid.png" alt="Liquid Theme" width={80} height={40} />
-          <Image src="/badges/seo.png" alt="SEO Optimized" width={90} height={40} />
+          <Image src="/images/shopify.svg" alt="Shopify Expert" width={100} height={40} />
+          <Image src="/images/code.png" alt="Liquid Theme" width={80} height={40} />
+          <Image src="/images/seo-tag.svg" alt="SEO Optimized" width={90} height={40} />
         </div>
 
 

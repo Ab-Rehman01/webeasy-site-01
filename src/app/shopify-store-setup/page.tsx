@@ -1,5 +1,7 @@
 // app/shopify-development/page.tsx
+import Faq from '@/components/Faq';
 import ShopifyHero from '@/components/ShopifyHero';
+import Testimonials from '@/components/Testimonials';
 import { Metadata } from 'next';
 import Image from 'next/image';
 
@@ -94,7 +96,9 @@ export default function ShopifyDevelopmentPage() {
 
         <div className="py-12 bg-green-900 text-white text-center rounded-lg mt-12">
           <h2 className="text-3xl font-bold text-center mb-10">What Our Clients Say</h2>
+          <Testimonials/>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto px-4 pb-6">
+          
 
             <div className="bg-gray-800 p-4 rounded-xl shadow">
               <p className="italic text-gray-300">“They built my Shopify store in record time and helped with SEO. Sales went up 3x within weeks!”</p>
@@ -122,24 +126,8 @@ export default function ShopifyDevelopmentPage() {
             </div>
           </div>
 
-          <div className="py-14 bg-gray-100 text-gray-800 pt-4">
-            <div className="max-w-4xl mx-auto px-4">
-              <h2 className="text-3xl font-bold mb-6 text-center">Frequently Asked Questions</h2>
-              <div className="space-y-6">
-                <div>
-                  <h3 className="font-semibold text-lg">How long does it take to build a Shopify store?</h3>
-                  <p className="text-sm text-gray-600 mt-1">Usually 7–10 days depending on the store size and custom features.</p>
-                </div>
-                <div>
-                  <h3 className="font-semibold text-lg">Do you provide Shopify training?</h3>
-                  <p className="text-sm text-gray-600 mt-1">Yes, we offer training via video call and provide a PDF guide for ongoing help.</p>
-                </div>
-
-
-              </div>
-            </div>
-          </div>
-        </div>
+         </div>
+         <Faq />
         <div className="text-center mt-10">
           <a href="https://wa.me/923242822577" className="inline-block bg-green-700 text-white px-6 py-3 rounded-lg hover:bg-green-800 transition">
             Start Your Shopify Project Today

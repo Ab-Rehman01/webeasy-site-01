@@ -21,29 +21,42 @@ export default function ContactForm() {
   };
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
+  e.preventDefault();
+  if (!formRef.current) return;
+  setStatus("");
 
-    if (formRef.current) {
-      emailjs
-        .sendForm(
-          "service_w28ct9q",
-          "template_t6y6n8l",
-          formRef.current,
-          "23-5vuksDomrEBbUl"
-        )
-        .then((result: EmailJSResponseStatus) => {
-  console.log(result.text); // optional
-  setStatus("✅ Message sent successfully!");
-  setFormData({ name: "", email: "", phone: "", message: "" });
-})
+  // 1. Admin Notification
+  emailjs
+    .sendForm(
+      "service_uhx8h49",
+      "template_hecxeia",  // admin template ID
+      formRef.current,
+      "23-5vuksDomrEBbUl"
+    )
+    .then(() => {
+      console.log("✅ Admin notified");
+    })
+    .catch((error) => {
+      console.error("❌ Failed to notify admin:", error);
+    });
 
-        .catch((error) => {
-          setStatus("❌ Failed to send. Try again.");
-          console.error(error);
-        });
-    }
-  };
-
+  // 2. User Auto Reply
+  emailjs
+    .sendForm(
+      "service_w28ct9q",
+      "template_t6y6n8l", // user auto-reply template ID
+      formRef.current,
+      "23-5vuksDomrEBbUl"
+    )
+    .then(() => {
+      setStatus("✅ Message sent successfully!");
+      setFormData({ name: "", email: "", phone: "", message: "" });
+    })
+    .catch((error) => {
+      setStatus("❌ Failed to send message. Try again.");
+      console.error(error);
+    });
+};
   return (
     <div className="min-h-screen bg-gradient-to-tr from-blue-100 via-white to-blue-200 flex items-center justify-center px-4 py-10">
       <div className="bg-white/60 backdrop-blur-md shadow-xl rounded-2xl p-8 max-w-2xl w-full">

@@ -26,8 +26,8 @@ export default function ContactForm() {
     if (formRef.current) {
       emailjs
         .sendForm(
-          "service_784c58v",
-          "template_3j1w7vc",
+          "service_w28ct9q",
+          "template_t6y6n8l",
           formRef.current,
           "23-5vuksDomrEBbUl"
         )

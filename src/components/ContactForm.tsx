@@ -29,7 +29,7 @@ export default function ContactForm() {
   emailjs
     .sendForm(
       "service_uhx8h49",
-      "template_eou97bd",  // admin template ID
+      "template_lv6tr26",  // admin template ID
       formRef.current,
       "23-5vuksDomrEBbUl"
     )

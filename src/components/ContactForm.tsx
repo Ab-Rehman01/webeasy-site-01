@@ -123,7 +123,7 @@ export default function Contact() {
             className="w-full p-3 bg-gray-900 rounded border border-gray-700 focus:outline-none focus:ring-2 focus:ring-purple-600"
           />
 
-          <button
+           <button
             type="submit"
             disabled={loading}
             className="w-full bg-purple-600 hover:bg-purple-700 text-white py-3 rounded transition duration-300 font-medium flex items-center justify-center"
@@ -155,7 +155,6 @@ export default function Contact() {
               "Send Message"
             )}
           </button>
-
           {status && (
             <p
   className={`text-sm mt-3 ${

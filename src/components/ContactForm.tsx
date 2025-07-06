@@ -34,7 +34,7 @@ export default function Contact() {
   setStatus("");
 
   // 1. Admin Notification.
-  setLoading(true);
+
   emailjs
     .sendForm(
       "service_uhx8h49",

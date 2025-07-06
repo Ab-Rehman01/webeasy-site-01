@@ -32,13 +32,13 @@ export default function Contact() {
   e.preventDefault();
   if (!formRef.current) return;
   setStatus("");
+  setLoading(true);
 
-  // 1. Admin Notification.
-
+  // 1. Notify Admin
   emailjs
     .sendForm(
       "service_uhx8h49",
-      "template_lv6tr26",  // admin template ID
+      "template_lv6tr26",
       formRef.current,
       "23-5vuksDomrEBbUl"
     )
@@ -49,24 +49,26 @@ export default function Contact() {
       console.error("❌ Failed to notify admin:", error);
     });
 
-  // 2. User Auto Reply
-  setLoading(true);
+  // 2. Auto-Reply to User
   emailjs
     .sendForm(
       "service_w28ct9q",
-      "template_t6y6n8l", // user auto-reply template ID
+      "template_t6y6n8l",
       formRef.current,
       "23-5vuksDomrEBbUl"
     )
     .then(() => {
       setStatus("✅ Message sent successfully!");
       setFormData({ name: "", email: "", phone: "", message: "" });
+      setLoading(false); // ✅ Reset button
     })
     .catch((error) => {
       setStatus("❌ Failed to send message. Try again.");
       console.error(error);
+      setLoading(false); // ✅ Reset even on failure
     });
 };
+
 
   return (
     <section id="contact" className="bg-black text-white py-16 px-4">

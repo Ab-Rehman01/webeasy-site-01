@@ -22,7 +22,7 @@ export default function Contact() {
     // For number input: allow only +92-3XXXXXXXXX (max 13 characters)
     if (name === "number") {
       if (!value.startsWith("+92-3")) return;
-      if (value.length > 9) return;
+      if (value.length > 10) return;
     }
 
     setFormData({ ...formData, [name]: value });
@@ -104,12 +104,12 @@ export default function Contact() {
             <input
               type="text"
               name="number"
-              placeholder="Enter -9 digit number"
+              placeholder="Enter - 10 digit number"
               value={formData.phone}
               onChange={(e) => {
                 // Ensure only numbers after +92-3
                 const input = e.target.value.replace(/[^\d]/g, ""); // remove non-digits
-                if (input.length <= 9) {
+                if (input.length <= 10) {
                   setFormData({ ...formData, phone: input });
                 }
               }}

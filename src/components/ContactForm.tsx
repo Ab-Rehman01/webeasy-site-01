@@ -33,7 +33,8 @@ export default function Contact() {
   if (!formRef.current) return;
   setStatus("");
 
-  // 1. Admin Notification
+  // 1. Admin Notification.
+  setLoading(true);
   emailjs
     .sendForm(
       "service_uhx8h49",
@@ -49,6 +50,7 @@ export default function Contact() {
     });
 
   // 2. User Auto Reply
+  setLoading(true);
   emailjs
     .sendForm(
       "service_w28ct9q",

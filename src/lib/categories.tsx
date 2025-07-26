@@ -1109,7 +1109,7 @@ export const categories: {
   keyphrase: "Free Bootstrap 5 Business Template",
   seoTitle: "Free Bootstrap 5 Business Template – Company Corporate Website Layout",
   metaDescription: "Company is a responsive, SEO-friendly Bootstrap 5 business template perfect for digital agencies, startups, and consultancies. Includes 10+ pages with sliders, blog, pricing, forms, and multipurpose UI elements.",
-  image: "/categories/Business/screencapture-themewagon-github-io-Company-2025-07-27-04_19_38.jpg", // Replace with actual image path
+  image: "/categories/landing/screencapture-themewagon-github-io-Company-2025-07-27-04_19_38.jpg", // Replace with actual image path
   imageAlt: "Company Bootstrap 5 Business Template Preview",
   image1: "/categories/Company-1200x736.jpg",
   demoUrl: "https://yourdomain.com/demo/company-bootstrap5-template", // Replace with actual demo link
@@ -1159,14 +1159,63 @@ export const categories: {
   ]
 }
 ,
-        {
-          id: "1",
-          name: "App Launch",
-          image: "/templates/landing1.jpg",
-          demoUrl: "https://demo.site/landing1",
-          price: "PKR 12,000",
-          description: "Perfect landing page for mobile app promotion."
-        },
+       {
+  id: "4",
+  name: "Company – Free Responsive Bootstrap 5 Business Template",
+  slug: "company-bootstrap5-business-template",
+  keyphrase: "Free Bootstrap 5 Business Template",
+  seoTitle: "Free Bootstrap 5 Business Template – Company Corporate Website Layout",
+  metaDescription: "Company is a responsive, SEO-friendly Bootstrap 5 business template perfect for digital agencies, startups, and consultancies. Includes 10+ pages with sliders, blog, pricing, forms, and multipurpose UI elements.",
+  image: "/categories/landing/Businessscreencapture-themewagon-github-io-Company-2025-07-27-04_19_38.jpg", // Replace with actual image path
+  imageAlt: "Company Bootstrap 5 Business Template Preview",
+  image1: "/categories/Company-1200x736.jpg",
+  demoUrl: "https://yourdomain.com/demo/company-bootstrap5-template", // Replace with actual demo link
+  price: "Free", // Free template
+  tags: [
+    "Bootstrap 5 Business Template",
+    "Free Corporate Website Layout",
+    "Startup Agency Template",
+    "Responsive HTML5 Template",
+    "Slider with Hero Image",
+    "Tabbed Content UI",
+    "Portfolio Section",
+    "Contact Form with Geolocation",
+    "SEO-Optimized Template",
+    "Newsletter Form Integration"
+  ],
+  description: "Company is a multipurpose Bootstrap 5 template suitable for startups, agencies, and consultancies. Built with HTML5, CSS3, and Sass, it features a clean, responsive layout with sliders, carousels, pricing tables, and advanced navigation UI.",
+  overview: "This template includes 10+ HTML pages with features such as a sticky navbar, header slider, portfolio, pricing tables, blog with pagination, YouTube video player, contact form with map, testimonial section, and mobile-first design – all optimized for page speed and cross-browser performance.",
+  gallery: "Includes hero header with carousel, tabbed sections, blog layouts, newsletter UI, testimonial sliders, pricing cards, back-to-top button, and modal video players. Easily customizable with Sass support and well-structured HTML.",
+  skill: "Perfect for developers building corporate or business websites using Bootstrap 5 with a modular and mobile-optimized layout. Great for digital agencies, SaaS, consulting firms, and marketing teams.",
+  features: [
+    "Built on Bootstrap v5.3.3",
+    "HTML5 & CSS3 Markup",
+    "Preloader Animation",
+    "Hero Header with Slider & Image",
+    "Sticky Top Navigation Bar",
+    "Multilevel Dropdown Menu",
+    "Collapsible Burger Menu",
+    "Breadcrumbs & Back-to-Top Button",
+    "Tabbed Content Sections",
+    "Portfolio Showcase",
+    "Blog Section with Pagination",
+    "Contact Form UI with Geolocation",
+    "YouTube Video Player",
+    "Testimonial Section",
+    "Pricing Table UI",
+    "Newsletter Subscription Form UI",
+    "Call-to-Action Buttons",
+    "On-Hover Effects",
+    "Responsive Layout for All Devices",
+    "SEO-Friendly Markup",
+    "Sass-Supported Codebase",
+    "Developer-Friendly Structure",
+    "Page-Speed Optimized",
+    "Clean and Multipurpose Design",
+    "Cross-Browser Compatibility"
+  ]
+}
+,
         {
           id: "1",
           name: "App Launch",

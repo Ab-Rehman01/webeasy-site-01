@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import Image from "next/image";
 import TemplatePreviewGrid from "@/components/TemplatePreviewGrid";
 import Head from "next/head"; // for SEO
+import TemplateCategories from "@/components/TemplateCategories";
 
 interface Props {
   params: {
@@ -44,32 +45,32 @@ export default function TemplateDetailPage({ params }: Props) {
           />
         </div>
 
-        <section className="text-gray-700 space-y-6">
+        <section className="text-gray-300 space-y-6">
           <div>
-            <h2 className="text-2xl font-bold text-black">Description</h2>
+            <h2 className="text-2xl font-bold text-white">Description</h2>
             <p>{template.description}</p>
           </div>
 
           <div>
-            <h2 className="text-2xl font-bold text-black">Overview</h2>
+            <h2 className="text-2xl font-bold text-white">Overview</h2>
             <p>{template.overview}</p>
           </div>
 
           <div>
-            <h2 className="text-2xl font-bold text-black">Portfolio Gallery</h2>
+            <h2 className="text-2xl font-bold text-white">Portfolio Gallery</h2>
             <p>{template.gallery}</p>
           </div>
 
           <div>
-            <h2 className="text-2xl font-bold text-black">Skills & Timeline</h2>
+            <h2 className="text-2xl font-bold text-white">Skills & Timeline</h2>
             <p>{template.skill}</p>
           </div>
         </section>
 
         {Array.isArray(template.features) && template.features.length > 0 && (
           <div className="mt-8">
-            <h2 className="text-2xl font-bold text-black mb-4">Key Features</h2>
-            <ul className="list-disc pl-6 text-gray-800 space-y-2">
+            <h2 className="text-2xl font-bold text-white mb-4">Key Features</h2>
+            <ul className="list-disc pl-6 text-gray-400 space-y-2">
               {template.features.map((feature, index) => (
                 <li key={index}>{feature}</li>
               ))}
@@ -78,7 +79,7 @@ export default function TemplateDetailPage({ params }: Props) {
         )}
 
 
-        <div className="mt-6 text-lg font-semibold text-gray-800">
+        <div className="mt-6 text-lg font-semibold text-gray-400">
           Price: <span>{template.price}</span>
         </div>
 
@@ -87,7 +88,7 @@ export default function TemplateDetailPage({ params }: Props) {
             href={template.demoUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block bg-blue-600 text-white px-4 py-2 mt-4 rounded hover:bg-blue-700 transition"
+            className="inline-block bg-blue-600 text-white px-4 py-2 mt-4 rounded hover:bg-blue transition"
           >
             Live Demo
           </a>
@@ -95,7 +96,7 @@ export default function TemplateDetailPage({ params }: Props) {
 
         {relatedTemplates.length > 0 && (
           <div className="mt-12">
-            <h2 className="text-2xl font-bold mb-6 text-center text-black">
+            <h2 className="text-2xl font-bold mb-6 text-center text-blue">
               More Templates in {category.name}
             </h2>
             <TemplatePreviewGrid
@@ -103,7 +104,17 @@ export default function TemplateDetailPage({ params }: Props) {
               templates={relatedTemplates}
               limit={5}
             />
+          {/* </div>
+          <div className="mt-12"> */}
+            <h2 className="text-2xl font-bold mb-2 mt-8 text-center text-green">
+              More Templates in
+            </h2>
+            <TemplateCategories />
           </div>
+
+
+
+
         )}
       </main>
     </>

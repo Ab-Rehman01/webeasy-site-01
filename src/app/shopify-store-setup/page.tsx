@@ -20,7 +20,7 @@ export default function ShopifyDevelopmentPage() {
       <section className="w-full px-4 sm:px-6 md:px-8 py-12">
 
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto items-center mb-4">
 
           {/* Left Content */}
           <div>
@@ -46,7 +46,7 @@ export default function ShopifyDevelopmentPage() {
               <li>Training &amp; Support</li>
               <li>We&apos;ll handle the tech so you don&apos;t have to</li>
             </ul>
-            <div className="py-10 bg-green-600 text-white text-center rounded-lg mx-4 mt-8">
+            <div className="py-10 bg-green-600 text-white text-center rounded-lg mx-4 mt-8 mb-8">
               <h2 className="text-3xl font-bold mb-4">Need Help Setting Up Your Store?</h2>
               <p className="text-lg mb-6">Let our Shopify experts build, optimize, and launch your store the right way.</p>
               <a
@@ -58,7 +58,7 @@ export default function ShopifyDevelopmentPage() {
             </div>
           </div>
           {/* Right Side Video */}
-          <div className="w-full max-w-sm aspect-[9/16] mx-auto rounded-xl overflow-hidden shadow-xl">
+          <div className="w-full max-w-sm aspect-[9/16] mx-auto rounded-xl overflow-hidden shadow-xl ">
 
             <video
               autoPlay

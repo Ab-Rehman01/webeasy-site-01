@@ -28,7 +28,7 @@ export default function CategoryPage({ params }: Props) {
 
   return (
     <main className="p-4 max-w-6xl mx-auto">
-      <h1 className="text-3xl font-bold mb-6 text-center text-black">{category.name}</h1>
+      <h1 className="text-3xl font-bold mb-6 text-center text-black">Category{category.name}</h1>
 
       {category.templates ? (
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
@@ -60,7 +60,7 @@ export default function CategoryPage({ params }: Props) {
       )}
       {categories.length > 0 && (
                 <div className="mt-12">
-                  <h2 className="text-2xl font-bold mb-6 text-center text-black">
+                  <h2 className="text-2xl font-bold mb-6 text-center text-gray-100">
                     More Templates in {category.name}
                   </h2>
                   <TemplateCategories />

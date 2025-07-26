@@ -721,52 +721,283 @@ export const categories: {
       templates: [
         {
           id: "1",
-          name: "Builder Pro",
-          image: "/templates/construction1.jpg",
-          demoUrl: "https://demo.site/construction1",
-          price: "PKR 22,000",
-          description: "Professional website template for construction companies."
+          name: "Tower Construction – HTML5 Template for Architect & Construction",
+          slug: "tower-construction-html5-template",
+          keyphrase: "Construction HTML5 Website Template",
+          seoTitle: "Construction HTML5 Website Template – Tower Architect & Builder Theme",
+          metaDescription: "Tower Construction is a responsive HTML5 template tailored for construction businesses, architects, renovators, landscapers, and interior designers, offering 30+ pre-built layouts, animations, and Bootstrap framework.",
+          image: "/categories/Construction/screencapture-file-K-templete-construction.jpg", // Replace with actual path
+          imageAlt: "Tower Construction HTML5 Template Preview",
+          image1: "/categories/1547477059 build.jpg",
+          demoUrl: "https://yourdomain.com/demo/tower-construction-template", // Replace with actual demo URL
+          price: "$25", // Replace with your actual price
+          tags: [
+            "Construction Template",
+            "Architecture Website Template",
+            "Renovation HTML5 Template",
+            "Landscaping Web Design",
+            "Contractor Bootstrap Template",
+            "Interior Design Layout",
+            "Business HTML Template",
+            "Filterable Gallery",
+            "Google Maps Integration",
+            "Responsive Builder Template"
+          ],
+          description: "Tower Construction is a clean, fully responsive HTML5 template designed for construction companies, architecture firms, interior decorators, and home renovation businesses. With 30+ ready-made pages, it offers a seamless experience for professionals looking to establish a strong online presence.",
+          overview: "Built with Bootstrap 3 and modern HTML5/CSS3 standards, Tower Construction provides smooth animations, two home page variations, and multiple inner layouts for showcasing services, galleries, and team members. It includes integrated Google Maps, social icons, and well-commented code for easy customization.",
+          gallery: "Includes beautifully crafted gallery pages with filters, slider-based home sections, service layouts, and contact forms. Designed with mobile optimization in mind, it supports cross-browser compatibility and fast performance.",
+          skill: "Ideal for web developers, agencies, and businesses looking for a customizable and lightweight construction industry template built on HTML5, CSS3, and Bootstrap 3.",
+          features: [
+            "2 Home Page Layouts",
+            "30+ Pre-built Pages",
+            "Bootstrap 3 Framework",
+            "HTML5 & CSS3 Validated Code",
+            "SEO Optimized Structure",
+            "Fully Responsive Design",
+            "Slider Revolution Included (Save $14)",
+            "Filterable Gallery Page",
+            "Google Maps Integration",
+            "Social Media Icons",
+            "Smooth CSS3 Animations",
+            "Google Fonts Included",
+            "Simple & Semantic Markup",
+            "Well-commented Code",
+            "Mobile-first Design",
+            "404 Error Page",
+            "2 Contact Form Layouts",
+            "Cross-browser Compatibility",
+            "Quick to Customize"
+          ]
         },
         {
-          id: "1",
-          name: "Builder Pro",
-          image: "/templates/construction1.jpg",
-          demoUrl: "https://demo.site/construction1",
-          price: "PKR 22,000",
-          description: "Professional website template for construction companies."
+          id: "2",
+          name: "Simply – Free HTML5 Bootstrap Construction Template",
+          slug: "simply-construction-html5-bootstrap-template",
+          keyphrase: "Free Construction HTML5 Bootstrap Template",
+          seoTitle: "Free Construction HTML5 Bootstrap Template – Simply Website Layout",
+          metaDescription: "Simply is a clean and modern HTML5 Bootstrap construction template ideal for architecture, engineering, industrial, and corporate websites. It features 3 home pages, 16+ HTML files, and a responsive design.",
+          image: "/categories/Construction/screencapture-file-K-templete-construction-Simply-Construction.jpg", // Replace with actual image path
+          imageAlt: "Simply Free Construction HTML5 Template Preview",
+          image1: "/categories/1548069284 simply (1).jpg",
+          demoUrl: "https://yourdomain.com/demo/simply-construction-template", // Replace with actual demo link
+          price: "Free", // Free template
+          tags: [
+            "Free Construction Template",
+            "HTML5 Bootstrap Website",
+            "Responsive Architecture Template",
+            "Industrial Company Web Layout",
+            "Corporate Engineering Design",
+            "Free Download Template",
+            "Bootstrap 3 Template",
+            "Cross-browser Compatible",
+            "Dynamic Contact Form",
+            "Modern Clean Design"
+          ],
+          description: "Simply is a modern, free HTML5 Bootstrap template tailored for construction, architecture, engineering, plumbing, and industrial companies. With its neat design and responsive layout, it provides an ideal base for professional business websites.",
+          overview: "The template includes 3 homepage variations and over 16 HTML pages, covering all essential sections such as services, contact, and company information. Built using Bootstrap 3, it's fully responsive and optimized for all major browsers.",
+          gallery: "Includes modern UI elements, clean typography, multiple homepage layouts, and a dynamic contact form. Optimized for mobile devices with well-commented HTML and CSS for easy customization.",
+          skill: "Perfect for developers looking for a lightweight, free construction website layout using Bootstrap 3, HTML5, and CSS3 with clean, semantic code.",
+          features: [
+            "Valid HTML5 & CSS3 Code",
+            "Clean and Modern Design",
+            "16+ HTML Pages",
+            "Built on Bootstrap v3",
+            "Fully Responsive Layout",
+            "3 Unique Home Pages",
+            "Cross-browser Compatible",
+            "Dynamic Contact Form",
+            "Google Fonts Integration",
+            "Well-commented Codebase",
+            "Creative and Neat UI",
+            "Lightweight and Fast",
+            "Free to Use"
+          ]
         },
         {
-          id: "1",
-          name: "Builder Pro",
-          image: "/templates/construction1.jpg",
-          demoUrl: "https://demo.site/construction1",
-          price: "PKR 22,000",
-          description: "Professional website template for construction companies."
-        },
+          id: "3",
+          name: "Indico – Construction & Building HTML Template",
+          slug: "indico-construction-html-template",
+          keyphrase: "Construction HTML Template Bootstrap 4",
+          seoTitle: "Construction HTML Template Bootstrap 4 – Indico Building & Architecture Theme",
+          metaDescription: "Indico is a responsive HTML template built with Bootstrap 4, featuring 2 homepages, 15+ inner pages, Ajax contact form, modern design, and full responsiveness for construction, architecture, and business sites.",
+          image: "/categories/Construction/screencapture-file-K-templete-construction-indico-construction-building-html-template-indico-construction-building-html-template-index-html-2025-07-27-02_35_48.jpg", // Replace with actual image path
+          imageAlt: "Indico Construction and Building HTML Template Preview",
+          image1: "/categories/1575000193 Indico - Construction & Building HTML Template.jpg",
+          demoUrl: "https://yourdomain.com/demo/indico-construction-template", // Replace with actual demo URL
+          price: "$22", // Replace with your actual price
+          tags: [
+            "Construction Template Bootstrap 4",
+            "Architecture Website HTML",
+            "Responsive Building Template",
+            "Cleaning Service Web Layout",
+            "Interior Design HTML Template",
+            "Ajax Contact Form",
+            "Lightbox Plugin",
+            "Developer Friendly HTML",
+            "Modern Construction Web Design",
+            "Google Fonts Integration"
+          ],
+          description: "Indico is a premium HTML template designed for construction, architecture, interior design, and business websites. Built on Bootstrap 4, it features a clean, ultra-modern layout with responsive design and developer-friendly code.",
+          overview: "The Indico template includes 2 homepages and over 15 pre-designed pages that can be easily customized. With full responsiveness, cross-browser compatibility, and Ajax-based contact forms, it’s perfect for any business needing a modern online presence.",
+          gallery: "The template features responsive layouts, elegant lightbox plugins, icons, Google Fonts, and polished page transitions. All pages are optimized for mobile and desktop devices with smooth performance.",
+          skill: "Great for developers, freelancers, or web agencies needing a robust and customizable construction website starter built with HTML5, CSS3, Bootstrap 4, and modern JavaScript.",
+          features: [
+            "2 Homepage Layouts",
+            "15+ Pre-built Pages",
+            "Fully Responsive Design",
+            "Built with Bootstrap 4",
+            "Ajax Working Contact Form",
+            "Modern & Clean Design",
+            "Developer Friendly Code with Comments",
+            "Responsive Lightbox Integration",
+            "Cross-browser Compatibility",
+            "900+ Font Icons Included",
+            "Google Fonts Integration",
+            "Easy to Customize Structure",
+            "Mobile Optimized Layout",
+            "Multi-purpose Usage – Construction, Interior, Business"
+          ]
+        }
+        ,
         {
-          id: "1",
-          name: "Builder Pro",
-          image: "/templates/construction1.jpg",
-          demoUrl: "https://demo.site/construction1",
-          price: "PKR 22,000",
-          description: "Professional website template for construction companies."
-        },
+          id: "4",
+          name: "Autora – Construction Business HTML Template",
+          slug: "autora-construction-html-template",
+          keyphrase: "Construction Business HTML Template",
+          seoTitle: "Construction Business HTML Template – Autora Building & Architecture Layout",
+          metaDescription: "Autora is a professional HTML template for construction, plumbing, architecture, and renovation services. It includes 2 homepages, portfolio pages, parallax effects, and unlimited customization options.",
+          image: "/categories/Construction/screencapture-file-K-templete-construction-Autora-Construction-HTML.jpg", // Replace with actual image path
+          imageAlt: "Autora Construction Business HTML Tescreencapture-file-K-templete-construction-Autora-Construction-HTMLmplate Preview",
+          image1: "/categories/1539358087autorthumb.jpg",
+          demoUrl: "https://yourdomain.com/demo/autora-construction-template", // Replace with actual demo URL
+          price: "$24", // Replace with your actual price
+          tags: [
+            "Construction Business Template",
+            "Architecture HTML Template",
+            "Plumbing Web Design",
+            "Renovation Company Template",
+            "Retina Ready Website",
+            "Unlimited Color Options",
+            "Ajax Contact Form",
+            "HTML5 CSS3 Template",
+            "Portfolio Page Layout",
+            "Parallax Effect"
+          ],
+          description: "Autora is a powerful and versatile HTML5 template designed specifically for construction companies, plumbers, painters, architects, and renovation professionals. It supports responsive layouts, clean design, and robust customization options.",
+          overview: "With 2 homepage styles, portfolio pages, retina-ready visuals, and unlimited color choices, Autora allows you to build stunning construction business websites with ease. It features Ajax contact forms, parallax scrolling, and mobile optimization throughout.",
+          gallery: "Autora includes boxed and wide layouts, parallax effect backgrounds, detailed portfolio sections, and responsive elements across all screen sizes. Built with pixel-perfect precision and developer-friendly code.",
+          skill: "Ideal for developers and agencies working on websites for the construction industry. Built on HTML5, CSS3, and modern responsive practices with customization at its core.",
+          features: [
+            "HTML5 & CSS3 Markup",
+            "Fully Responsive Layout",
+            "2 Homepage Styles",
+            "2 Portfolio Pages",
+            "Parallax Background Effects",
+            "Ajax Contact Form",
+            "Unlimited Color Options",
+            "Retina Ready Support",
+            "Boxed & Wide Layout Options",
+            "Clean & Unique Design",
+            "Pixel Perfect UI",
+            "Easy to Customize Elements",
+            "Free Font Icons Included",
+            "Optimized for Mobile Devices",
+            "Cross-browser Compatibility"
+          ]
+        }
+        ,
         {
-          id: "1",
-          name: "Builder Pro",
-          image: "/templates/construction1.jpg",
-          demoUrl: "https://demo.site/construction1",
-          price: "PKR 22,000",
-          description: "Professional website template for construction companies."
-        },
+          id: "5",
+          name: "Construction – Bootstrap Responsive Web Template",
+          slug: "construction-bootstrap-responsive-template",
+          keyphrase: "Bootstrap Responsive Construction Web Template",
+          seoTitle: "Bootstrap Responsive Construction Web Template – Multipurpose Business Layout",
+          metaDescription: "Construction is a clean and professional multipage HTML template built on Bootstrap 4, ideal for corporate, financial, and construction businesses. Includes blog pages, project layouts, and full responsiveness.",
+          image: "/categories/Construction/screencapture-file-K-templete-construction-construction-construction-index-html-2025-07-27-03_14_19.jpg", // Replace with actual image path
+          imageAlt: "Construction Bootstrap Responsive Web Template Preview",
+          image1: "/categories/mtumbnil.jpg",
+          demoUrl: "https://yourdomain.com/demo/construction-bootstrap-template", // Replace with actual demo link
+          price: "Free", // Free template
+          tags: [
+            "Bootstrap Construction Template",
+            "Responsive HTML5 Template",
+            "Corporate Business Template",
+            "Financial Services Layout",
+            "Font Awesome Icons",
+            "Google Fonts",
+            "Clean Multipage Design",
+            "Animated Buttons",
+            "HTML5 CSS3 jQuery",
+            "Google Map Integration"
+          ],
+          description: "Construction is a professional and versatile Bootstrap-based HTML template tailored for financial, business, and corporate firms. It features all essential pages like blog layouts, projects, contact, and single pages in a clean multipurpose structure.",
+          overview: "Built with Bootstrap v4.0.0, HTML5, and CSS3, this template is 100% responsive and compatible with all modern browsers. It includes animated buttons, slider, Google Maps integration, and Font Awesome icons, offering a smooth user experience on all devices.",
+          gallery: "This template features elegant sliders, image transitions, sidebar blogs, about and contact sections, and a project showcase. Cleanly structured and easy to customize with developer-friendly code.",
+          skill: "Ideal for web developers, freelancers, or agencies creating sites for construction, corporate, or financial businesses using HTML5, CSS3, and Bootstrap 4.",
+          features: [
+            "Built with Bootstrap v4.0.0",
+            "HTML5 & CSS3 Markup",
+            "100% Responsive Layout",
+            "Image Slider with Transitions",
+            "Font Awesome 5.6.0 Icons",
+            "Google Fonts Integration",
+            "Simple to Customize Structure",
+            "Clean and Multipurpose Design",
+            "Animated Buttons",
+            "Google Maps Integration",
+            "Two Blog Pages (Left & Right Sidebar)",
+            "Project and Contact Pages",
+            "Cross-browser Compatibility",
+            "Single Page HTML Layout Included"
+          ]
+        }
+        ,
         {
-          id: "1",
-          name: "Builder Pro",
-          image: "/templates/construction1.jpg",
-          demoUrl: "https://demo.site/construction1",
-          price: "PKR 22,000",
-          description: "Professional website template for construction companies."
-        },
+          id: "6",
+          name: "Sunrise – Construction Builder Company Responsive HTML Template",
+          slug: "sunrise-construction-builder-html-template",
+          keyphrase: "Construction Builder HTML Template",
+          seoTitle: "Construction Builder HTML Template – Sunrise Responsive Business Website",
+          metaDescription: "Sunrise is a clean, responsive HTML template for construction and builder companies. Built with Bootstrap 3, it features 2 homepage layouts, 24 HTML files, Revolution Slider, and Owl Carousel.",
+          image: "/categories/Construction/screencapture-file-K-templete-construction-Construction-Company.jpg", // Replace with actual image path
+          imageAlt: "Sunrise Construction Builder HTML Template Preview",
+          image1: "/categories/1539534984construction thumb.jpg",
+          demoUrl: "https://yourdomain.com/demo/sunrise-construction-template", // Replace with actual demo URL
+          price: "$23", // Replace with your actual price
+          tags: [
+            "Construction Builder Template",
+            "Responsive HTML5 Template",
+            "Bootstrap 3 Website Template",
+            "Owl Carousel Integration",
+            "Revolution Slider Included",
+            "Business Website Layout",
+            "Clean Simple Design",
+            "Fully Responsive UI",
+            "W3C Validated Code",
+            "Google Fonts Support"
+          ],
+          description: "Sunrise is a powerful and resourceful HTML template designed for construction companies, builders, and business websites related to the construction industry. It’s built with Bootstrap 3, includes 24 pre-built HTML pages, and supports modern web design practices.",
+          overview: "With 2 homepage styles and a flexible layout, Sunrise adapts beautifully to all devices. It includes Revolution Slider, Owl Carousel, and validated HTML5/CSS3 code. The template is well-documented, easy to edit, and compatible with all browsers and frameworks.",
+          gallery: "Sunrise includes hero sliders, company profile sections, team displays, project showcases, and contact forms. It uses Owl Carousel for testimonials and features clean, responsive UI elements ready to be customized.",
+          skill: "Perfect for developers and businesses looking to launch a modern construction or corporate website using Bootstrap 3 and responsive design principles.",
+          features: [
+            "2 Home Page Layouts",
+            "24 Pre-built HTML Files",
+            "Built on Bootstrap 3",
+            "Flexible and Drag-responsive Layout",
+            "Revolution Slider Included",
+            "Owl Carousel Integration",
+            "HTML5 & CSS3 Markup",
+            "W3C Validated Code",
+            "Clean and Minimal Design",
+            "Fully Responsive Across Devices",
+            "Easy to Customize Structure",
+            "Google Fonts Included",
+            "Well-documented Code",
+            "Cross-browser Tested"
+          ]
+        }
+        ,
       ],
     },
     {
@@ -776,28 +1007,158 @@ export const categories: {
       templates: [
         {
           id: "1",
-          name: "App Launch",
-          image: "/templates/landing1.jpg",
-          demoUrl: "https://demo.site/landing1",
-          price: "PKR 12,000",
-          description: "Perfect landing page for mobile app promotion."
-        },
+          name: "BusTraveller – Free HTML5 Travel Agency Website Template",
+          slug: "bustraveller-html5-travel-template",
+          keyphrase: "Free HTML5 Travel Agency Website Template",
+          seoTitle: "Free HTML5 Travel Agency Website Template – BusTraveller One-Page Layout",
+          metaDescription: "BusTraveller is a free HTML5 one-page template for travel agencies with a modern hero header, top navbar, responsive layout, and SEO-optimized clean code. Perfect for travel, business, or multipurpose websites.",
+          image: "/categories/landing/screencapture-themewagon-github-io-BusTraveller-2025-07-27-03_42_27.jpg", // Replace with actual image path
+          imageAlt: "BusTraveller Free HTML5 Travel Agency Website Template Preview",
+          image1: "/categories/bustraveller.jpg",
+          demoUrl: "https://yourdomain.com/demo/bustraveller-travel-template", // Replace with actual demo URL
+          price: "Free", // Free template
+          tags: [
+            "Free Travel Agency Template",
+            "HTML5 One-Page Template",
+            "Responsive Website Layout",
+            "SEO-Friendly HTML Template",
+            "Clean Codebase Design",
+            "Hero Header Template",
+            "Newsletter Subscription UI",
+            "Call-to-Action Buttons",
+            "Cross-browser Compatible",
+            "Multipurpose Business Template"
+          ],
+          description: "BusTraveller is a beautifully crafted one-page HTML5 template designed for travel agencies and multipurpose business sites. It includes hero headers, call-to-action buttons, on-hover effects, and a clean, responsive layout optimized for page speed.",
+          overview: "The template is mobile-first, developer-friendly, and built with HTML5 and CSS3. It offers all essential UI components such as top navigation, newsletter form, footer widgets, and social media icons — all optimized for performance and cross-browser compatibility.",
+          gallery: "Features include elegant visual sections, CTA buttons, newsletter subscription, social icons, and smooth scroll effects — all within a single responsive page. Built for fast performance with a clean UI and easy customization.",
+          skill: "Ideal for developers or startups seeking a free, fast-loading travel or business template built with HTML5, CSS3, and clean JavaScript.",
+          features: [
+            "HTML5 & CSS3 Markup",
+            "One-Page Layout",
+            "Hero Header Section",
+            "Top Navigation Bar",
+            "Call-to-Action Buttons",
+            "On-Hover Effects",
+            "Newsletter Subscription Form UI",
+            "Fully Responsive Design",
+            "Clean Codebase",
+            "SEO-Friendly",
+            "Cross-browser Compatible",
+            "Page Speed Optimized",
+            "Detailed Footer with Social Media Icons",
+            "Free to Use and Customize"
+          ]
+        }
+        ,
         {
-          id: "1",
-          name: "App Launch",
-          image: "/templates/landing1.jpg",
-          demoUrl: "https://demo.site/landing1",
-          price: "PKR 12,000",
-          description: "Perfect landing page for mobile app promotion."
+          id: "2",
+          name: "Broadcast – Free Responsive HTML5 Entertainment Website Template",
+          slug: "broadcast-html5-entertainment-template",
+          keyphrase: "Free HTML5 Entertainment Website Template",
+          seoTitle: "Free HTML5 Entertainment Website Template – Broadcast Music & Media Layout",
+          metaDescription: "Broadcast is a free, responsive multipage HTML5 template designed for music, media, and entertainment websites. Features include hero header, video gallery, tabbed content, and a clean, SEO-friendly codebase.",
+          image: "/categories/landing/screencapture-themewagon-github-io-Broadcast-2025-07-27-04_02_07.jpg", // Replace with actual image path
+          imageAlt: "Broadcast Free Entertainment HTML5 Template Preview",
+          image1: "/categories/Broadcast.webp",
+          demoUrl: "https://yourdomain.com/demo/broadcast-entertainment-template", // Replace with actual demo link
+          price: "Free", // Free template
+          tags: [
+            "Free Entertainment Template",
+            "HTML5 Multipage Website",
+            "Music Gallery Layout",
+            "Video Player Template",
+            "SEO-Friendly HTML Template",
+            "Responsive Landing Page",
+            "Cross-browser Compatible",
+            "Tabbed Content UI",
+            "Modal Video Gallery",
+            "Mobile-first Web Design"
+          ],
+          description: "Broadcast is a dynamic and visually engaging multipage HTML5 template crafted for music, entertainment, and media websites. Built for performance and customization, it features a hero header, video galleries, blog section, and fully responsive design.",
+          overview: "Designed with a mobile-first approach using HTML5 and CSS3, Broadcast includes 3+ pages with interactive UI elements such as burger menus, tabbed sections, CTA buttons, modal video players, search filters, and social media integrations — all optimized for SEO and fast load times.",
+          gallery: "Includes hero headers, video displays, tabbed content areas, and stylish footers with social media icons. It also features a clean codebase for developer customization and smooth responsiveness across all screen sizes.",
+          skill: "Ideal for web developers and media businesses seeking a free, flexible entertainment or music website starter template built on HTML5/CSS3.",
+          features: [
+            "HTML5 & CSS3 Markup",
+            "Multipage Design (3+ Pages)",
+            "Hero Header Section",
+            "Burger Navigation Menu",
+            "Tabbed Content Sections",
+            "Search Filter UI",
+            "Form UI Elements",
+            "Modal Video Players",
+            "Video Gallery Integration",
+            "Blog Section",
+            "On-Hover Effects",
+            "Call-to-Action Buttons",
+            "Fully Responsive Layout",
+            "Clean Developer-Friendly Codebase",
+            "Cross-browser Compatible",
+            "SEO Optimized Structure",
+            "Page-Speed Optimized",
+            "Mobile-First Design Approach",
+            "Detailed Footer with Social Icons"
+          ]
+
         },
-        {
-          id: "1",
-          name: "App Launch",
-          image: "/templates/landing1.jpg",
-          demoUrl: "https://demo.site/landing1",
-          price: "PKR 12,000",
-          description: "Perfect landing page for mobile app promotion."
-        },
+       {
+  id: "3",
+  name: "Company – Free Responsive Bootstrap 5 Business Template",
+  slug: "company-bootstrap5-business-template",
+  keyphrase: "Free Bootstrap 5 Business Template",
+  seoTitle: "Free Bootstrap 5 Business Template – Company Corporate Website Layout",
+  metaDescription: "Company is a responsive, SEO-friendly Bootstrap 5 business template perfect for digital agencies, startups, and consultancies. Includes 10+ pages with sliders, blog, pricing, forms, and multipurpose UI elements.",
+  image: "/categories/Business/screencapture-themewagon-github-io-Company-2025-07-27-04_19_38.jpg", // Replace with actual image path
+  imageAlt: "Company Bootstrap 5 Business Template Preview",
+  image1: "/categories/Company-1200x736.jpg",
+  demoUrl: "https://yourdomain.com/demo/company-bootstrap5-template", // Replace with actual demo link
+  price: "Free", // Free template
+  tags: [
+    "Bootstrap 5 Business Template",
+    "Free Corporate Website Layout",
+    "Startup Agency Template",
+    "Responsive HTML5 Template",
+    "Slider with Hero Image",
+    "Tabbed Content UI",
+    "Portfolio Section",
+    "Contact Form with Geolocation",
+    "SEO-Optimized Template",
+    "Newsletter Form Integration"
+  ],
+  description: "Company is a multipurpose Bootstrap 5 template suitable for startups, agencies, and consultancies. Built with HTML5, CSS3, and Sass, it features a clean, responsive layout with sliders, carousels, pricing tables, and advanced navigation UI.",
+  overview: "This template includes 10+ HTML pages with features such as a sticky navbar, header slider, portfolio, pricing tables, blog with pagination, YouTube video player, contact form with map, testimonial section, and mobile-first design – all optimized for page speed and cross-browser performance.",
+  gallery: "Includes hero header with carousel, tabbed sections, blog layouts, newsletter UI, testimonial sliders, pricing cards, back-to-top button, and modal video players. Easily customizable with Sass support and well-structured HTML.",
+  skill: "Perfect for developers building corporate or business websites using Bootstrap 5 with a modular and mobile-optimized layout. Great for digital agencies, SaaS, consulting firms, and marketing teams.",
+  features: [
+    "Built on Bootstrap v5.3.3",
+    "HTML5 & CSS3 Markup",
+    "Preloader Animation",
+    "Hero Header with Slider & Image",
+    "Sticky Top Navigation Bar",
+    "Multilevel Dropdown Menu",
+    "Collapsible Burger Menu",
+    "Breadcrumbs & Back-to-Top Button",
+    "Tabbed Content Sections",
+    "Portfolio Showcase",
+    "Blog Section with Pagination",
+    "Contact Form UI with Geolocation",
+    "YouTube Video Player",
+    "Testimonial Section",
+    "Pricing Table UI",
+    "Newsletter Subscription Form UI",
+    "Call-to-Action Buttons",
+    "On-Hover Effects",
+    "Responsive Layout for All Devices",
+    "SEO-Friendly Markup",
+    "Sass-Supported Codebase",
+    "Developer-Friendly Structure",
+    "Page-Speed Optimized",
+    "Clean and Multipurpose Design",
+    "Cross-Browser Compatibility"
+  ]
+}
+,
         {
           id: "1",
           name: "App Launch",
@@ -1041,100 +1402,100 @@ export const categories: {
             "Valid HTML5 & CSS3 Codebase"
           ]
         }
-    , {
-      id: "6",
-      name: "Electricca – Electrical Services HTML Template",
-      slug: "electricca-html-template",
-      keyphrase: "Electrical Services HTML Template",
-      seoTitle: "Electrical Services HTML Template – Electricca | Bootstrap 4 Responsive",
-      metaDescription: "Electricca is a multipage responsive HTML template for electrical service companies. Built on Bootstrap 4, it's SEO-friendly and developer-ready.",
-      image: "/categories/business/screencapture-file-K-templete-business-electricca-1-0-0-index-html-2025-05-22-22_50_29.webp",
-      imageAlt: "Electricca – Responsive HTML template for electrical service companies",
-      image1: "/categories/Electricca-1200x736.webp",
-      demoUrl: "https://demo.yourdomain.com/electricca",
-      price: "Free",
-      tags: [
-        "Electricca",
-        "HTML Template",
-        "Electrical Services",
-        "Bootstrap 4",
-        "Responsive Website",
-        "Business Template",
-        "SEO Optimized",
-        "Corporate Template"
+        , {
+          id: "6",
+          name: "Electricca – Electrical Services HTML Template",
+          slug: "electricca-html-template",
+          keyphrase: "Electrical Services HTML Template",
+          seoTitle: "Electrical Services HTML Template – Electricca | Bootstrap 4 Responsive",
+          metaDescription: "Electricca is a multipage responsive HTML template for electrical service companies. Built on Bootstrap 4, it's SEO-friendly and developer-ready.",
+          image: "/categories/business/screencapture-file-K-templete-business-electricca-1-0-0-index-html-2025-05-22-22_50_29.webp",
+          imageAlt: "Electricca – Responsive HTML template for electrical service companies",
+          image1: "/categories/Electricca-1200x736.webp",
+          demoUrl: "https://demo.yourdomain.com/electricca",
+          price: "Free",
+          tags: [
+            "Electricca",
+            "HTML Template",
+            "Electrical Services",
+            "Bootstrap 4",
+            "Responsive Website",
+            "Business Template",
+            "SEO Optimized",
+            "Corporate Template"
+          ],
+          description: "Electricca is a responsive HTML5 template designed for electrical service providers. It features a clean UI, smooth animations, a contact form, geolocation, and a multipage layout ideal for business and corporate use.",
+          overview: "Electricca is a professional-grade HTML template perfect for electrical companies and service businesses. Built with Bootstrap 4, it's developer-friendly, mobile-first, cross-browser compatible, and SEO optimized. Features include a hero header, sliders, testimonials, blog section, and reusable components to build a solid web presence.",
+          gallery: "Includes multiple reusable layout components such as gallery pages, testimonial sections, and blog previews that showcase your work and services effectively.",
+          skill: "HTML5, CSS3, Bootstrap 4, Responsive Design, SEO Optimization",
+          features: [
+            "Bootstrap 4.1.0",
+            "Responsive Multipage Layout",
+            "SEO-Friendly & Fast Loading",
+            "Hero Image and Header Carousel",
+            "Contact Form with Geolocation",
+            "Mobile-First and Cross-Browser Compatible",
+            "Newsletter Subscription UI",
+            "Testimonial & Blog Sections",
+            "Clean, Developer-Friendly Codebase",
+            "Call-to-Action Buttons and On-Hover Effects"
+          ]
+        }
       ],
-      description: "Electricca is a responsive HTML5 template designed for electrical service providers. It features a clean UI, smooth animations, a contact form, geolocation, and a multipage layout ideal for business and corporate use.",
-      overview: "Electricca is a professional-grade HTML template perfect for electrical companies and service businesses. Built with Bootstrap 4, it's developer-friendly, mobile-first, cross-browser compatible, and SEO optimized. Features include a hero header, sliders, testimonials, blog section, and reusable components to build a solid web presence.",
-      gallery: "Includes multiple reusable layout components such as gallery pages, testimonial sections, and blog previews that showcase your work and services effectively.",
-      skill: "HTML5, CSS3, Bootstrap 4, Responsive Design, SEO Optimization",
-      features: [
-        "Bootstrap 4.1.0",
-        "Responsive Multipage Layout",
-        "SEO-Friendly & Fast Loading",
-        "Hero Image and Header Carousel",
-        "Contact Form with Geolocation",
-        "Mobile-First and Cross-Browser Compatible",
-        "Newsletter Subscription UI",
-        "Testimonial & Blog Sections",
-        "Clean, Developer-Friendly Codebase",
-        "Call-to-Action Buttons and On-Hover Effects"
-      ]
-    }
-  ],
     },
-{
-  name: "Blogs & Magazines",
-    slug: "blogs",
+    {
+      name: "Blogs & Magazines",
+      slug: "blogs",
       image: "/categories/blogs.jpg",
-        templates: [
-          {
-            id: "1",
-            name: "Tech Blog",
-            image: "/templates/blog1.jpg",
-            demoUrl: "https://demo.site/blog1",
-            price: "PKR 14,000",
-            description: "Simple and stylish blog template for tech writers."
-          },
-          {
-            id: "1",
-            name: "Tech Blog",
-            image: "/templates/blog1.jpg",
-            demoUrl: "https://demo.site/blog1",
-            price: "PKR 14,000",
-            description: "Simple and stylish blog template for tech writers."
-          },
-          {
-            id: "1",
-            name: "Tech Blog",
-            image: "/templates/blog1.jpg",
-            demoUrl: "https://demo.site/blog1",
-            price: "PKR 14,000",
-            description: "Simple and stylish blog template for tech writers."
-          },
-          {
-            id: "1",
-            name: "Tech Blog",
-            image: "/templates/blog1.jpg",
-            demoUrl: "https://demo.site/blog1",
-            price: "PKR 14,000",
-            description: "Simple and stylish blog template for tech writers."
-          },
-          {
-            id: "1",
-            name: "Tech Blog",
-            image: "/templates/blog1.jpg",
-            demoUrl: "https://demo.site/blog1",
-            price: "PKR 14,000",
-            description: "Simple and stylish blog template for tech writers."
-          },
-          {
-            id: "1",
-            name: "Tech Blog",
-            image: "/templates/blog1.jpg",
-            demoUrl: "https://demo.site/blog1",
-            price: "PKR 14,000",
-            description: "Simple and stylish blog template for tech writers."
-          },
-        ],
+      templates: [
+        {
+          id: "1",
+          name: "Tech Blog",
+          image: "/templates/blog1.jpg",
+          demoUrl: "https://demo.site/blog1",
+          price: "PKR 14,000",
+          description: "Simple and stylish blog template for tech writers."
+        },
+        {
+          id: "1",
+          name: "Tech Blog",
+          image: "/templates/blog1.jpg",
+          demoUrl: "https://demo.site/blog1",
+          price: "PKR 14,000",
+          description: "Simple and stylish blog template for tech writers."
+        },
+        {
+          id: "1",
+          name: "Tech Blog",
+          image: "/templates/blog1.jpg",
+          demoUrl: "https://demo.site/blog1",
+          price: "PKR 14,000",
+          description: "Simple and stylish blog template for tech writers."
+        },
+        {
+          id: "1",
+          name: "Tech Blog",
+          image: "/templates/blog1.jpg",
+          demoUrl: "https://demo.site/blog1",
+          price: "PKR 14,000",
+          description: "Simple and stylish blog template for tech writers."
+        },
+        {
+          id: "1",
+          name: "Tech Blog",
+          image: "/templates/blog1.jpg",
+          demoUrl: "https://demo.site/blog1",
+          price: "PKR 14,000",
+          description: "Simple and stylish blog template for tech writers."
+        },
+        {
+          id: "1",
+          name: "Tech Blog",
+          image: "/templates/blog1.jpg",
+          demoUrl: "https://demo.site/blog1",
+          price: "PKR 14,000",
+          description: "Simple and stylish blog template for tech writers."
+        },
+      ],
     },
   ];

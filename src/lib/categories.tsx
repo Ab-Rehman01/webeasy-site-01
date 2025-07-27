@@ -424,7 +424,7 @@ export const categories: {
           image: "/categories/Ecom/screencapture-file-K-templete-E-com-belle-template-index-html-2025-05-20-02_39_58.jpg", // Update with actual path
           imageAlt: "Belle Multipurpose eCommerce HTML Template Preview",
           image1: "/categories/1573476912 belle.jpg",
-          demoUrl: "https://yourdomain.com/demo/belle-template", // Replace with actual demo URL
+          demoUrl: "https://belle-multipurpose-bootstrap-html-t.vercel.app/", // Replace with actual demo URL
           price: "$35", // Set your pricing
           tags: [
             "eCommerce Template",
@@ -519,7 +519,7 @@ export const categories: {
           image: "/categories/Ecom/screencapture-file-K-templete-E-com-karma-masterr-karma-master-index-html-2025-05-20-06_00_23.jpg", // Replace with actual path
           imageAlt: "Karma HTML5 Bootstrap eCommerce Website Template Preview",
           image1: "/categories/Karma-1-1200x736.webp",
-          demoUrl: "https://yourdomain.com/demo/karma-template", // Replace with actual demo URL
+          demoUrl: "https://karma-master1.vercel.app/", // Replace with actual demo URL
           price: "$29", // Replace with your price
           tags: [
             "HTML5 Bootstrap eCommerce Template",

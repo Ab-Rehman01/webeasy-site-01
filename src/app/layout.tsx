@@ -1,30 +1,35 @@
+
 // src/app/layout.tsx
 import './globals.css';
 import { ReactNode } from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
-
-import WhatsAppButton from '@/components/WhatsappButton'
+import WhatsAppButton from '@/components/WhatsappButton';
 import CustomChatBot from '@/components/CustomChatBot';
 
-
 export const metadata = {
-   title: 'WebEzee-Tech | Web Development, Shopify, SEO & Digital Marketing Services ',
-  description:  'Launch your brand with expert web development, Shopify stores, SEO services, and custom digital solutions Web Development in Pakistan by Webezee-Tech.',
+  metadataBase: new URL("https://webezee-tech.vercel.app/"),
+
+  title: 'WebEzee Tech | Web Development, Shopify, SEO & Digital Marketing in Pakistan',
+  description:
+    'WebEzee Tech offers expert web development, Shopify stores, SEO optimization, and digital marketing services in Pakistan. Build your brand with custom web solutions.',
 
   keywords: [
-    'Web Development in Pakistan',
-    'Shopify Development',
-    'SEO Services Optimization',
-    'Digital Marketing',
-    'Responsive Web Design',
+    'Web Development Pakistan',
+    'Shopify Development Pakistan',
+    'SEO Services Pakistan',
+    'Digital Marketing Agency',
+    'Next.js Development',
+    'Custom Website Design',
     'E-commerce Solutions',
+    'Responsive Web Design',
+    'Branding & Marketing',
     'Webezee Tech',
-    'Next.js Developer',
     'Website Maintenance',
-    'Branding',
-    'Next.js Development'
+    'UI UX Design',
   ],
+
+  authors: [{ name: 'WebEzee Tech', url: 'https://webezee-tech.vercel.app/' }],
 
   icons: {
     icon: '/images/favicon/favicon.ico',
@@ -41,60 +46,57 @@ export const metadata = {
   },
 
   openGraph: {
-    title: 'Webezee-Tech | Web Development & Marketing Services',
-    description: 'Launch your brand with expert web development, Shopify stores, and SEO.',
+    title: 'WebEzee Tech | Web Development, Shopify & SEO Services',
+    description:
+      'Launch your brand with WebEzee Tech. Professional web development, Shopify stores, SEO optimization, and digital marketing solutions.',
     url: 'https://webezee-tech.vercel.app/',
+    siteName: 'WebEzee Tech',
     type: 'website',
+    locale: 'en_PK',
     images: [
       {
         url: 'https://webezee-tech.vercel.app/og-image-v2.png',
         width: 1200,
         height: 630,
-        alt: 'Webezee-Tech OG Image',
+        alt: 'WebEzee Tech - Web Development & Marketing Services',
       },
     ],
   },
 
   twitter: {
     card: 'summary_large_image',
-    title: 'Webezee-Tech | Web Development & Marketing',
-    description: 'Launch your brand with custom web and SEO solutions.',
+    title: 'WebEzee Tech | Web Development & Marketing Services',
+    description:
+      'Expert web development, Shopify, SEO, and digital marketing solutions for your brand.',
+    creator: '@webezee_tech', // agar twitter handle hai to
     images: ['https://webezee-tech.vercel.app/og-image-v2.png'],
   },
 
   robots: {
     index: true,
-    follow: false,
+    follow: true,
+    nocache: false,
+  },
+
+  alternates: {
+    canonical: 'https://webezee-tech.vercel.app/',
   },
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
-    
-
       <body className="relative text-white bg-gray-900 min-h-screen">
-
-        {/* Background Image with Overlay */}
-        {/* <div className="fixed inset-0 z-[-1]">
-          <div
-            className="absolute bg-gray-900 inset-0 opacity-60"
-            aria-hidden="true"
-          ></div>
-          
-        </div> */}
-
         <Navbar />
         <main className="px-0">{children}</main>
-        
-       <CustomChatBot />
-      <WhatsAppButton />
-
+        <CustomChatBot />
+        <WhatsAppButton />
         <Footer />
       </body>
     </html>
   );
 }
+
 
 // src/app/layout.tsx
 // src/app/layout.tsx (or wherever your root layout lives)

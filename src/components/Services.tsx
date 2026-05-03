@@ -124,6 +124,23 @@ export default function Services() {
           </Link>
         ))}
       </motion.div>
+      <div className="max-w-4xl mx-auto mt-20 text-gray-300">
+  <h2 className="text-3xl font-bold mb-4 text-white">
+    Complete Digital Solutions for Businesses in Pakistan
+  </h2>
+
+  <p className="mb-4">
+    WebEzee Tech provides professional web development, SEO services, Shopify store setup,
+    and digital marketing solutions in Pakistan. We help businesses build strong online
+    presence with fast, modern, and conversion-focused strategies.
+  </p>
+
+  <p>
+    Whether you need a custom website, better Google rankings, or a complete eCommerce solution,
+    our expert team ensures your business grows online effectively.
+  </p>
+</div>
+
 
       {/* 👇 Pricing section niche */}
       <PricingPackages />

@@ -1,4 +1,5 @@
 'use client'
+//components/Services.tsx
 import Link from 'next/link'
 import { FaCheckCircle } from 'react-icons/fa'
 import { motion } from 'framer-motion'
@@ -82,7 +83,9 @@ export default function ServiceSection() {
 
       {/* Intro */}
       <div className="max-w-5xl mx-auto text-center mb-14">
-        <h1 className="text-4xl md:text-5xl font-bold mb-4">What We Offer</h1>
+        <h1 className="text-4xl md:text-5xl font-bold mb-4">
+  Our Web Development, SEO & Digital Marketing Services in Pakistan
+</h1>
         <p className="text-gray-400 text-lg text=black">
           Complete digital services to build, scale, and support your business online.
         </p>

@@ -82,9 +82,7 @@ export default function Services() {
         >
           Our Services
           <br>
-          <h1>
-            Best Web Development & SEO Agency in Pakistan
-          </h1>
+          
           <h1 className="text-4xl font-bold">
         Best Web Development & SEO Agency in Pakistan
       </h1>

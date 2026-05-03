@@ -57,24 +57,50 @@
 //     </section>
 //   )
 // }
-
+// src/app/services/page.tsx
 
 
 import ServiceSection from '@/components/Service';
 
 export const metadata = {
-  title: 'Our Services | Webezee-Tech',
-  description: 'Explore our wide range of services — web development, SEO, Shopify, and digital marketing tailored for your business.',
-  keywords: 'Web development, SEO, digital marketing, Shopify, online services',
+  title: 'Web Development, SEO & Digital Marketing Services in Pakistan | WebEzee Tech',
+
+  description:
+    'WebEzee Tech offers professional web development, Shopify store setup, SEO services, and digital marketing in Pakistan. Grow your business with modern and high-performance solutions.',
+
+  alternates: {
+    canonical: 'https://webezee-tech.vercel.app/services',
+  },
+
   openGraph: {
-    title: 'Our Services | Webezee-Tech',
-    description: 'Grow your business online with custom digital services from Webeasy-Tech.',
+    title: 'Web Development & SEO Services in Pakistan | WebEzee Tech',
+    description:
+      'Explore WebEzee Tech services including custom websites, Shopify stores, SEO optimization, and digital marketing solutions.',
     url: 'https://webezee-tech.vercel.app/services',
     type: 'website',
+    images: [
+      {
+        url: 'https://webezee-tech.vercel.app/og-services.png',
+        width: 1200,
+        height: 630,
+        alt: 'WebEzee Tech Services',
+      },
+    ],
+  },
+
+  twitter: {
+    card: 'summary_large_image',
+    title: 'WebEzee Tech Services',
+    description:
+      'Web development, SEO, Shopify, and digital marketing services in Pakistan.',
     images: ['https://webezee-tech.vercel.app/og-services.png'],
   },
-};
- export default function ServicePage() {
+
+  robots: {
+    index: true,
+    follow: true,
+  },
+}; export default function ServicePage() {
    return <ServiceSection />
   ;
  }

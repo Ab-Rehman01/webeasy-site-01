@@ -1,4 +1,3 @@
-
 // src/app/layout.tsx
 import './globals.css';
 import { ReactNode } from 'react';
@@ -65,9 +64,14 @@ export const metadata = {
 
   twitter: {
     card: 'summary_large_image',
-    title: 'WebEzee Tech | Web Development & Marketing Services',
-    description:
-      'Expert web development, Shopify, SEO, and digital marketing solutions for your brand.',
+    title: {
+  default: 'WebEzee Tech - Web Development & SEO Agency in Pakistan',
+  template: '%s | WebEzee Tech'
+},
+
+description:
+  'WebEzee Tech is a leading web development and digital marketing agency in Pakistan. We build fast websites, Shopify stores, and SEO strategies that grow your business.',
+
     creator: '@webezee_tech', // agar twitter handle hai to
     images: ['https://webezee-tech.vercel.app/og-image-v2.png'],
   },

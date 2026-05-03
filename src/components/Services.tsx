@@ -80,7 +80,10 @@ export default function Services() {
           transition={{ duration: 0.7 }}
           className="text-4xl font-bold mb-4"
         >
-          Our Services 
+          Our Services
+          <h1>
+            Best Web Development & SEO Agency in Pakistan
+          </h1>
         </motion.h2>
         <p className="text-gray-400 text-lg leading-relaxed">
           We offer a wide range of digital solutions tailored to help your business grow online — from sleek websites to
@@ -111,9 +114,9 @@ export default function Services() {
               <h3 className="text-xl font-semibold mb-2 text-center">{service.title}</h3>
               <p className="text-gray-300 text-sm leading-relaxed text-center">{service.desc}</p>
             </motion.div>
-            </Link>
+          </Link>
         ))}
-          </motion.div>
+      </motion.div>
 
       {/* 👇 Pricing section niche */}
       <PricingPackages />

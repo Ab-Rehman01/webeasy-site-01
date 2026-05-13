@@ -42,7 +42,9 @@ export default function DashboardPage() {
     loadMessages();
   };
 
-  const chats = [...new Set(messages.map((m) => m.phone))];
+const chats = Array.from(
+  new Set(messages.map((m) => m.phone))
+);
 
   return (
     <div className="flex h-screen bg-black text-white">

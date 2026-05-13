@@ -1,5 +1,12 @@
 "use client";
 
+import {
+  SignedIn,
+  SignedOut,
+  SignInButton,
+  UserButton,
+} from "@clerk/nextjs";
+
 import { useState } from "react";
 
 export default function DashboardPage() {
@@ -25,36 +32,66 @@ export default function DashboardPage() {
 
   return (
     <div className="min-h-screen bg-black text-white p-10">
-      <h1 className="text-4xl font-bold mb-10">
-        Webezee WhatsApp Dashboard
-      </h1>
+      <div className="flex justify-between items-center mb-10">
+        <h1 className="text-4xl font-bold">
+          Webezee WhatsApp Dashboard
+        </h1>
 
-      <div className="max-w-xl bg-zinc-900 p-6 rounded-2xl">
-        <h2 className="text-2xl mb-5">Send WhatsApp Message</h2>
+        <div>
+          <SignedOut>
+            <SignInButton />
+          </SignedOut>
 
-        <input
-          type="text"
-          placeholder="923001234567"
-          className="w-full p-3 rounded-lg bg-zinc-800 mb-4"
-          value={phone}
-          onChange={(e) => setPhone(e.target.value)}
-        />
-
-        <textarea
-          placeholder="Type your message..."
-          className="w-full p-3 rounded-lg bg-zinc-800 mb-4"
-          rows={5}
-          value={message}
-          onChange={(e) => setMessage(e.target.value)}
-        />
-
-        <button
-          onClick={sendMessage}
-          className="bg-green-600 hover:bg-green-700 px-6 py-3 rounded-xl"
-        >
-          Send Message
-        </button>
+          <SignedIn>
+            <UserButton />
+          </SignedIn>
+        </div>
       </div>
+
+      <SignedIn>
+        <div className="max-w-xl bg-zinc-900 p-6 rounded-2xl">
+          <h2 className="text-2xl mb-5">
+            Send WhatsApp Message
+          </h2>
+
+          <input
+            type="text"
+            placeholder="923001234567"
+            className="w-full p-3 rounded-lg bg-zinc-800 mb-4"
+            value={phone}
+            onChange={(e) => setPhone(e.target.value)}
+          />
+
+          <textarea
+            placeholder="Type your message..."
+            className="w-full p-3 rounded-lg bg-zinc-800 mb-4"
+            rows={5}
+            value={message}
+            onChange={(e) => setMessage(e.target.value)}
+          />
+
+          <button
+            onClick={sendMessage}
+            className="bg-green-600 hover:bg-green-700 px-6 py-3 rounded-xl"
+          >
+            Send Message
+          </button>
+        </div>
+      </SignedIn>
+
+      <SignedOut>
+        <div className="text-center mt-20">
+          <h2 className="text-3xl font-bold mb-5">
+            Please Login First
+          </h2>
+
+          <SignInButton>
+            <button className="bg-blue-600 px-6 py-3 rounded-xl">
+              Login
+            </button>
+          </SignInButton>
+        </div>
+      </SignedOut>
     </div>
   );
 }

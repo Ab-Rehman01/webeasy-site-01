@@ -5,7 +5,7 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import WhatsAppButton from '@/components/WhatsappButton';
 import CustomChatBot from '@/components/CustomChatBot';
-
+import { ClerkProvider } from "@clerk/nextjs";
 export const metadata = {
   metadataBase: new URL("https://webezee-tech.vercel.app/"),
 
@@ -89,6 +89,7 @@ description:
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
+    <ClerkProvider>
     <html lang="en">
       <body className="relative text-white bg-gray-900 min-h-screen">
         <Navbar />
@@ -97,7 +98,9 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <WhatsAppButton />
         <Footer />
       </body>
-    </html>
+          </html>
+
+    </ClerkProvider>
   );
 }
 

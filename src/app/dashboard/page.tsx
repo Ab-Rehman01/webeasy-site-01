@@ -31,7 +31,7 @@ export default function DashboardPage() {
   };
 
   return (
-    <div className="min-h-screen bg-black text-white p-10">
+    <div className="min-h-screen bg-black text-white p-10 pt-24">
       <div className="flex justify-between items-center mb-10">
         <h1 className="text-4xl font-bold">
           Webezee WhatsApp Dashboard

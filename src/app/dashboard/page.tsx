@@ -1,15 +1,16 @@
 "use client";
 
 import { useEffect, useState } from "react";
- type Message = {
+
+type Message = {
   phone: string;
   message: string;
   direction: "inbound" | "outbound";
   created_at?: string;
 };
-export default function DashboardPage() {
 
-  const [messages, setMessages] = useState<any[]>([]);
+export default function DashboardPage() {
+  const [messages, setMessages] = useState<Message[]>([]);
   const [selected, setSelected] = useState("");
   const [text, setText] = useState("");
 
@@ -20,12 +21,17 @@ export default function DashboardPage() {
   const loadMessages = async () => {
     const res = await fetch("/api/messages");
     const data = await res.json();
-    setMessages(data.messages);
+    setMessages(data.messages || []);
   };
 
   const send = async () => {
+    if (!selected || !text) return;
+
     await fetch("/api/send-message", {
       method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
       body: JSON.stringify({
         to: selected,
         message: text,
@@ -45,11 +51,17 @@ export default function DashboardPage() {
       <div className="w-1/3 border-r p-4">
         <h2 className="font-bold mb-4">Chats</h2>
 
+        {chats.length === 0 && (
+          <p className="text-gray-400">No chats yet</p>
+        )}
+
         {chats.map((c) => (
           <div
             key={c}
             onClick={() => setSelected(c)}
-            className="p-2 border-b cursor-pointer"
+            className={`p-2 border-b cursor-pointer ${
+              selected === c ? "bg-zinc-800" : ""
+            }`}
           >
             {c}
           </div>
@@ -59,23 +71,36 @@ export default function DashboardPage() {
       {/* RIGHT CHAT BOX */}
       <div className="flex-1 flex flex-col p-4">
 
-        <div className="flex-1 overflow-auto">
+        {/* MESSAGES */}
+        <div className="flex-1 overflow-auto space-y-2">
           {messages
             .filter((m) => m.phone === selected)
             .map((m, i) => (
-              <div key={i} className="p-2">
-                <b>{m.direction}:</b> {m.message}
+              <div
+                key={i}
+                className={`p-2 rounded-lg w-fit max-w-xs ${
+                  m.direction === "outbound"
+                    ? "bg-green-600 ml-auto"
+                    : "bg-zinc-700"
+                }`}
+              >
+                {m.message}
               </div>
             ))}
         </div>
 
-        <div className="flex gap-2">
+        {/* INPUT */}
+        <div className="flex gap-2 mt-2">
           <input
-            className="flex-1 p-2 bg-zinc-800"
+            className="flex-1 p-2 bg-zinc-800 rounded"
             value={text}
+            placeholder="Type message..."
             onChange={(e) => setText(e.target.value)}
           />
-          <button onClick={send} className="bg-green-600 px-4">
+          <button
+            onClick={send}
+            className="bg-green-600 px-4 rounded"
+          >
             Send
           </button>
         </div>

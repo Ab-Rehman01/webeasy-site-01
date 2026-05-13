@@ -23,10 +23,10 @@ export default function ScrollFadeIn({ children, direction = 'left', delay = 0 }
       opacity: 1,
       x: 0,
       transition: {
-        duration: 0.6,
-        delay,
-        ease: 'easeOut',
-      },
+  duration: 0.6,
+  delay: 0.2,
+  ease: [0.42, 0, 0.58, 1]
+},
     },
   };
 

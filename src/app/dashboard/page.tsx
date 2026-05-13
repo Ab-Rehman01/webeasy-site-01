@@ -47,7 +47,7 @@ const chats = Array.from(
 );
 
   return (
-    <div className="flex h-screen bg-black text-white">
+    <div className="flex h-screen bg-black text-white pt-24">
 
       {/* LEFT CHAT LIST */}
       <div className="w-1/3 border-r p-4">

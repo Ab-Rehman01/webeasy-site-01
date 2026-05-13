@@ -2,83 +2,112 @@
 
 import { useState } from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false)
 
   return (
-    <nav className="fixed top-0 left-0 w-full z-50 backdrop-blur-md bg-black/30 text-white">
+    <nav className="fixed top-0 left-0 w-full z-50 backdrop-blur-md bg-black/40 text-white border-b border-white/10">
       <div className="flex items-center justify-between container mx-auto px-4 py-3">
-        {/* Logo + Phone */}
-        <div className="flex items-center space-x-4">
+
+        {/* Logo */}
+        <div className="flex items-center space-x-3">
           <Image
-            src="/images/420193098_122110677836242846_4605351335286497655_n.jpg"
-            alt="WebEzee Logo"
+            src="/images/logo.jpg"
+            alt="WebEzee Tech Logo"
             width={110}
             height={35}
             className="h-[35px] w-auto object-contain"
           />
-          <h1 className="text-xl font-bold">WebEzee-Tech</h1>
+
+          <h1 className="text-lg font-bold">
+            WebEzee Tech
+          </h1>
+
           <a
             href="tel:+923242822577"
             className="hidden md:flex items-center text-sm text-green-400 hover:text-green-300"
           >
-            <span className="mr-1">📞</span> +92 324 2822577
+            📞 +92 324 2822577
           </a>
         </div>
 
         {/* Desktop Menu */}
         <ul className="hidden md:flex space-x-6 text-sm font-medium items-center">
-          <li><a href="/" className="hover:text-green-400">Home</a></li>
-          <li className="relative group">
-            <a href="/services" className="cursor-pointer hover:text-green-400">Services</a>
-            <ul className="absolute left-0 top-full bg-gray-800 text-white mt-1 rounded shadow-lg min-w-[160px] opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-opacity duration-200 z-50">
-              <li><a href="/web-development" className="block px-4 py-2 hover:bg-gray-700">Web Development</a></li>
-              <li><a href="/digital-marketing" className="block px-4 py-2 hover:bg-gray-700">Digital Marketing</a></li>
-              <li><a href="/seo-services" className="block px-4 py-2 hover:bg-gray-700">SEO Services</a></li>
-            </ul>
+
+          <li>
+            <Link href="/" className="hover:text-green-400">
+              Home
+            </Link>
           </li>
-          {/* <li><a href="/testimonials" className="hover:text-green-400">Testimonials</a></li> */}
-          <li><a href="https://wa.me/923242822577" target="_blank" rel="noopener noreferrer" className="hover:text-green-400">WhatsApp</a></li>
-              <li><a href="/about" onClick={() => setMenuOpen(false)}>About Us</a></li>
-          <li><a href="/contact" className="hover:text-green-400">Contact Us</a></li>
+
+          <li>
+            <Link href="/services" className="hover:text-green-400">
+              Services
+            </Link>
+          </li>
+
+          <li>
+            <Link href="/about" className="hover:text-green-400">
+              About
+            </Link>
+          </li>
+
+          <li>
+            <Link href="/contact" className="hover:text-green-400">
+              Contact
+            </Link>
+          </li>
+          <li>
+  <Link
+    href="/contact"
+    className="bg-green-500 px-3 py-1 rounded text-black font-medium hover:bg-green-400 transition"
+  >
+    Get Quote
+  </Link>
+</li>
+
+          <li>
+            <Link
+              href="https://wa.me/923242822577"
+              target="_blank"
+              className="text-green-400 hover:text-green-300"
+            >
+              WhatsApp
+            </Link>
+          </li>
         </ul>
 
-        {/* Mobile Menu Button */}
+        {/* Mobile Button */}
         <button
-          className="md:hidden text-white focus:outline-none"
+          className="md:hidden text-white text-2xl"
           onClick={() => setMenuOpen(!menuOpen)}
         >
-          {menuOpen ? '✖️' : '☰'}
+          {menuOpen ? '✖' : '☰'}
         </button>
       </div>
 
       {/* Mobile Menu */}
       {menuOpen && (
-        <ul className="md:hidden bg-black/80 px-4 py-4 space-y-3 text-sm font-medium">
-          <li><a href="/" onClick={() => setMenuOpen(false)}>Home</a></li>
-          <li>
-            <details className="group">
-              <summary className="cursor-pointer">Services</summary>
-              <ul className="ml-4 mt-2 space-y-1 text-gray-300">
-                <li><a href="/web-development" onClick={() => setMenuOpen(false)}>Web Development</a></li>
-                <li><a href="/digital-marketing" onClick={() => setMenuOpen(false)}>Digital Marketing</a></li>
-                <li><a href="/seo-services" onClick={() => setMenuOpen(false)}>SEO Services</a></li>
-              </ul>
-            </details>
-          </li>
-     
-          <li><a href="https://wa.me/923242822577" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
-          <li><a href="/about" onClick={() => setMenuOpen(false)}>About Us</a></li>
+        <div className="md:hidden bg-black/90 px-4 py-4 space-y-3 text-sm">
 
-          <li><a href="/contact" onClick={() => setMenuOpen(false)}>Contact Us</a></li>
+          <Link href="/" onClick={() => setMenuOpen(false)}>Home</Link>
+          <Link href="/services" onClick={() => setMenuOpen(false)}>Services</Link>
+          <Link href="/about" onClick={() => setMenuOpen(false)}>About</Link>
+          <Link href="/contact" onClick={() => setMenuOpen(false)}>Contact</Link>
 
-        </ul>
+          <a
+            href="https://wa.me/923242822577"
+            className="block text-green-400"
+          >
+            WhatsApp
+          </a>
+        </div>
       )}
     </nav>
   )
 }
-
 
 
 // import { useState } from 'react'

@@ -21,7 +21,7 @@ export default function Footer() {
           <a href="https://instagram.com/yourprofile" target="_blank" rel="noopener noreferrer" className="hover:text-white">
             <Instagram className="w-5 h-5 inline-block mr-1" /> Instagram
           </a>
-          <a href="https://facebook.com/yourpage" target="_blank" rel="noopener noreferrer" className="hover:text-white">
+          <a href="https://www.facebook.com/webezee.host" target="_blank" rel="noopener noreferrer" className="hover:text-white">
             <Facebook className="w-5 h-5 inline-block mr-1" /> Facebook
           </a>
         </div>

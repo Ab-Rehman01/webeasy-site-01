@@ -1,6 +1,6 @@
 'use client';
 
-import { motion } from 'framer-motion';
+import { motion, Variants } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { ReactNode } from 'react';
 
@@ -20,7 +20,7 @@ export default function ScrollFadeIn({
     threshold: 0.1,
   });
 
-  const variants = {
+  const variants: Variants = {
     hidden: {
       opacity: 0,
       x: direction === 'left' ? -50 : 50,
@@ -30,8 +30,8 @@ export default function ScrollFadeIn({
       x: 0,
       transition: {
         duration: 0.6,
-        delay: delay, // ✅ NOW USED PROPERLY
-        ease: [0.42, 0, 0.58, 1],
+        delay,
+        ease: "easeOut", // ✅ FIXED
       },
     },
   };

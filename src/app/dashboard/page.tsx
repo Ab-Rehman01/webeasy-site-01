@@ -1,8 +1,14 @@
 "use client";
 
 import { useEffect, useState } from "react";
-
+ type Message = {
+  phone: string;
+  message: string;
+  direction: "inbound" | "outbound";
+  created_at?: string;
+};
 export default function DashboardPage() {
+
   const [messages, setMessages] = useState<any[]>([]);
   const [selected, setSelected] = useState("");
   const [text, setText] = useState("");

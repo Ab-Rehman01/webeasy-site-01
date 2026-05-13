@@ -1,4 +1,3 @@
-// components/ScrollFadeIn.tsx
 'use client';
 
 import { motion } from 'framer-motion';
@@ -11,8 +10,15 @@ interface Props {
   delay?: number;
 }
 
-export default function ScrollFadeIn({ children, direction = 'left', delay = 0 }: Props) {
-  const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.1 });
+export default function ScrollFadeIn({
+  children,
+  direction = 'left',
+  delay = 0,
+}: Props) {
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    threshold: 0.1,
+  });
 
   const variants = {
     hidden: {
@@ -23,10 +29,10 @@ export default function ScrollFadeIn({ children, direction = 'left', delay = 0 }
       opacity: 1,
       x: 0,
       transition: {
-  duration: 0.6,
-  delay: 0.2,
-  ease: [0.42, 0, 0.58, 1]
-},
+        duration: 0.6,
+        delay: delay, // ✅ NOW USED PROPERLY
+        ease: [0.42, 0, 0.58, 1],
+      },
     },
   };
 

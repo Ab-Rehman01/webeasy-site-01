@@ -83,9 +83,9 @@ export default function Services() {
           Our Services
           
           <br />
-          <h1 className="text-4xl font-bold">
+          <h2 className="text-4xl font-bold">
         Best Web Development & SEO Agency in Pakistan
-      </h1>
+      </h2>
 
       <p>
         We build high-converting websites, Shopify stores, and SEO strategies.

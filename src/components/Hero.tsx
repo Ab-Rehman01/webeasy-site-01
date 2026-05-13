@@ -120,7 +120,9 @@ export default function Hero() {
             visible: { opacity: 1, y: 0 },
           }}
         >
-  Launch your brand with custom websites, eCommerce stores, and powerful digital marketing — all with Webeasy-Tech.
+   
+        Best Web Development & SEO Agency in Pakistan
+    
 </motion.p>
         <motion.a
           href="https://wa.me/+923242822577"
@@ -132,7 +134,9 @@ export default function Hero() {
             visible: { opacity: 1, y: 0 },
           }}
         >
-          Get Free Consultation
+          <p>
+        We build high-converting websites, Shopify stores, and SEO strategies.
+      </p>
         </motion.a>
         </motion.div>
     

@@ -3,13 +3,13 @@ import { NextRequest, NextResponse } from "next/server";
 const VERIFY_TOKEN = "webezee_verify_token";
 
 export async function GET(req: NextRequest) {
-  const searchParams = req.nextUrl.searchParams;
+  const params = req.nextUrl.searchParams;
 
-  const mode = searchParams.get("hub.mode");
-  const token = searchParams.get("hub.verify_token");
-  const challenge = searchParams.get("hub.challenge");
+  const mode = params.get("hub.mode");
+  const token = params.get("hub.verify_token");
+  const challenge = params.get("hub.challenge");
 
-  if (mode === "subscribe" && token && token === VERIFY_TOKEN) {
+  if (mode === "subscribe" && token === VERIFY_TOKEN) {
     return new NextResponse(challenge, {
       status: 200,
       headers: { "Content-Type": "text/plain" },
@@ -23,13 +23,21 @@ export async function POST(req: NextRequest) {
   try {
     const body = await req.json();
 
-    console.log("Webhook Data:", JSON.stringify(body, null, 2));
+    const message =
+      body?.entry?.[0]?.changes?.[0]?.value?.messages?.[0];
 
-    const messages =
-      body?.entry?.[0]?.changes?.[0]?.value?.messages;
+    if (message) {
+      const from = message.from;
+      const text = message.text?.body;
 
-    if (messages) {
-      console.log("Incoming Messages:", messages);
+      console.log("Incoming:", from, text);
+
+      // 👉 HERE SAVE TO DB (Supabase)
+      // await supabase.from("messages").insert({
+      //   phone: from,
+      //   message: text,
+      //   direction: "inbound",
+      // });
     }
 
     return NextResponse.json({ success: true });

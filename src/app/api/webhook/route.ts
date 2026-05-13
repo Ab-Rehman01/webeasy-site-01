@@ -32,6 +32,8 @@ export async function POST(req: NextRequest) {
       success: true,
     });
   } catch (error) {
-  console.error("Webhook failed:", error);
-}
+    return NextResponse.json({
+      success: false,
+    });
+  }
 }

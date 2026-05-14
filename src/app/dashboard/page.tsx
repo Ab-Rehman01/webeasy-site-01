@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 
 type Message = {
-  phone: string;
+  contact_phone: string;
   message: string;
   direction: "inbound" | "outbound";
   created_at?: string;
@@ -13,17 +13,21 @@ export default function DashboardPage() {
   const [messages, setMessages] = useState<Message[]>([]);
   const [selected, setSelected] = useState("");
   const [text, setText] = useState("");
+  const [newNumber, setNewNumber] = useState("");
 
   useEffect(() => {
     loadMessages();
   }, []);
 
+  // LOAD MESSAGES
   const loadMessages = async () => {
     const res = await fetch("/api/messages");
     const data = await res.json();
+
     setMessages(data.messages || []);
   };
 
+  // SEND MESSAGE
   const send = async () => {
     if (!selected || !text) return;
 
@@ -39,51 +43,96 @@ export default function DashboardPage() {
     });
 
     setText("");
+
     loadMessages();
   };
 
-const chats = Array.from(
-  new Set(messages.map((m) => m.phone))
-);
+  // UNIQUE CHAT LIST
+  const chats = Array.from(
+    new Set(messages.map((m) => m.contact_phone))
+  );
 
   return (
-    <div className="flex h-screen bg-black text-white pt-24">
+    <div className="flex h-screen bg-black text-white pt-20">
 
-      {/* LEFT CHAT LIST */}
-      <div className="w-1/3 border-r p-4">
-        <h2 className="font-bold mb-4">Chats</h2>
+      {/* LEFT SIDEBAR */}
+      <div className="w-1/3 border-r border-zinc-800 p-4 overflow-auto">
 
+        <h2 className="text-2xl font-bold mb-4">
+          Chats
+        </h2>
+
+        {/* NEW CHAT */}
+        <div className="mb-4">
+          <input
+            type="text"
+            placeholder="923001234567"
+            value={newNumber}
+            onChange={(e) => setNewNumber(e.target.value)}
+            className="w-full p-3 rounded bg-zinc-800 outline-none"
+          />
+
+          <button
+            onClick={() => {
+              if (!newNumber) return;
+
+              setSelected(newNumber);
+              setNewNumber("");
+            }}
+            className="w-full mt-2 bg-green-600 hover:bg-green-700 p-3 rounded"
+          >
+            New Chat
+          </button>
+        </div>
+
+        {/* CHAT LIST */}
         {chats.length === 0 && (
-          <p className="text-gray-400">No chats yet</p>
+          <p className="text-gray-400">
+            No chats yet
+          </p>
         )}
 
         {chats.map((c) => (
           <div
             key={c}
             onClick={() => setSelected(c)}
-            className={`p-2 border-b cursor-pointer ${
-              selected === c ? "bg-zinc-800" : ""
+            className={`p-3 mb-2 rounded cursor-pointer transition ${
+              selected === c
+                ? "bg-zinc-700"
+                : "bg-zinc-900 hover:bg-zinc-800"
             }`}
           >
-            {c}
+            <p className="font-medium">
+              {c}
+            </p>
           </div>
         ))}
       </div>
 
-      {/* RIGHT CHAT BOX */}
-      <div className="flex-1 flex flex-col p-4">
+      {/* RIGHT CHAT AREA */}
+      <div className="flex-1 flex flex-col">
+
+        {/* TOP BAR */}
+        <div className="border-b border-zinc-800 p-4">
+          <h2 className="font-bold text-xl">
+            {selected || "Select a chat"}
+          </h2>
+        </div>
 
         {/* MESSAGES */}
-        <div className="flex-1 overflow-auto space-y-2">
+        <div className="flex-1 overflow-auto p-4 space-y-3">
+
           {messages
-            .filter((m) => m.phone === selected)
+            .filter(
+              (m) => m.contact_phone === selected
+            )
             .map((m, i) => (
               <div
                 key={i}
-                className={`p-2 rounded-lg w-fit max-w-xs ${
+                className={`max-w-xs p-3 rounded-xl ${
                   m.direction === "outbound"
                     ? "bg-green-600 ml-auto"
-                    : "bg-zinc-700"
+                    : "bg-zinc-800"
                 }`}
               >
                 {m.message}
@@ -91,22 +140,23 @@ const chats = Array.from(
             ))}
         </div>
 
-        {/* INPUT */}
-        <div className="flex gap-2 mt-2">
+        {/* INPUT AREA */}
+        <div className="border-t border-zinc-800 p-4 flex gap-2">
+
           <input
-            className="flex-1 p-2 bg-zinc-800 rounded"
+            className="flex-1 p-3 rounded bg-zinc-800 outline-none"
             value={text}
             placeholder="Type message..."
             onChange={(e) => setText(e.target.value)}
           />
+
           <button
             onClick={send}
-            className="bg-green-600 px-4 rounded"
+            className="bg-green-600 hover:bg-green-700 px-6 rounded"
           >
             Send
           </button>
         </div>
-
       </div>
     </div>
   );

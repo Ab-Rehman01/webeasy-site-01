@@ -75,21 +75,6 @@
 //   }
 // }
 
-// export async function POST(req: NextRequest) {
-//   try {
-//     const body = await req.json();
-
-//     console.log("🔥 POST WEBHOOK HIT");
-//     console.log(JSON.stringify(body, null, 2));
-
-//     return NextResponse.json({ success: true });
-//   } catch (error) {
-//     console.log("❌ POST ERROR:", error);
-
-//     return NextResponse.json({ success: false });
-//   }
-// }
-
 import { NextRequest, NextResponse } from "next/server";
 
 export async function GET(req: NextRequest) {
@@ -113,6 +98,7 @@ export async function GET(req: NextRequest) {
   return new NextResponse("Forbidden", { status: 403 });
 }
 
+
 export async function POST(req: NextRequest) {
   try {
     const body = await req.json();
@@ -120,9 +106,28 @@ export async function POST(req: NextRequest) {
     console.log("🔥 POST WEBHOOK HIT");
     console.log(JSON.stringify(body, null, 2));
 
+    const value = body?.entry?.[0]?.changes?.[0]?.value;
+
+    // 📩 INCOMING MESSAGE
+    const message = value?.messages?.[0];
+
+    if (message) {
+      const from = message.from;
+      const text = message.text?.body;
+
+      console.log("📩 Incoming:", from, text);
+    }
+
+    // 📤 STATUS UPDATE
+    const status = value?.statuses?.[0];
+
+    if (status) {
+      console.log("📤 Status:", status.status, status.id);
+    }
+
     return NextResponse.json({ success: true });
   } catch (error) {
-    console.log("❌ POST ERROR:", error);
+    console.error(error);
 
     return NextResponse.json({ success: false });
   }
